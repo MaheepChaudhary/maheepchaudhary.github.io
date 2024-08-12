@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Maheep Chaudhary"
-permalink: /cv/
+title: "CV"
+permalink: /Maheep Chaudhary - CV/
 author_profile: true
 redirect_from:
   - /resume

@@ -1,5 +1,5 @@
 ---
-title: "Positional Embedding and their role in Transformers" 
+title: "Layers and their roles in LLMs" 
 # date: 2015-08-14
 tags:
   - Transformer From Scratch

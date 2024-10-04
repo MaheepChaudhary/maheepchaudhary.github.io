@@ -18,6 +18,13 @@ redirect_from:
 <!-- <span style="font-size: 0.9em">Previously, I worked for 2 years under the guidance of <a href="https://scholar.google.com/citations?user=nZxJGeUAAAAJ&amp;hl=en" target="_blank">Mr. Haohan Wang</a>, Carnegie Mellon University, USA, where I wrote a survey on Trustworthiness in Machine Learning from Causal Perspective: <a href="https://arxiv.org/abs/2307.16851">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a>. <em>You can access my latest work under preparation using this <a href="https://github.com/MaheepChaudhary/Causation-inComputerVision">link.</a></em>. Previously, I had worked with <a href="http://driverless.mit.edu/">MIT Driverless</a> on Self-Driving Car as Computer Vision Engineer and also participated in <a href="https://www.indyautonomouschallenge.com/">Indus Autonomous Challenge</a>. In addition to that I have also worked with <a href="https://scholar.google.co.in/citations?user=TBcGmiwAAAAJ&amp;hl=en">Dr. Shitala Prasad, A*star, Singapore</a> where I worked on Caption Generation using the MANN, which is currently being reviewed. Additionally, I have worked on <a href="https://arxiv.org/abs/2108.06206">Reminder Cum Recommendation System</a> under the guidance of <a href="https://scholar.google.co.in/citations?user=OR0yLJEAAAAJ&amp;hl=en" target="_blank">Prof. Chandresh Kumar Maurya</a>, IIT Indore which was successfully submitted to Cods-COMAD: ACM IKDD 2021. Besides that, I have also worked on the Recommendation Engine Research Project under <a href="https://scholar.google.co.in/citations?user=5kG-VWMAAAAJ&amp;hl=en">Prof. Mrityunjay Singh</a> (Funded by AICTE) in JUIT, Wagnakhat for one year and have submitted the paper in the Information Sciences journal. I have also been a <strong>winner</strong> in the <a href="https://www.sih.gov.in/">Smart India Hackathon</a>(World's Biggest Hackathon) solving the problem proposed by the <a href="https://bprd.nic.in/">Beaureau of Research and Development</a>(BPRD) regarding Facial Recognition. I have also been shortlisted by AICTE to represent India as <strong>Team Leader in ASEAN-India Hackathon</strong>, which was held between 11 ASEAN countries.
 </span> -->
 
+<br>
+<br>
+<br><br><br><br><br>
+<br>
+<br>
 
-
-
+<center>
+<b><span style="color:red" >NOTE:</span></b> 
+<i><span style="color:red" >I am planning to pursue a PhD starting in the Fall of 2025.</span></i>
+</center>

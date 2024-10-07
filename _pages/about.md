@@ -13,7 +13,7 @@ redirect_from:
 
 <span style="font-size: 0.9em">During my master's, I had the privilege of working with <a href="https://atticusg.github.io">Dr. Atticus Geiger</a> and <a href="https://www.ntu.edu.sg/scse/about-us/past-chairs/prof-ong-yew-soon">Prof. Ong Yee Soon</a>. Prior to that, during my gap year and the final year of my bachelor's, I had the honor of collaborating with <a href="https://haohanwang.github.io">Prof. Haohan Wang</a>. Additionally, during my undergraduate studies, I was fortunate to work with the <a href="http://driverless.mit.edu/">MIT Driverless team</a>, as well as <a href="https://scholar.google.co.in/citations?user=TBcGmiwAAAAJ&amp;hl=en">Prof. Shitala Prasad</a> and <a href="https://scholar.google.co.in/citations?user=OR0yLJEAAAAJ&amp;hl=en" target="_blank">Prof. Chandresh Kumar Maurya</a>.</span>
 
-<span style="font-size: 0.9em">Do know more about my research philosophy and interest, consider reading my: <a href = "https://drive.google.com/file/d/19pDsxgjf1BDKzBm83EujnLbnfmLqTkQ1/view?usp=sharing">Research Statement</a>.</span>
+<span style="font-size: 0.9em">To know more about my research philosophy and interest, consider reading my: <a href = "https://drive.google.com/file/d/19pDsxgjf1BDKzBm83EujnLbnfmLqTkQ1/view?usp=sharing">Research Statement</a>.</span>
 
 <!-- <span style="font-size: 0.9em">I am currently a Master's student in <a href="https://www.ntu.edu.sg/">NTU, Singapore</a> under the guidance <a href="https://www.ntu.edu.sg/scse/about-us/past-chairs/prof-ong-yew-soon">Prof. Ong Yee Soon</a> - <em>President's Chair Professor of Computer Science at the School of Computer Science and Engineering at Nanyang Technological University (NTU)</em>. Beside, that I am working with <a href="https://www.stanford.edu/">Stanford University</a> under the expert guidance of <a href="https://atticusg.github.io/">Dr. Atticus Geiger</a>. In this role, I am actively engaged in a research endeavor that delves into the intricacies of neural networks. My focus involves interventions employing causality as a tool to enhance interpretability and fortify the robustness of these neural networks. This experience has provided valuable insights into the inner workings of these systems and their potential applications in advancing the field. -->
 
@@ -30,4 +30,3 @@ redirect_from:
 <b><span style="color:red" >NOTE:</span></b> 
 <i><span style="color:black" >I am planning to pursue a PhD starting in the Fall of 2025.</span></i>
 </center>
-

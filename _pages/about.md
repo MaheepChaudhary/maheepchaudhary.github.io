@@ -11,7 +11,8 @@ redirect_from:
 <!-- Hello | Bonjour | Hola | Namaste
 ====== -->
 
-<span style="font-size: 0.9em">During my master's, I had the privilege of working with <a href="https://atticusg.github.io">Dr. Atticus Geiger</a> and <a href="https://www.ntu.edu.sg/scse/about-us/past-chairs/prof-ong-yew-soon">Prof. Ong Yee Soon</a>. Prior to that, during my gap year and the final year of my bachelor's, I had the honor of collaborating with <a href="https://haohanwang.github.io">Prof. Haohan Wang</a>. Additionally, during my undergraduate studies, I was fortunate to work with the <a href="http://driverless.mit.edu/">MIT Driverless team</a>, as well as <a href="https://scholar.google.co.in/citations?user=TBcGmiwAAAAJ&amp;hl=en">Prof. Shitala Prasad</a> and <a href="https://scholar.google.co.in/citations?user=OR0yLJEAAAAJ&amp;hl=en" target="_blank">Prof. Chandresh Kumar Maurya</a>.</span>
+<span style="font-size: 0.9em">During my master's, I had the privilege of working with <a href="https://atticusg.github.io">Dr. Atticus Geiger</a> and <a href="https://www.ntu.edu.sg/scse/about-us/past-chairs/prof-ong-yew-soon">Prof. Ong Yee Soon</a>. Prior to that, in my final 
+year of my bachelor's and an additional year after that, I had the honor of collaborating with <a href="https://haohanwang.github.io">Prof. Haohan Wang</a>. Additionally, during my undergraduate studies, I was fortunate to work with the <a href="http://driverless.mit.edu/">MIT Driverless team</a>, as well as <a href="https://scholar.google.co.in/citations?user=TBcGmiwAAAAJ&amp;hl=en">Prof. Shitala Prasad</a> and <a href="https://scholar.google.co.in/citations?user=OR0yLJEAAAAJ&amp;hl=en" target="_blank">Prof. Chandresh Kumar Maurya</a>.</span>
 
 <span style="font-size: 0.9em">To know more about my research philosophy and interest, consider reading my: <a href = "https://drive.google.com/file/d/19pDsxgjf1BDKzBm83EujnLbnfmLqTkQ1/view?usp=sharing">Research Statement</a>.</span>
 

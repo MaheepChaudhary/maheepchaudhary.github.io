@@ -26,7 +26,3 @@ redirect_from:
 <br>
 <br>
 
-<center>
-<b><span style="color:red" >NOTE:</span></b> 
-<i><span style="color:black" >I am planning to pursue a PhD starting in the Fall of 2025.</span></i>
-</center>

@@ -409,7 +409,7 @@ I am grateful to [Dr. Michael Sklar](https://statistics.stanford.edu/people/mich
 - [Transformer Playslist by CodeEmporium](https://www.youtube.com/playlist?list=PLTl9hO2Oobd97qfWC40gOSU8C0iu0m2l4)
 - [The Illustrated Transformer by Jay Alammar](https://jalammar.github.io/illustrated-transformer/)
 
-## Connect with me 😀 <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h2>
+## Connect with me 😀 <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 * [Twitter](https://x.com/ChaudharyMaheep) 
 * [Linkedin](https://www.linkedin.com/in/maheep-chaudhary-07a03617a/)
  

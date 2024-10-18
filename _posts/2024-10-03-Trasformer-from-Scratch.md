@@ -413,20 +413,3 @@ I am grateful to [Dr. Michael Sklar](https://statistics.stanford.edu/people/mich
 * [Twitter](https://x.com/ChaudharyMaheep) 
 * [Linkedin](https://www.linkedin.com/in/maheep-chaudhary-07a03617a/)
  
-
-
-## What is Attention?
-
-## What is Self-Attention?
-
-## What is Multi-Head Attention?
-
-## What is Positional Embedding?
-
-## What is Position-wise Feed-Forward Networks?
-
-
-## What is Layer Normalization?
-
-
-## What is Mased Multi-Head Attention?

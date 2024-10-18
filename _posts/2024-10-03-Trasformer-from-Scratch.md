@@ -1,9 +1,3 @@
----
-title: "Tansformer from Scratch"# date: 2015-08-14
-permalink: /posts/2012/08/blog-post-4/
-tags:
-
-
 ## Introduction
 
 Recently Deep Learning has advanced rapidly using the introduction of Transformers, due to their ability to process data in parallel, 

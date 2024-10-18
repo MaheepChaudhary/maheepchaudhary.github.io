@@ -35,7 +35,7 @@ We will require the position embedding to be unique for each word in the sentenc
 
 ```
 
-<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/positional_encoding.png" alt="Transformer From Scratch">
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/positional_encoding.png" alt="Positional Encoding">
 
 
 <!-- ![alt text](./figures/positional_encoding.png) -->
@@ -55,7 +55,9 @@ We will require the position embedding to be unique for each word in the sentenc
 * How can we think about the relevance of "key", "value," and "query"?
   - The "query" can be seen as the question being asked, while the "keys" represent the context or references used to determine how closely the query matches. The "values" hold the actual information or answers, and the most relevant value is selected based on the similarity between the query and the keys.
 
-![alt text](./figures/qkv.png)
+
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/qkv.png" alt="Query-Key-Value">
+
 
 The other components of the encoder are explained in detail below, especially:
 
@@ -63,7 +65,7 @@ The other components of the encoder are explained in detail below, especially:
 2. LayerNorm
 3. Feed-Forward Layers
 
-![encoder image](./figures/encoder.png)
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/encoder.png" alt="Encoder">
 
 
 ### 🐷 Multi-Head Attention
@@ -72,7 +74,8 @@ Multiple matrices, such as `W_q`, `W_k`, and `W_v`, are used to extract content 
 
 All heads outputs are finally concatenated and filtered through a linear layer, which projects it into the dimension equivalent to a single head.  
 
-![alt text](./figures/mhattn.png)
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/mhattn.png" alt="Mutli-head attention">
+
 
 ```python
    def self_attention(self):
@@ -104,7 +107,8 @@ Layer normalization is a crucial technique used in transformers that helps stabi
 5. **Facilitates Training with Larger Learning Rates:** Layer normalization allows for the use of larger learning rates, which can further accelerate training and lead to better final performance.
 6. **Enhances Generalization:** The normalization process can help the model generalize better to unseen data by reducing overfitting tendencies, as it adds a level of regularization.
 
-![(https://www.pinecone.io/learn/batch-layer-normalization/)](figures/layer_normalisation.png)
+
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/layer_normalisation.png" alt="batch-layer-normalization">
 
 
 <center><i>Figure 2: Layer Normalisation happens between same set of features of different samples [<a href = "https://www.pinecone.io/learn/batch-layer-normalization/">2</a>].</i></center>
@@ -205,7 +209,9 @@ The decoder architecture is often one of the least explained aspects in related 
 
 The decoder takes the output or ground-truth sentence as input and adds positional embeddings before passing it through the masked multi-head attention module.
 
-![alt text](figures/decoder.png)
+
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/decoder.png" alt="decoder">
+
 
 
 ### 🐸 Masked Multi-Head Attention
@@ -215,7 +221,8 @@ In the masked multi-head attention module, the input is the sentence with added 
 The masking tensor is constructed with values of $0$ and $-\infty$ for the upper right part of the matrix. This is added to the product of the query and key, keeping the lower left values (including the diagonal) intact while setting the upper right values to infinity. After applying softmax, these $-\infty$ elements are converted to $0$, effectively hiding future tokens for each word.
 Finally, we incorporate the values, of the word with non-zero values by taking product between masked key-query product values `t.matmul(B1,V1)` as output of this module. Finally, similar to multi-head attention, the information for all the heads are concatenated and filtered through a linear layer. 
 
-![alt text](figures/mmheadattn.png)
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/mmheadattn.png" alt="masked level multi head attention">
+
 
 ```python
     def masked_multi_head_attention(self, encoder_output: Tensor, dec_attn: Tensor) -> Tensor:
@@ -244,7 +251,8 @@ Finally, we incorporate the values, of the word with non-zero values by taking p
 
 In this module, the multi-head attention functions similarly to how it does in the decoder. The key difference lies in the inputs it receives. The `encoder_output` is used to construct the keys and values, while the query is derived from the output of the masked multi-head attention module. This setup allows the model to incorporate information from the input sentence (through the keys and values) while utilizing the available context from the ground-truth to predict the next word.
 
-![alt text](figures/dmmattn.png)
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/dmmattn.png" alt="decoder mutli head attention">
+
 
 ```python
     def multi_head_attention(self, encoder_output: Tensor, dec_attn: Tensor) -> Tensor:

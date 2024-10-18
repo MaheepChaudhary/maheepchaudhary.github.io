@@ -8,7 +8,9 @@ Hence, it becomes crucial for anyone to start understanding the Transformer mode
 ## What is a Transformer?
 The Transformer model is based on the Attention mechanism which is a mechanism that allows the model to focus on the relevant parts of the input sequence when predicting the output. The Transformer model has been used in various NLP tasks such as Machine Translation, Text Summarization, and Question Answering. In this blog post, we will be building a Transformer model from scratch.
 
-<img src="https://github.com/MaheepChaudhary/maheepchaudhary.github.io/blob/master/_posts/figures/Transformer_from_scratch.png" alt="Transformer From Scratch">
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/Transformer_from_scratch.png" alt="Transformer From Scratch">
+
+
 
 
 <!-- ![Transformer Image](./figures/Transformer_from_scratch.png) -->
@@ -33,7 +35,8 @@ We will require the position embedding to be unique for each word in the sentenc
 
 ```
 
-<img src="https://github.com/MaheepChaudhary/maheepchaudhary.github.io/blob/master/_posts/figures/positional_encoding.png" alt="Positional Encoding">
+<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/positional_encoding.png" alt="Transformer From Scratch">
+
 
 <!-- ![alt text](./figures/positional_encoding.png) -->
 

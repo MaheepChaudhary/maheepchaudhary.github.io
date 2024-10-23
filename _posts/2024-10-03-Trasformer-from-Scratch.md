@@ -4,6 +4,7 @@
 
 Recently Deep Learning has advanced rapidly using the introduction of Transformers, due to their ability to process data in parallel, 
 compared to prior models which used to process data sequentially.
+
 Hence, it becomes crucial for anyone to start understanding the Transformer model and how it works-looking to start contributing the in the domain of artificial intelligence or deep learning. 
 
 

@@ -151,7 +151,7 @@ self.layer_norm = nn.LayerNorm(512)
 
 The feed-forward layers in a transformer consist of two linear layers with a ReLU activation in between. The first layer projects the input into a higher dimension, and the second layer brings it back to the original size. This simple yet powerful architecture allows the model to transform and refine the representation of data.
 
-![Feed-Forward Layer](./figures/ffn.png)
+![Feed-Forward Layer](https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/ffn.png)
 
 Here's an implementation of the feed-forward module:
 

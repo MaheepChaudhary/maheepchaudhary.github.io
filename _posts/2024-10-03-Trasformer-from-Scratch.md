@@ -14,15 +14,20 @@ The Transformer model consists of two primary components: the encoder and the de
 
 ## 🧿 Positional Encoding
 
-The positional encoding module becomes crucial for the Transformer model, as it allows the model to understand the sequential nature of the input data. 
-The sequential data is sent in parallel, therefore losing information about its sequence. 
-Hence, adding the positional embedding acts as a guide for the model to understand the sequence of the data using the formula:
+Positional encoding is essential for the Transformer model because it enables the model to recognize the sequential nature of input data. Since the data is processed in parallel, the sequence information would otherwise be lost. To address this, each word in a sentence needs a representation that captures its position. 
 
-$$PE_{(pos, 2i)} = sin(\frac{pos}{10000^{2i/d_{model}}})$$
-$$PE_{(pos, 2i+1)} = cos(\frac{pos}{10000^{2i/d_{model}}})$$
+In traditional binary systems, the least significant bit (LSB) alternates with every number, the second-lowest bit alternates every two numbers, and so on. However, using binary representations is inefficient in a world dominated by floating-point numbers. Instead, we can use continuous float equivalents—sinusoidal functions—that serve a similar purpose, acting like alternating bits.
 
-where $pos$ is the position of the word in the sentence, $i$ is the dimension of the embedding, and $d_{model}$ is the dimension of the embedding and can be easily executed using the following code:
+By adding positional embeddings, the model gains a sense of sequence using the following formula:
 
+\[
+PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right)
+\]
+\[
+PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)
+\]
+
+Here, $pos$ represents the position of the word in the sentence, $i$ is the dimension index, and $d_{model}$ is the dimensionality of the embedding. This can be implemented easily using the following code:
 
 ```python
   def position_embedding(self, sent: Tensor, d_model: int) -> Tensor:
@@ -54,156 +59,166 @@ where $pos$ is the position of the word in the sentence, $i$ is the dimension of
 1. Is there any better positional encoding method?
 2. How much does this positional encoding affect the model and overall generalization? -->
 
+These positional encodings are added in case of both the modules of the transformer, i.e., the encoder and the decoder.
+
 
 ## 🍀🎃 Encoder
 
-* How can we think about the relevance of "key", "value," and "query"?
-  - The "query" can be seen as the question being asked, while the "keys" represent the context or references used to determine how closely the query matches. The "values" hold the actual information or answers, and the most relevant value is selected based on the similarity between the query and the keys.
+
+### Key, Value, and Query in Transformers
+
+Another important concept in Transformers is the role of "key," "value," and "query." These components drive the self-attention mechanism, which is a core feature of the model.
+
+- **Query:** The query can be thought of as the question being asked by the model.
+- **Key:** The keys serve as the context or references that the model uses to determine how closely a query matches.
+- **Value:** The values contain the actual information or answers, and the most relevant value is selected based on the similarity between the query and the keys.
+
+This process allows the model to focus on the most important parts of the input sequence by aligning queries with matching keys and then retrieving the corresponding values.
+
+![Query-Key-Value](https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/qkv.png)
+
+---
+
+### Key Components of the Transformer Encoder
+
+The Transformer encoder is composed of several components that work together to process and encode the input data. These include:
+
+1. **Multi-Head Attention:** This mechanism allows the model to focus on different parts of the input simultaneously, capturing diverse relationships between words in a sentence.
+2. **Layer Normalization (LayerNorm):** This helps stabilize and normalize the activations in each layer, improving training and convergence.
+3. **Feed-Forward Layers:** These layers perform additional transformations on the data to enhance its representation, helping the model capture complex patterns.
+
+In the next sections, we will dive deeper into each of these components to understand how they contribute to the overall performance of the Transformer model.
 
 
-<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/qkv.png" alt="Query-Key-Value">
-
-
-The other components of the encoder are explained in detail below, especially:
-
-1. Multi-Head Attention
-2. LayerNorm
-3. Feed-Forward Layers
 
 <img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/encoder.png" alt="Encoder">
 
 
 ### 🐷 Multi-Head Attention
 
-Multiple matrices, such as `W_q`, `W_k`, and `W_v`, are used to extract content from the input embeddings, transforming them into *queries*, *keys*, and *values*. The use of multiple heads allows the model to capture different aspects of the context for each query. This can be likened to a student having the ability to ask several questions (multiple heads) versus only being allowed to ask a single question (one head), thus enabling a richer understanding. 
+In the multi-head attention mechanism, several matrices like `W_q`, `W_k`, and `W_v` are used to extract information from input embeddings, transforming them into *queries*, *keys*, and *values*. The key advantage of having multiple heads is that it allows the model to capture different aspects of the context for each query. Imagine a student being able to ask multiple questions (multiple heads) versus just one question (single head), enabling a deeper and more nuanced understanding of the input data.
 
-All heads outputs are finally concatenated and filtered through a linear layer, which projects it into the dimension equivalent to a single head.  
+The outputs from all heads are concatenated and passed through a linear layer that projects them back into the original dimension.
 
-<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/mhattn.png" alt="Mutli-head attention">
+![Multi-Head Attention](https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/mhattn.png)
 
+Here's an example of how multi-head attention works in code:
 
 ```python
-   def self_attention(self):
+def self_attention(self):
 
-        query = self.W_q(self.input_embedding).view(1, self.num_heads, self.seq_len, self.q_dim) # (1, 2, 4, 512)
-        key = self.W_k(self.input_embedding).view(1, self.num_heads, self.seq_len, self.k_dim) # (1, 2, 4, 512)
-        value = self.W_v(self.input_embedding).view(1, self.num_heads, self.seq_len, self.v_dim) # (1, 2, 4, 512)
-        
-        # we will take the dot product of query and key to get the similarity score.
-        attention_score = t.softmax(t.matmul(query, key.transpose(2,3))/t.sqrt(t.tensor(self.k_dim)), dim=-1) # (1, 2, 4, 4)
-        overall_attention = t.matmul(attention_score, value)
+    query = self.W_q(self.input_embedding).view(1, self.num_heads, self.seq_len, self.q_dim)  # (1, 2, 4, 512)
+    key = self.W_k(self.input_embedding).view(1, self.num_heads, self.seq_len, self.k_dim)    # (1, 2, 4, 512)
+    value = self.W_v(self.input_embedding).view(1, self.num_heads, self.seq_len, self.v_dim)  # (1, 2, 4, 512)
+    
+    # Compute similarity score
+    attention_score = t.softmax(t.matmul(query, key.transpose(2, 3)) / t.sqrt(t.tensor(self.k_dim)), dim=-1)  # (1, 2, 4, 4)
+    overall_attention = t.matmul(attention_score, value)
+    overall_attention = t.cat(overall_attention).view(1, self.seq_len, self.k_dim * self.num_heads)  # (1, 4, 512)
 
-        overall_attention = t.cat(overall_attention).view(1, self.seq_len, self.k_dim*self.num_heads) # (1, 4, 512)
-        
-        final_attention = self.W_o(overall_attention) # (1, 4, 512)
-                
-        return final_attention
-
+    final_attention = self.W_o(overall_attention)  # (1, 4, 512)
+            
+    return final_attention
 ```
 
+---
 
 ### 🤥 LayerNorm
 
-Layer normalization is a crucial technique used in transformers that helps stabilize and accelerate the training process, which normalizes the inputs to each layer, ensuring that they have a mean of zero and a standard deviation of one. This helps to stabilize the distribution of activations during training, which can lead to more consistent learning. As a result, producing the following effects on the network learning:
-1. **Reduces Internal Covariate Shift:** By normalizing the inputs to each layer, layer normalization reduces the problem of internal covariate shift. This means that the distribution of inputs to each layer remains relatively constant throughout training, which helps improve convergence rates.
-2. **Improves Gradient Flow:** By normalizing the inputs, layer normalization can mitigate issues with vanishing or exploding gradients. This is particularly important in deep networks like transformers, where gradient flow can be problematic.
-3. **Faster Convergence:** With more stable training dynamics, models often converge faster, requiring fewer epochs to achieve similar performance levels compared to models without normalization.
-4. **Independence from Batch Size:** Unlike batch normalization, which normalizes across a batch of inputs, layer normalization normalizes across the features for each individual sample. This makes it particularly well-suited for transformer architectures, where variable sequence lengths and batch sizes are common.
-5. **Facilitates Training with Larger Learning Rates:** Layer normalization allows for the use of larger learning rates, which can further accelerate training and lead to better final performance.
-6. **Enhances Generalization:** The normalization process can help the model generalize better to unseen data by reducing overfitting tendencies, as it adds a level of regularization.
+Layer normalization is a critical component in transformers, designed to stabilize and accelerate the training process. It normalizes the inputs to each layer, ensuring a mean of zero and a standard deviation of one. This technique helps to maintain a stable distribution of activations during training, leading to more consistent learning. The benefits of layer normalization include:
 
+1. **Reducing Internal Covariate Shift:** By normalizing inputs, it ensures the distribution remains constant, improving convergence.
+2. **Improving Gradient Flow:** Helps address issues with vanishing or exploding gradients, critical for deep networks like transformers.
+3. **Faster Convergence:** Leads to quicker training, often requiring fewer epochs.
+4. **Independence from Batch Size:** Unlike batch normalization, layer normalization works at the feature level for individual samples, making it ideal for variable sequence lengths.
+5. **Facilitating Larger Learning Rates:** The stable dynamics allow for larger learning rates, accelerating training.
+6. **Enhancing Generalization:** Helps in reducing overfitting, acting as a form of regularization.
 
-<img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/layer_normalisation.png" alt="batch-layer-normalization">
+![Layer Normalization](https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/layer_normalisation.png)
 
+<center><i>Figure 2: Layer Normalization happens across features for each individual sample [<a href = "https://www.pinecone.io/learn/batch-layer-normalization/">2</a>].</i></center>
 
-<center><i>Figure 2: Layer Normalisation happens between same set of features of different samples [<a href = "https://www.pinecone.io/learn/batch-layer-normalization/">2</a>].</i></center>
+The code for LayerNorm is straightforward:
 
 ```python
 self.layer_norm = nn.LayerNorm(512)
 ```
 
-### 🥳 Feed-Forward Layers:
+---
 
-The feed-forward layers module consist of 2 layers with a linear activation `ReLU` between them. 
-The architecture of the module allows the former layer to project the output into a higher dimension, while the latter projects it into original space. 
+### 🥳 Feed-Forward Layers
 
-![alt text](./figures/ffn.png)
+The feed-forward layers in a transformer consist of two linear layers with a ReLU activation in between. The first layer projects the input into a higher dimension, and the second layer brings it back to the original size. This simple yet powerful architecture allows the model to transform and refine the representation of data.
+
+![Feed-Forward Layer](./figures/ffn.png)
+
+Here's an implementation of the feed-forward module:
 
 ```python
-    def ffn(self, x:Tensor) -> Tensor:
-        x1 = self.fc1(x)
-        x2 = self.relu(x1)
-        x3 = self.fc2(x2)
-    
-        return x3
+def ffn(self, x: Tensor) -> Tensor:
+    x1 = self.fc1(x)
+    x2 = self.relu(x1)
+    x3 = self.fc2(x2)
+    return x3
 ```
 
+---
 
-This is the whole code of Encoder: 
+### Full Encoder Implementation
+
+Now that we’ve discussed the key components, here is the full implementation of an encoder in PyTorch:
 
 ```python
 class encoder:
-
-    def __init__(
-        self,
-        num_heads: int,
-        sent: Tensor) -> None:
-        
+    def __init__(self, num_heads: int, sent: Tensor) -> None:
         super(encoder, self).__init__()
-        
+
         self.sent = sent
         self.num_heads = num_heads
         self.k_dim = 512; self.v_dim = 512; self.q_dim = 512
-        self.W_q = nn.Linear(512, self.k_dim*self.num_heads) 
-        self.W_k = nn.Linear(512, self.k_dim*self.num_heads)
-        self.W_v = nn.Linear(512, self.v_dim*self.num_heads)
-
+        self.W_q = nn.Linear(512, self.k_dim * self.num_heads) 
+        self.W_k = nn.Linear(512, self.k_dim * self.num_heads)
+        self.W_v = nn.Linear(512, self.v_dim * self.num_heads)
         self.seq_len = sent.size()[0]
         assert self.seq_len == 4, "The sequence length should be 4."
         
-        self.W_o = nn.Linear(512*self.num_heads,512) 
-        
+        self.W_o = nn.Linear(512 * self.num_heads, 512) 
         self.layer_norm = nn.LayerNorm(512)
-        
         self.fc1 = nn.Linear(512, 1024)
         self.fc2 = nn.Linear(1024, 512)
         self.relu = nn.ReLU()
 
-    # we will make two heads for multi-head attention
     def self_attention(self):
-
-        query = self.W_q(self.input_embedding).view(1, self.num_heads, self.seq_len, self.q_dim) # (1, 2, 4, 512)
-        key = self.W_k(self.input_embedding).view(1, self.num_heads, self.seq_len, self.k_dim) # (1, 2, 4, 512)
-        value = self.W_v(self.input_embedding).view(1, self.num_heads, self.seq_len, self.v_dim) # (1, 2, 4, 512)
+        query = self.W_q(self.input_embedding).view(1, self.num_heads, self.seq_len, self.q_dim)  # (1, 2, 4, 512)
+        key = self.W_k(self.input_embedding).view(1, self.num_heads, self.seq_len, self.k_dim)    # (1, 2, 4, 512)
+        value = self.W_v(self.input_embedding).view(1, self.num_heads, self.seq_len, self.v_dim)  # (1, 2, 4, 512)
         
-        # we will take the dot product of query and key to get the similarity score.
-        attention_score = t.softmax(t.matmul(query, key.transpose(2,3))/t.sqrt(t.tensor(self.k_dim)), dim=-1) # (1, 2, 4, 4)
+        # Compute similarity score
+        attention_score = t.softmax(t.matmul(query, key.transpose(2, 3)) / t.sqrt(t.tensor(self.k_dim)), dim=-1)  # (1, 2, 4, 4)
         overall_attention = t.matmul(attention_score, value)
+        overall_attention = t.cat(overall_attention).view(1, self.seq_len, self.k_dim * self.num_heads)  # (1, 4, 512)
 
-        overall_attention = t.cat(overall_attention).view(1, self.seq_len, self.k_dim*self.num_heads) # (1, 4, 512)
-        
-        final_attention = self.W_o(overall_attention) # (1, 4, 512)
+        final_attention = self.W_o(overall_attention)  # (1, 4, 512)
                 
         return final_attention
-        
 
-    def ffn(self, x:Tensor) -> Tensor:
+    def ffn(self, x: Tensor) -> Tensor:
         x1 = self.fc1(x)
         x2 = self.relu(x1)
         x3 = self.fc2(x2)
-    
         return x3
 
     def forward(self):
         self.input_embedding = self.position_embedding(self.sent, 4)
         multi_head_attn = self.self_attention()
-        multi_head_attn_out = self.W_o(multi_head_attn) #(4,2048) * (2048, 4) = (4, 4)
+        multi_head_attn_out = self.W_o(multi_head_attn)
         input_embedding = self.layer_norm(multi_head_attn_out + self.input_embedding)
         ffn_out = self.ffn(input_embedding)
         encoder_out = self.layer_norm(ffn_out + input_embedding)
         return encoder_out
 ```
 
+This is the complete encoder structure with multi-head attention, layer normalization, and feed-forward layers. These core components allow the Transformer to learn complex representations and perform powerful sequence-to-sequence modeling.
 
 
 

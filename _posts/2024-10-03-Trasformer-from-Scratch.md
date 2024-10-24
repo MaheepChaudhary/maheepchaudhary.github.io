@@ -2,25 +2,27 @@
 ---
 ## Introduction
 
-Recently Deep Learning has advanced rapidly using the introduction of Transformers, due to their ability to process data in parallel, 
-compared to prior models which used to process data sequentially.
-
-Hence, it becomes crucial for anyone to start understanding the Transformer model and how it works-looking to start contributing the in the domain of artificial intelligence or deep learning. 
-
+Deep Learning has seen rapid progress recently with the introduction of Transformers, largely due to their ability to process data in parallel, unlike earlier models like RNNs, which processed data sequentially. Transformers have become the foundation for state-of-the-art generative models such as GPT-3, BERT, and T5. As a result, understanding how the Transformer model works is essential for anyone looking to contribute to the fields of artificial intelligence or deep learning. This blog begins by asking the question: "*What is a Transformer?*".
 
 ## What is a Transformer?
-The Transformer model is based on the Attention mechanism which is a mechanism that allows the model to focus on the relevant parts of the input sequence when predicting the output. The Transformer model has been used in various NLP tasks such as Machine Translation, Text Summarization, and Question Answering. In this blog post, we will be building a Transformer model from scratch.
+A Transformer is a neural architecture that computes data in parallel, utilizing an Attention mechanism. While parallel processing offers significant advantages, it can hinder the model's ability to capture the sequential nature, or "context," of data in tasks like natural language processing. To address this, Transformers use positional encoding, which incorporates sequential information by adding position vectors to the input data. 
+
+The Transformer model consists of two primary components: the encoder and the decoder. The encoder processes input data and passes it to the decoder. The decoder then uses both the encoder's processed input and previous predictions to predict the next elements in a sequence. To fully understand the architecture of the Transformer, we will first explore its individual components, starting with Positional Encoding.
 
 <img src="https://raw.githubusercontent.com/MaheepChaudhary/maheepchaudhary.github.io/master/_posts/figures/Transformer_from_scratch.png" alt="Transformer From Scratch">
 
 
-
-
-<!-- ![Transformer Image](./figures/Transformer_from_scratch.png) -->
-
 ## 🧿 Positional Encoding
 
-We will require the position embedding to be unique for each word in the sentence. As it represents different position and having the same position will affect the learning of the model. Hence, we will need to create a bits and bytes type of representation for each word in the sentence. The LSB bit is alternating on every number, the second-lowest bit is rotating on every two numbers, and so on. However, using binary values would be inefficient in a world dominated by floating-point numbers. Instead, we can represent them with their continuous float equivalents—sinusoidal functions. These functions essentially act like alternating bits.
+The positional encoding module becomes crucial for the Transformer model, as it allows the model to understand the sequential nature of the input data. 
+The sequential data is sent in parallel, therefore losing information about its sequence. 
+Hence, adding the positional embedding acts as a guide for the model to understand the sequence of the data using the formula:
+
+$$PE_{(pos, 2i)} = sin(\frac{pos}{10000^{2i/d_{model}}})$$
+$$PE_{(pos, 2i+1)} = cos(\frac{pos}{10000^{2i/d_{model}}})$$
+
+where $pos$ is the position of the word in the sentence, $i$ is the dimension of the embedding, and $d_{model}$ is the dimension of the embedding and can be easily executed using the following code:
+
 
 ```python
   def position_embedding(self, sent: Tensor, d_model: int) -> Tensor:

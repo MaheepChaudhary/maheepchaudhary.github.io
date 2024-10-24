@@ -20,13 +20,10 @@ In traditional binary systems, the least significant bit (LSB) alternates with e
 
 By adding positional embeddings, the model gains a sense of sequence using the following formula:
 
-\[
-PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right)
-\]
 
-\[
-PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)
-\]
+$$PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right)$$
+
+$$PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)$$
 
 Here, $pos$ represents the position of the word in the sentence, $i$ is the dimension index, and $d_{model}$ is the dimensionality of the embedding. This can be implemented easily using the following code:
 

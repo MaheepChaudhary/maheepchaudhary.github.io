@@ -23,6 +23,7 @@ By adding positional embeddings, the model gains a sense of sequence using the f
 \[
 PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right)
 \]
+
 \[
 PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)
 \]

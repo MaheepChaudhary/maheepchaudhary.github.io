@@ -86,7 +86,7 @@ author:
   location         : "Singapore"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=dP5bGsMAAAAJ&hl=en"
+  googlescholar    : #"https://scholar.google.com/citations?user=dP5bGsMAAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -106,7 +106,7 @@ author:
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    : 12963281/maheep
+  stackoverflow    : #12963281/maheep
   steam            :
   tumblr           :
   twitter          : "ChaudharyMaheep"

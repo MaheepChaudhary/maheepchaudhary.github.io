@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: <p>AI Safety Researcher <span>|</span> Mechanistic Interpretability <span>|</p>
+# title: <p>AI Safety Researcher <span>|</span> Mechanistic Interpretability <span>|</p>
 excerpt: "About me"
 author_profile: true
 redirect_from:

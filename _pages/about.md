@@ -25,7 +25,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);">
     <img src="/images/safetynet.png" alt="SafetyNet Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://arxiv.org/pdf/2505.14300" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary, Fazl Barez</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(231, 76, 60, 0.1); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">Under review at NeurIPS 2025</p>
       <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">A system to detect when AI models are being deceptive or producing harmful content, crucial for safe AI deployment in real-world applications.</p>
@@ -37,7 +37,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/causal_abstraction.png" alt="Causal Abstraction Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">Journal of Machine Learning Research (JMLR) 2024</p>
       <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Provides rigorous mathematical frameworks for understanding how neural networks make decisions and process information internally.</p>
@@ -49,7 +49,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/evaluation_sae.png" alt="Sparse Autoencoder Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://arxiv.org/abs/2409.04478" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary, Atticus Geiger</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">arXiv</p>
       <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Methods to extract and interpret the factual knowledge stored inside language models, advancing our ability to understand AI decision-making.</p>
@@ -57,11 +57,12 @@ redirect_from:
   </div>
 </div>
 
+
 <div style="margin: 30px 0; background: white; border-radius: 16px; overflow: hidden; border: 1px solid #ecf0f1; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/causality.png" alt="Trustworthy ML Survey" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></h3>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://arxiv.org/abs/2307.16851" style="color: #2c3e50; text-decoration: none;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">arXiv</p>
       <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Comprehensive survey on building trustworthy AI systems using causal methods, bridging data-centric approaches with AI alignment and safety.</p>
@@ -73,7 +74,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/memeclip.png" alt="MemeCLIP Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h3>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">EMNLP 2024 Main Conference</p>
       <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Using multimodal AI to understand and classify memes, bridging computer vision and natural language processing for social media content.</p>

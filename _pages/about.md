@@ -9,26 +9,27 @@ redirect_from:
 ---
 
 
-<div style="max-width: 850px; margin: 0 auto; line-height: 1.7; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<div style="max-width: 850px; margin: 0 auto; line-height: 1.7; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
 
-<p style="font-size: 1.15em; margin-bottom: 22px; line-height: 1.6; color: #2c3e50; font-weight: 400;">Hi! I am an independent AI safety researcher currently working with <a href="#" style="color: #3498db; text-decoration: none; font-weight: 500;">Fazl Barez</a> at the <a href="#" style="color: #3498db; text-decoration: none; font-weight: 500;">University of Oxford</a> on detecting deceptive behaviors in large language models. I'm also collaborating with <a href="https://atticusg.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Atticus Geiger</a> at Stanford on mechanistic interpretability.</p>
+<p style="font-size: 1.15em; margin-bottom: 22px; line-height: 1.6; color: #2c3e50; font-weight: 400; font-family: 'Inter', sans-serif;">Hi! I am an independent AI safety researcher currently working with <a href="#" style="color: #3498db; text-decoration: none; font-weight: 500;">Fazl Barez</a> at the <a href="#" style="color: #3498db; text-decoration: none; font-weight: 500;">University of Oxford</a> on whitebox monitoring of LLMs; and mentoring research projects at <a href="https://algoverseairesearch.org" style="color: #3498db; text-decoration: none; font-weight: 500;">Algoverse</a>.</p>
 
-<p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e;">I have been working with <a href="https://haohanwang.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Haohan Wang</a> at UIUC on trustworthy machine learning and completed my <strong style="color: #000000ff;">master's at NTU Singapore</strong>. Before diving deep into AI safety research, I won the Smart India Hackathon with 200K+ participants and led international teams solving real-world AI problems.</p>
+<p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Inter', sans-serif;">I have been working with <a href="https://atticusg.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Atticus Geiger</a> at Prair Group on mechanistic interpretability and
+<a href="https://haohanwang.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Haohan Wang</a> at UIUC on trustworthy machine learning and completed my <strong style="color: #000000ff;">master's at NTU Singapore</strong>. Before diving deep into AI safety research, I won the Smart India Hackathon with 200K+ participants and led international teams solving real-world AI problems.</p>
 
-<p style="font-size: 1.05em; margin-bottom: 40px; line-height: 1.65; color: #34495e;">Drop me an email at <a href="mailto:your-email@domain.com" style="color: #3498db; text-decoration: none; font-weight: 500; padding: 2px 4px; background: rgba(52, 152, 219, 0.1); border-radius: 3px;">maheepchaudhary.research@gmail.com</a> to discuss research and collaboration!</p>
+<p style="font-size: 1.05em; margin-bottom: 40px; line-height: 1.65; color: #34495e; font-family: 'Inter', sans-serif;">Drop me an email at <a href="mailto:your-email@domain.com" style="color: #3498db; text-decoration: none; font-weight: 500; padding: 2px 4px; background: rgba(52, 152, 219, 0.1); border-radius: 3px;">maheepchaudhary.research@gmail.com</a> to discuss research and collaboration!</p>
 
-<h2 style="font-size: 1.6em; font-weight: 700; margin: 50px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px;">Research</h2>
+<h2 style="font-size: 1.6em; font-weight: 700; margin: 50px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Inter', sans-serif;">Research</h2>
 
-<p style="font-size: 1.05em; margin-bottom: 35px; line-height: 1.65; color: #555;">I research AI safety and interpretability to ensure advanced AI systems are aligned with human values. This involves mechanistic interpretability, deception detection, and causal methods for understanding neural networks. Here's some of my recent work:</p>
+<p style="font-size: 1.05em; margin-bottom: 35px; line-height: 1.65; color: #555; font-family: 'Inter', sans-serif;">I research AI safety and interpretability to ensure advanced AI systems are aligned with human values. This involves mechanistic interpretability, deception detection, and causal methods for understanding neural networks. Here's some of my recent work:</p>
 
 <div style="margin: 30px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.1); transition: all 0.3s ease;">
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);">
     <img src="/images/safetynet.png" alt="SafetyNet Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://arxiv.org/pdf/2505.14300" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary, Fazl Barez</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(231, 76, 60, 0.1); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">Under review at NeurIPS 2025</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">A system to detect when AI models are being deceptive or producing harmful content, crucial for safe AI deployment in real-world applications.</p>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Inter', sans-serif;"><a href="https://arxiv.org/pdf/2505.14300" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Inter', sans-serif;">Maheep Chaudhary, Fazl Barez</p>
+      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(231, 76, 60, 0.1); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500; font-family: 'Inter', sans-serif;">Under review at NeurIPS 2025</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic; font-family: 'Inter', sans-serif;">A system to detect when AI models are being deceptive or producing harmful content, crucial for safe AI deployment in real-world applications.</p>
     </div>
   </div>
 </div>
@@ -37,10 +38,10 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/causal_abstraction.png" alt="Causal Abstraction Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">Journal of Machine Learning Research (JMLR) 2024</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Provides rigorous mathematical frameworks for understanding how neural networks make decisions and process information internally.</p>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Inter', sans-serif;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Inter', sans-serif;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
+      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500; font-family: 'Inter', sans-serif;">Journal of Machine Learning Research (JMLR) 2024</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic; font-family: 'Inter', sans-serif;">Provides rigorous mathematical frameworks for understanding how neural networks make decisions and process information internally.</p>
     </div>
   </div>
 </div>
@@ -49,10 +50,10 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/evaluation_sae.png" alt="Sparse Autoencoder Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://arxiv.org/abs/2409.04478" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary, Atticus Geiger</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">arXiv</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Methods to extract and interpret the factual knowledge stored inside language models, advancing our ability to understand AI decision-making.</p>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Inter', sans-serif;"><a href="https://arxiv.org/abs/2409.04478" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Inter', sans-serif;">Maheep Chaudhary, Atticus Geiger</p>
+      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500; font-family: 'Inter', sans-serif;">arXiv</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic; font-family: 'Inter', sans-serif;">Methods to extract and interpret the factual knowledge stored inside language models, advancing our ability to understand AI decision-making.</p>
     </div>
   </div>
 </div>
@@ -62,10 +63,10 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/causality.png" alt="Trustworthy ML Survey" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://arxiv.org/abs/2307.16851" style="color: #2c3e50; text-decoration: none;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">arXiv</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Comprehensive survey on building trustworthy AI systems using causal methods, bridging data-centric approaches with AI alignment and safety.</p>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Inter', sans-serif;"><a href="https://arxiv.org/abs/2307.16851" style="color: #2c3e50; text-decoration: none;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Inter', sans-serif;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
+      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500; font-family: 'Inter', sans-serif;">arXiv</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic; font-family: 'Inter', sans-serif;">Comprehensive survey on building trustworthy AI systems using causal methods, bridging data-centric approaches with AI alignment and safety.</p>
     </div>
   </div>
 </div>
@@ -74,30 +75,32 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
     <img src="/images/memeclip.png" alt="MemeCLIP Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">EMNLP 2024 Main Conference</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic;">Using multimodal AI to understand and classify memes, bridging computer vision and natural language processing for social media content.</p>
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Inter', sans-serif;"><a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Inter', sans-serif;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
+      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500; font-family: 'Inter', sans-serif;">EMNLP 2024 Main Conference</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-style: italic; font-family: 'Inter', sans-serif;">Using multimodal AI to understand and classify memes, bridging computer vision and natural language processing for social media content.</p>
     </div>
   </div>
 </div>
 
-<h2 style="font-size: 1.6em; font-weight: 700; margin: 60px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px;">Background & Recognition</h2>
+<h2 style="font-size: 1.6em; font-weight: 700; margin: 60px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Inter', sans-serif;">Background & Recognition</h2>
 
-<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e;">My journey in AI began with winning hackathons and solving real-world problems. I was the <strong style="color: #e74c3c;">winner of Smart India Hackathon</strong> (world's largest with 200K+ participants), where I developed facial recognition systems for criminal identification. I also led the <strong style="color: #3498db;">ASEAN-India Hackathon</strong> team across 10+ countries, focusing on marine species detection.</p>
+<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e; font-family: 'Inter', sans-serif;">My journey in AI began with winning hackathons and solving real-world problems. I was the <strong style="color: #e74c3c;">winner of Smart India Hackathon</strong> (world's largest with 200K+ participants), where I developed facial recognition systems for criminal identification. I also led the <strong style="color: #3498db;">ASEAN-India Hackathon</strong> team across 10+ countries, focusing on marine species detection.</p>
 
-<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e;">Beyond research, I'm passionate about nurturing the next generation of AI researchers—I've <strong style="color: #27ae60;">mentored over 35 students</strong> across multiple research programs and institutions. I've been selected as a mentor for the <strong>UNESCO-India-Africa Program</strong> spanning 20+ countries, where I help develop voice-assisted systems for farmers. I also serve as a reviewer for top-tier venues including ICML 2025 Workshop and multiple NeurIPS 2024 workshops.</p>
+<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e; font-family: 'Inter', sans-serif;">Beyond research, I'm passionate about nurturing the next generation of AI researchers—I've <strong style="color: #27ae60;">mentored over 35 students</strong> across multiple research programs and institutions. I've been selected as a mentor for the <strong>UNESCO-India-Africa Program</strong> spanning 20+ countries, where I help develop voice-assisted systems for farmers. I also serve as a reviewer for top-tier venues including ICML 2025 Workshop and multiple NeurIPS 2024 workshops.</p>
 
 <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); border-radius: 16px; padding: 30px; margin: 40px 0; color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
-  <h3 style="margin: 0 0 18px 0; color: white; font-size: 1.3em; font-weight: 700;">My Research Philosophy</h3>
-  <p style="margin: 0; font-size: 1.1em; line-height: 1.6; opacity: 0.95;">I believe powerful AI systems must be interpretable and aligned with human values. My work focuses on understanding the internal mechanisms of neural networks and developing practical methods to detect when they behave in unintended ways. From theoretical foundations to deployed safety systems, I work across the full spectrum of AI alignment research.</p>
+  <h3 style="margin: 0 0 18px 0; color: white; font-size: 1.3em; font-weight: 700; font-family: 'Inter', sans-serif;">My Research Philosophy</h3>
+  <p style="margin: 0; font-size: 1.1em; line-height: 1.6; opacity: 0.95; font-family: 'Inter', sans-serif;">I believe powerful AI systems must be interpretable and aligned with human values. My work focuses on understanding the internal mechanisms of neural networks and developing practical methods to detect when they behave in unintended ways. From theoretical foundations to deployed safety systems, I work across the full spectrum of AI alignment research.</p>
 </div>
 
-<p style="font-size: 0.95em; line-height: 1.6; color: #7f8c8d; text-align: center; margin-top: 30px;">Read my full <a href="https://drive.google.com/file/d/1Al37c66ZkPu9T0WxXt1ZcBdLtxxZ6Aha/view?usp=sharing" style="color: #3498db; text-decoration: none; font-weight: 500; border-bottom: 2px solid transparent; transition: border-bottom 0.3s ease;">Research Statement</a> for more details on my approach.</p>
+<p style="font-size: 0.95em; line-height: 1.6; color: #7f8c8d; text-align: center; margin-top: 30px; font-family: 'Inter', sans-serif;">Read my full <a href="https://drive.google.com/file/d/1Al37c66ZkPu9T0WxXt1ZcBdLtxxZ6Aha/view?usp=sharing" style="color: #3498db; text-decoration: none; font-weight: 500; border-bottom: 2px solid transparent; transition: border-bottom 0.3s ease;">Research Statement</a> for more details on my approach.</p>
 
 </div>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* Enhanced styling for better visual appeal */
 a:hover {
   border-bottom: 2px solid #3498db !important;

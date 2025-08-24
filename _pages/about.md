@@ -8,132 +8,102 @@ redirect_from:
   - /about.html
 ---
 
-<div style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+<div style="max-width: 850px; margin: 0 auto; line-height: 1.7; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
 
-<h2>About Me</h2>
+<p style="font-size: 1.15em; margin-bottom: 22px; line-height: 1.6; color: #2c3e50; font-weight: 400;">Hi! I am an independent AI safety researcher currently working with <a href="#" style="color: #3498db; text-decoration: none; font-weight: 500;">Fazl Barez</a> at the <a href="#" style="color: #3498db; text-decoration: none; font-weight: 500;">University of Oxford</a> on detecting deceptive behaviors in large language models. I'm also collaborating with <a href="https://atticusg.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Atticus Geiger</a> at Stanford on mechanistic interpretability.</p>
 
-<!-- <p style="font-size: 1.1em; color: #333; margin-bottom: 15px;">I'm on a quest to make AI systems both powerful and safe.</p> -->
+<p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e;">I have been working with <a href="https://haohanwang.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Haohan Wang</a> at UIUC on trustworthy machine learning and completed my master's at NTU Singapore. Before diving deep into AI safety research, I won the <strong style="color: #e74c3c;">Smart India Hackathon</strong> with 200K+ participants and led international teams solving real-world AI problems.</p>
 
-<p style="font-size: 1.0em; margin-bottom: 15px;">I'm an AI safety researcher focused on understanding the internal mechanisms of large language models and developing practical methods to detect harmful outputs. Currently collaborating with researchers at <strong>Oxford</strong>, <strong>Stanford</strong>, and other leading institutions on foundational problems in AI alignment and interpretability.</p>
+<p style="font-size: 1.05em; margin-bottom: 40px; line-height: 1.65; color: #34495e;">Drop me an email at <a href="mailto:your-email@domain.com" style="color: #3498db; text-decoration: none; font-weight: 500; padding: 2px 4px; background: rgba(52, 152, 219, 0.1); border-radius: 3px;">your-email@domain.com</a> to discuss research and collaboration!</p>
 
-<p style="font-size: 0.95em; color: #666;">My work bridges theoretical foundations with real-world safety applications—from publishing causal abstraction theory in <strong>JMLR</strong> to developing <strong>SafetyNet</strong>, a system for detecting deceptive behaviors in LLMs.</p>
+<h2 style="font-size: 1.6em; font-weight: 700; margin: 50px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px;">Research</h2>
 
-<hr style="margin: 40px 0; border: none; height: 1px; background: #ddd;">
+<p style="font-size: 1.05em; margin-bottom: 35px; line-height: 1.65; color: #555;">I research AI safety and interpretability to ensure advanced AI systems are aligned with human values. This involves mechanistic interpretability, deception detection, and causal methods for understanding neural networks. Here's some of my recent work:</p>
 
-<h2>Current Research</h2>
-
-<p style="font-size: 1.0em; margin-bottom: 30px;">Here's some of my recent work on making AI systems more interpretable and safer:</p>
-
-<div style="margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #007acc; display: flex; gap: 20px; align-items: flex-start;">
-  <img src="/images/safetynet.png" alt="SafetyNet Research" style="width: 100px; height: 130px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div>
-    <h3 style="margin: 0 0 10px 0; color: #007acc;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling Deceptive Behaviors</h3>
-    <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #666;">Maheep Chaudhary, Fazl Barez (Oxford, 2024-25)</p>
-    <p style="margin: 0; font-size: 0.95em;">Developing novel approaches to detect when large language models produce harmful content by understanding their internal deceptive mechanisms. <strong>Under review at NeurIPS 2025.</strong></p>
+<div style="margin: 30px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+  <div style="display: flex; align-items: center; padding: 25px; gap: 25px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);">
+    <img src="/images/safetynet.png" alt="SafetyNet Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
+    <div style="flex: 1;">
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary, Fazl Barez</p>
+      <p style="margin: 0; font-size: 0.9em; color: #95a5a6; background: rgba(231, 76, 60, 0.1); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">Under review at NeurIPS 2025</p>
+    </div>
   </div>
 </div>
 
-<div style="margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745; display: flex; gap: 20px; align-items: flex-start;">
-  <img src="/images/causal_abstraction.png" alt="Causal Abstraction Research" style="width: 100px; height: 120px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div>
-    <h3 style="margin: 0 0 10px 0; color: #28a745;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</h3>
-    <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #666;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts (Stanford, 2023-24)</p>
-    <p style="margin: 0; font-size: 0.95em;">Co-authored foundational theoretical work that provides rigorous mathematical frameworks for understanding how neural networks make decisions. <strong>Published in JMLR 2024.</strong></p>
+<div style="margin: 30px 0; background: white; border-radius: 16px; overflow: hidden; border: 1px solid #ecf0f1; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+  <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
+    <img src="/images/causal_abstraction.png" alt="Causal Abstraction Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+    <div style="flex: 1;">
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
+      <p style="margin: 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">Journal of Machine Learning Research (JMLR) 2024</p>
+    </div>
   </div>
 </div>
 
-<div style="margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #ffc107; display: flex; gap: 20px; align-items: flex-start;">
-  <img src="/images/evaluation_sae.png" alt="Sparse Autoencoder Research" style="width: 100px; height: 70px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div>
-    <h3 style="margin: 0 0 10px 0; color: #e67e22;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge</h3>
-    <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #666;">Maheep Chaudhary, Atticus Geiger (Stanford, 2024)</p>
-    <p style="margin: 0; font-size: 0.95em;">Systematic evaluation of methods to extract and understand how language models store factual knowledge, advancing our ability to interpret AI decision-making. <strong>Under review.</strong></p>
+<div style="margin: 30px 0; background: white; border-radius: 16px; overflow: hidden; border: 1px solid #ecf0f1; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+  <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
+    <img src="/images/evaluation_sae.png" alt="Sparse Autoencoder Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+    <div style="flex: 1;">
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">Maheep Chaudhary, Atticus Geiger</p>
+      <p style="margin: 0; font-size: 0.9em; color: #95a5a6; background: rgba(241, 196, 15, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">Under Review</p>
+    </div>
   </div>
 </div>
 
-<div style="margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #dc3545; display: flex; gap: 20px; align-items: flex-start;">
-  <img src="/images/modularity.png" alt="Modular Training Research" style="width: 100px; height: 50px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div>
-    <h3 style="margin: 0 0 10px 0; color: #dc3545;">Modular Training of Neural Networks aids Interpretability</h3>
-    <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #666;">Satvik Golechha, Maheep Chaudhary, Joan Velja, Alessandro Abate, Nandi Schoots</p>
-    <p style="margin: 0; font-size: 0.95em;">Exploring how training neural networks in modular components makes them more interpretable and trustworthy. <strong>Under review.</strong></p>
+<div style="margin: 30px 0; background: white; border-radius: 16px; overflow: hidden; border: 1px solid #ecf0f1; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+  <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
+    <img src="/images/memeclip.png" alt="MemeCLIP Research" style="width: 130px; height: 130px; border-radius: 12px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+    <div style="flex: 1;">
+      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50;"><a href="#" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h3>
+      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
+      <p style="margin: 0; font-size: 0.9em; color: #95a5a6; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 500;">EMNLP 2024 Main Conference</p>
+    </div>
   </div>
 </div>
 
-<hr style="margin: 40px 0; border: none; height: 1px; background: #ddd;">
+<h2 style="font-size: 1.6em; font-weight: 700; margin: 60px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px;">Background & Recognition</h2>
 
-<h2>Recognition & Impact</h2>
+<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e;">My journey in AI began with winning hackathons and solving real-world problems. I was the <strong style="color: #e74c3c;">winner of Smart India Hackathon</strong> (world's largest with 200K+ participants), where I developed facial recognition systems for criminal identification. I also led the <strong style="color: #3498db;">ASEAN-India Hackathon</strong> team across 10+ countries, focusing on marine species detection.</p>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
-  <div>
-    <h4 style="color: #007acc; margin-bottom: 10px;">🏆 Research Leadership</h4>
-    <ul style="font-size: 0.9em; line-height: 1.4;">
-      <li><strong>Winner</strong>, Smart India Hackathon (200K+ participants)</li>
-      <li><strong>Team Leader</strong>, ASEAN-India Hackathon (10+ countries)</li>
-      <li><strong>Mentor</strong>, UNESCO-India-Africa Program (20+ countries)</li>
-    </ul>
-  </div>
-  <div>
-    <h4 style="color: #28a745; margin-bottom: 10px;">📝 Academic Service</h4>
-    <ul style="font-size: 0.9em; line-height: 1.4;">
-      <li>Reviewer: ICML 2025 Workshop</li>
-      <li>Reviewer: NeurIPS 2024 Workshops</li>
-      <li>Multi-year collaborations with top institutions</li>
-    </ul>
-  </div>
+<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e;">I've been selected as a mentor for the <strong>UNESCO-India-Africa Program</strong> spanning 20+ countries, where I help develop voice-assisted systems for farmers. I also serve as a reviewer for top-tier venues including ICML 2025 Workshop and multiple NeurIPS 2024 workshops.</p>
+
+<div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); border-radius: 16px; padding: 30px; margin: 40px 0; color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
+  <h3 style="margin: 0 0 18px 0; color: white; font-size: 1.3em; font-weight: 700;">My Research Philosophy</h3>
+  <p style="margin: 0; font-size: 1.1em; line-height: 1.6; opacity: 0.95;">I believe powerful AI systems must be interpretable and aligned with human values. My work focuses on understanding the internal mechanisms of neural networks and developing practical methods to detect when they behave in unintended ways. From theoretical foundations to deployed safety systems, I work across the full spectrum of AI alignment research.</p>
 </div>
 
-<hr style="margin: 40px 0; border: none; height: 1px; background: #ddd;">
-
-<h2>Research Philosophy</h2>
-
-<div style="padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px; margin: 30px 0;">
-  <h3 style="margin: 0 0 15px 0; color: white;">Making AI Safe Through Understanding</h3>
-  <p style="margin: 0; font-size: 1.0em; line-height: 1.5;">I believe AI systems must be both powerful and safe. My research focuses on <strong>understanding how neural networks make decisions</strong> and developing <strong>practical methods to ensure they behave as intended</strong>. From theoretical foundations to deployed safety systems, I work across the full spectrum of AI alignment research.</p>
-</div>
-
-<p style="font-size: 0.9em; color: #666;">Want to know more about my approach? Read my full <a href="https://drive.google.com/file/d/1Al37c66ZkPu9T0WxXt1ZcBdLtxxZ6Aha/view?usp=sharing" style="color: #007acc;">Research Statement</a>.</p>
-
-<hr style="margin: 40px 0; border: none; height: 1px; background: #ddd;">
-
-<h2>Collaborations</h2>
-
-<p><strong>Current</strong>: Working with <a href="#" style="color: #007acc;">Dr. Fazl Barez</a> (Oxford) on AI safety, <a href="https://atticusg.github.io" style="color: #007acc;">Dr. Atticus Geiger</a> (Stanford) on interpretability, and <a href="https://haohanwang.github.io" style="color: #007acc;">Prof. Haohan Wang</a> (UIUC) on trustworthy ML.</p>
-
-<p><strong>Previous</strong>: Collaborated with <a href="https://www.ntu.edu.sg/scse/about-us/past-chairs/prof-ong-yew-soon" style="color: #007acc;">Prof. Ong Yee Soon</a> (NTU Singapore), the <a href="http://driverless.mit.edu/" style="color: #007acc;">MIT Driverless team</a>, and researchers at IIT Indore.</p>
-
-<hr style="margin: 40px 0; border: none; height: 1px; background: #ddd;">
-
-<div style="text-align: center; padding: 30px; background: #f8f9fa; border-radius: 12px; margin: 30px 0;">
-  <h3 style="margin: 0 0 15px 0; color: #333;">Interested in collaboration?</h3>
-  <p style="margin: 0; font-size: 0.95em; color: #666;">Drop me an email to discuss research, AI safety, or potential collaborations!</p>
-</div>
+<p style="font-size: 0.95em; line-height: 1.6; color: #7f8c8d; text-align: center; margin-top: 30px;">Read my full <a href="https://drive.google.com/file/d/1Al37c66ZkPu9T0WxXt1ZcBdLtxxZ6Aha/view?usp=sharing" style="color: #3498db; text-decoration: none; font-weight: 500; border-bottom: 2px solid transparent; transition: border-bottom 0.3s ease;">Research Statement</a> for more details on my approach.</p>
 
 </div>
 
 <style>
-/* Custom styling for dynamic text effects */
-h2, h3 {
-  font-weight: 600;
-  letter-spacing: -0.5px;
-}
-
-a {
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease;
-}
-
+/* Enhanced styling for better visual appeal */
 a:hover {
-  border-bottom: 2px solid #007acc;
+  border-bottom: 2px solid #3498db !important;
 }
 
-.research-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+div[style*="transition: all 0.3s ease"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15) !important;
 }
 
-.research-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+h3 a:hover {
+  color: #3498db !important;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  div[style*="display: flex"] {
+    flex-direction: column !important;
+  }
+  
+  img[style*="width: 130px"] {
+    width: 100% !important;
+    max-width: 200px !important;
+    height: auto !important;
+  }
 }
 </style>

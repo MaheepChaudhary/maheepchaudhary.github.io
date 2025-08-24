@@ -43,8 +43,8 @@ redirect_from:
     <img src="/images/safetynet.png" alt="SafetyNet Research" style="width: 140px; height: 140px; border-radius: 16px; flex-shrink: 0; object-fit: cover; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
     <div style="flex: 1;">
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-        <span style="background: #e74c3c; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">AI Safety</span>
         <span style="background: #9b59b6; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Deception Detection</span>
+        <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Interpretability</span>
       </div>
       <h3 style="margin: 0 0 12px 0; font-size: 1.35em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/pdf/2505.14300" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
       <p style="margin: 0 0 10px 0; font-size: 1em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary, Fazl Barez</p>
@@ -76,8 +76,8 @@ redirect_from:
     <img src="/images/evaluation_sae.png" alt="Sparse Autoencoder Research" style="width: 130px; height: 130px; border-radius: 14px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
     <div style="flex: 1;">
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-        <span style="background: #9b59b6; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Knowledge Extraction</span>
-        <span style="background: #34495e; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">GPT-2</span>
+        <span style="background: #9b59b6; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Faithfulness</span>
+        <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Interpretability</span>
       </div>
       <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2409.04478" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary, Atticus Geiger</p>

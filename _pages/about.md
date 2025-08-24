@@ -11,11 +11,11 @@ redirect_from:
 
 <div style="max-width: 850px; margin: 0 auto; line-height: 1.7; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
 
-<!-- Enhanced Opening Section -->
+<!-- Enhanced Opening Section
 <div style="text-align: center; margin-bottom: 40px; padding: 30px; background: linear-gradient(135deg, rgba(52, 152, 219, 0.05) 0%, rgba(155, 89, 182, 0.05) 100%); border-radius: 20px;">
   <h1 style="font-size: 1.4em; color: #2c3e50; margin: 0 0 15px 0; font-weight: 600; font-family: 'Poppins', sans-serif;">Building Safe AI Through Mechanistic Understanding</h1>
   <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #3498db, #9b59b6); margin: 0 auto 20px auto; border-radius: 2px;"></div>
-</div>
+</div> -->
 
 <!-- Current Work Highlight -->
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">

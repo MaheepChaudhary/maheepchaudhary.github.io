@@ -1,3 +1,4 @@
+
 ---
 permalink: /
 # title: <p>AI Safety Researcher <span>|</span> Mechanistic Interpretability <span>|</p>
@@ -45,7 +46,7 @@ redirect_from:
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
         <span style="background: #9b59b6; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Obfuscation</span>
         <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Causal Interpretability</span>
-        <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="width: 24px; height: 24px; border-radius: 50%; background: white; padding: 2px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="width: 36px; height: 36px; border-radius: 50%; background: white; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </div>
       <h3 style="margin: 0 0 12px 0; font-size: 1.35em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/pdf/2505.14300" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
       <p style="margin: 0 0 10px 0; font-size: 1em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary, Fazl Barez</p>
@@ -63,7 +64,7 @@ redirect_from:
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
         <span style="background: #9b59b6; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Faithfulness</span>
         <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;"> Causal Interpretability</span>
-        <!-- <img src="/images/stanford_logo.png" alt="Stanford University" style="width: 24px; height: 24px; border-radius: 50%; background: white; padding: 2px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"> -->
+        <!-- <img src="/images/stanford_logo.png" alt="Stanford University" style="width: 36px; height: 36px; border-radius: 50%; background: white; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"> -->
       </div>
       <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2409.04478" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary, Atticus Geiger</p>
@@ -86,7 +87,7 @@ redirect_from:
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
         <span style="background: #27ae60; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Theory</span>
         <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Causality</span>
-        <img src="/images/uiuc_logo.png" alt="University of Illinois" style="width: 24px; height: 24px; border-radius: 50%; background: white; padding: 2px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img src="/images/uiuc_logo.png" alt="University of Illinois" style="width: 36px; height: 36px; border-radius: 50%; background: white; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </div>
       <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2307.16851" style="color: #2c3e50; text-decoration: none;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
@@ -103,7 +104,7 @@ redirect_from:
       <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
         <span style="background: #27ae60; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Theory</span>
         <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Causal Interpretability</span>
-        <img src="/images/stanford_logo.jpg" alt="Stanford University" style="width: 24px; height: 24px; border-radius: 50%; background: white; padding: 2px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img src="/images/stanford_logo.jpg" alt="Stanford University" style="width: 36px; height: 36px; border-radius: 50%; background: white; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
       </div>
       <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
@@ -122,7 +123,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 20px; gap: 20px;">
     <img src="/images/modularity.png" alt="Modular Neural Network Training" style="width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; object-fit: cover; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
     <div style="flex: 1; position: relative;">
-      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 18px; height: 18px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2502.02470" style="color: #2c3e50; text-decoration: none;">Modular Training of Neural Networks aids Interpretability</a></h4>
       <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Satvik Golechha, Maheep Chaudhary, Joan Velja, Alessandro Abate, Nandi Schoots</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
@@ -135,7 +136,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 20px; gap: 20px;">
     <img src="/images/punctuations.png" alt="Punctuation and Language Models" style="width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; object-fit: cover; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
     <div style="flex: 1; position: relative;">
-      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 18px; height: 18px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2508.14067" style="color: #2c3e50; text-decoration: none;">Punctuation and Predicates in Language Models</a></h4>
       <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Sonakshi Chauhan, Maheep Chaudhary, Koby Choy, Samuel Nellessen, Nandi Schoots</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
@@ -148,7 +149,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 20px; gap: 20px;">
     <img src="/images/memeclip.png" alt="MemeCLIP Research" style="width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; object-fit: cover; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
     <div style="flex: 1; position: relative;">
-      <img src="/images/uiuc_logo.png" alt="University of Illinois" style="position: absolute; top: 5px; right: 5px; width: 18px; height: 18px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="/images/uiuc_logo.png" alt="University of Illinois" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h4>
       <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
       <p style="margin: 0 0 6px 0; font-size: 0.85em; color: #27ae60; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 600; font-family: 'Poppins', sans-serif;">EMNLP 2024</p>
@@ -226,3 +227,6 @@ h3 a:hover, h4 a:hover {
   }
 }
 </style>
+
+
+

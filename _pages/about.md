@@ -1,4 +1,3 @@
-
 ---
 permalink: /
 # title: <p>AI Safety Researcher <span>|</span> Mechanistic Interpretability <span>|</p>
@@ -123,7 +122,7 @@ redirect_from:
   <div style="display: flex; align-items: center; padding: 20px; gap: 20px;">
     <img src="/images/modularity.png" alt="Modular Neural Network Training" style="width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; object-fit: cover; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
     <div style="flex: 1; position: relative;">
-      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 2px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2502.02470" style="color: #2c3e50; text-decoration: none;">Modular Training of Neural Networks aids Interpretability</a></h4>
       <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Satvik Golechha, Maheep Chaudhary, Joan Velja, Alessandro Abate, Nandi Schoots</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
@@ -157,6 +156,7 @@ redirect_from:
     </div>
   </div>
 </div>
+
 
 <h2 style="font-size: 1.6em; font-weight: 700; margin: 60px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Poppins', sans-serif;">🏆 Background & Recognition</h2>
 

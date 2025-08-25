@@ -170,11 +170,13 @@ redirect_from:
   </div>
 </div>
 
-<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e; font-family: 'Poppins', sans-serif;">Beyond research, I'm passionate about nurturing the next generation of AI researchers:
+<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e; font-family: 'Poppins', sans-serif;">Beyond research, I'm passionate about nurturing the next generation of AI researchers:</p>
 
-- <strong>Mentored over 40+ students</strong> across multiple research programs and institutions.
-- <strong>Selected as mentor for UNESCO-India-Africa Program</strong> spanning 20+ countries.
-- Reviewed for <strong>ICML 2025</strong> Workshop and multiple <strong>NeurIPS 2024</strong> workshops.</p>
+<ul style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e; font-family: 'Poppins', sans-serif; padding-left: 20px;">
+  <li style="margin-bottom: 8px;"><strong>Mentored over 40+ students</strong> across multiple research programs and institutions.</li>
+  <li style="margin-bottom: 8px;"><strong>Selected as mentor for UNESCO-India-Africa Program</strong> spanning 20+ countries.</li>
+  <li style="margin-bottom: 8px;">Reviewed for <strong>ICML 2025</strong> Workshop and multiple <strong>NeurIPS 2024</strong> workshops.</li>
+</ul>
 
 <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); border-radius: 20px; padding: 35px; margin: 50px 0; color: white; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
   <h3 style="margin: 0 0 20px 0; color: white; font-size: 1.4em; font-weight: 700; text-align: center; font-family: 'Poppins', sans-serif;">💡 My Research Philosophy</h3>

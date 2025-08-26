@@ -32,7 +32,7 @@ redirect_from:
   <p style="margin: 15px 0 0 0; font-size: 0.9em; color: #7f8c8d; font-family: 'Poppins', sans-serif;">Open to collaborations in: <strong>deception, (mechanistic) causal interpretability, AI safety</strong></p>
 </div>
 
-<h2 style="font-size: 1.8em; font-weight: 700; margin: 60px 0 20px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Poppins', sans-serif; text-align: center;">🔬 Featured Research</h2>
+<h2 style="font-size: 1.8em; font-weight: 700; margin: 60px 0 20px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Poppins', sans-serif; text-align: center;">🔬 Research</h2>
 
 <p style="font-size: 1.05em; margin-bottom: 45px; line-height: 1.65; color: #555; font-family: 'Poppins', sans-serif; text-align: center;">I research AI safety and interpretability to ensure advanced AI systems are aligned with human values. This involves mechanistic interpretability, deception detection, and causal methods for understanding neural networks.</p>
 

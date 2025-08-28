@@ -186,10 +186,10 @@ redirect_from:
   <p style="margin: 0; font-size: 1.15em; line-height: 1.7; opacity: 0.95; text-align: center; font-family: 'Poppins', sans-serif;">I believe powerful AI systems must be interpretable and aligned with human values. My work focuses on understanding the internal mechanisms of neural networks and developing practical methods to detect when they behave in unintended ways. From theoretical foundations to deployed safety systems, I work across the full spectrum of AI alignment research.</p>
 </div>
 
-<div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(52, 152, 219, 0.05); border-radius: 16px;">
+<!-- <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(52, 152, 219, 0.05); border-radius: 16px;">
   <p style="font-size: 1em; line-height: 1.6; color: #7f8c8d; margin-bottom: 20px; font-family: 'Poppins', sans-serif;">Want to learn more about my research approach and methodology?</p>
   <a href="https://drive.google.com/file/d/1Al37c66ZkPu9T0WxXt1ZcBdLtxxZ6Aha/view?usp=sharing" style="display: inline-block; background: linear-gradient(135deg, #3498db, #2980b9); color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 1em; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); font-family: 'Poppins', sans-serif;">📄 Read My Research Statement</a>
-</div>
+</div> -->
 
 </div>
 

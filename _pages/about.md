@@ -50,7 +50,7 @@ redirect_from:
       <h3 style="margin: 0 0 12px 0; font-size: 1.35em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/pdf/2505.14300" style="color: #2c3e50; text-decoration: none;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></h3>
       <p style="margin: 0 0 10px 0; font-size: 1em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary, Fazl Barez</p>
       <p style="margin: 0 0 12px 0; font-size: 0.9em; color: #e74c3c; background: rgba(231, 76, 60, 0.1); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📝 Under review at NeurIPS 2025</p>
-      <p style="margin: 0; font-size: 0.95em; color: #5d6d7e; line-height: 1.5; font-family: 'Poppins', sans-serif;">A system to detect when AI models are being deceptive or producing harmful content, crucial for safe AI deployment in real-world applications.</p>
+      <p style="margin: 0; font-size: 0.95em; color: #5d6d7e; line-height: 1.5; font-family: 'Poppins', sans-serif;">Demonstrated: obfuscation occurs through information shifts from non-linear to linear representation spaces; proves white-box monitoring systems can be made more effective by enabling them to monitor multiple representation spaces.</p>
     </div>
   </div>
 </div>
@@ -68,7 +68,7 @@ redirect_from:
       <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2409.04478" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary, Atticus Geiger</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Methods to extract and interpret the factual knowledge stored inside language models, advancing our ability to understand AI decision-making.</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Proved the ineffectiveness of Sparse Autoencoders on disentangling knowledge in latent space, and suggested Distributed Alignment Search might be a better alternative.</p>
     </div>
   </div>
 </div>
@@ -91,7 +91,7 @@ redirect_from:
       <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2307.16851" style="color: #2c3e50; text-decoration: none;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Comprehensive survey on building trustworthy AI systems using causal methods.</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">A 80+ page primer on connecting causality to trustworthiness on AI systems and suggesting why it would the future of more faithful and deterministic systems.</p>
     </div>
   </div>
 </div>
@@ -108,7 +108,7 @@ redirect_from:
       <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
       <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
       <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #27ae60; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">🏆 JMLR 2024</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Provides rigorous mathematical frameworks for understanding how neural networks make decisions and process information internally.</p>
+      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">A survey on causal abstraction of neural network from a mechanistic perspective.</p>
     </div>
   </div>
 </div>
@@ -152,7 +152,7 @@ redirect_from:
       <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h4>
       <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
       <p style="margin: 0 0 6px 0; font-size: 0.85em; color: #27ae60; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 600; font-family: 'Poppins', sans-serif;">EMNLP 2024</p>
-      <p style="margin: 0; font-size: 0.85em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Using multimodal AI to understand and classify memes.</p>
+      <p style="margin: 0; font-size: 0.85em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Using multimodal AI to understand and classify fair memes.</p>
     </div>
   </div>
 </div>

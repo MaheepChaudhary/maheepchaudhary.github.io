@@ -25,7 +25,7 @@ redirect_from:
 
 <p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Poppins', sans-serif;">Previously, I have collaborated with <a href="https://atticusg.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Atticus Geiger</a> and <a href="https://nandischoots.com" style="color: #3498db; text-decoration: none; font-weight: 500;">Nandi Schoots</a>, <a href="https://www.ox.ac.uk" style="color: #3498db; text-decoration: none; font-weight: 500;">University of Oxford</a> on mechanistic (causal) interpretability; and <a href="https://haohanwang.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Haohan Wang</a> at <a href="https://illinois.edu" style="color: #3498db; text-decoration: none; font-weight: 500;">UIUC</a> on trustworthy machine learning, and completed my <strong style="color: #000000ff;">master's at NTU Singapore</strong>. Before diving deep into AI safety research, I won the Smart India Hackathon with 200K+ participants and led international teams solving real-world AI problems.</p>
 
-<p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Poppins', sans-serif;">In my life's causal DAG, my mentors are parent nodes of each success 🙏🏻.</p> 
+<p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Poppins', sans-serif; text-align: center;">In my life's causal DAG, my mentors are parent nodes of each success 🙏🏻.</p> 
 
 <!-- Enhanced Contact Section -->
 <div style="text-align: center; margin: 40px 0; padding: 25px; background: rgba(52, 152, 219, 0.05); border-radius: 16px; border: 2px solid rgba(52, 152, 219, 0.1);">

@@ -18,28 +18,37 @@ redirect_from:
 </div> -->
 
 <!-- Current Work Highlight -->
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
+<!-- <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; color: white; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
   <h3 style="margin: 0 0 15px 0; color: white; font-size: 1.2em; font-weight: 600; font-family: 'Poppins', sans-serif;">🔬 Current Research</h3>
   <p style="margin: 0; font-size: 1.05em; line-height: 1.6; opacity: 0.95; font-family: 'Poppins', sans-serif;">Working with <a href="#" style="color: #74b9ff; text-decoration: none; font-weight: 600;">Fazl Barez</a> at <a href="#" style="color: #74b9ff; text-decoration: none; font-weight: 600;">University of Oxford</a> on whitebox monitoring of LLMs, and mentoring research projects at <a href="https://algoverseairesearch.org" style="color: #74b9ff; text-decoration: none; font-weight: 600;">Algoverse</a>.</p>
-</div>
+</div> -->
 
-<p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Poppins', sans-serif;">Previously, I have collaborated with <a href="https://atticusg.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Atticus Geiger</a> and <a href="https://nandischoots.com" style="color: #3498db; text-decoration: none; font-weight: 500;">Nandi Schoots</a>, <a href="https://www.ox.ac.uk" style="color: #3498db; text-decoration: none; font-weight: 500;">University of Oxford</a> on mechanistic (causal) interpretability; and <a href="https://haohanwang.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Haohan Wang</a> at <a href="https://illinois.edu" style="color: #3498db; text-decoration: none; font-weight: 500;">UIUC</a> on trustworthy machine learning, and completed my <strong style="color: #000000ff;">master's at NTU Singapore</strong>. Before diving deep into AI safety research, I won the Smart India Hackathon with 200K+ participants and led international teams solving real-world AI problems.</p>
+<p style="font-size: 2em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important; font-weight: bold; font-style: italic; text-align: center;">Surgically making neural networks safe!</p>
 
-<p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Poppins', sans-serif; text-align: center;">In my life's causal DAG, my mentors are parent nodes of each success 🙏🏻.</p> 
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">I am Maheep, and I am working on "understanding" and "solving" misalignment via using <em style="font-family: 'Times New Roman', Times, serif !important;">mechanistic interpretability</em>. My research is oriented towards whitebox techniques, as models can be thinking evil but can give benign output after the last layer manipulates the latent state towards benign generation—acting as one of the main disadvantages for black-box safety learning \cite{?}.</p>
+
+<div style="height: 2px; background: linear-gradient(90deg, transparent, #2c3e50, transparent); margin: 20px 0 20px 0;"></div>
+
+
+<!-- font-family: 'Times New Roman', Times, serif !important;">I am Maheep, and I am working on "understanding" and "solving" misalignment via using <em style="font-family: 'Times New Roman', Times, serif !important;">mechanistic interpretability</em>. My research is oriented towards whitebox techniques, as models can be thinking evil but can give benign output after the last layer manipulates the latent state towards benign generation—acting as one of the main disadvantages for black-box safety learning \cite{?}.</p> -->
+
+<!-- <p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Poppins', sans-serif;">Previously, I have collaborated with <a href="https://atticusg.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Atticus Geiger</a> and <a href="https://nandischoots.com" style="color: #3498db; text-decoration: none; font-weight: 500;">Nandi Schoots</a>, <a href="https://www.ox.ac.uk" style="color: #3498db; text-decoration: none; font-weight: 500;">University of Oxford</a> on mechanistic (causal) interpretability; and <a href="https://haohanwang.github.io" style="color: #3498db; text-decoration: none; font-weight: 500;">Haohan Wang</a> at <a href="https://illinois.edu" style="color: #3498db; text-decoration: none; font-weight: 500;">UIUC</a> on trustworthy machine learning, and completed my <strong style="color: #000000ff;">master's at NTU Singapore</strong>. Before diving deep into AI safety research, I won the Smart India Hackathon with 200K+ participants and led international teams solving real-world AI problems.</p> -->
+
+<!-- <p style="font-size: 1.05em; margin-bottom: 22px; line-height: 1.65; color: #34495e; font-family: 'Poppins', sans-serif; text-align: center;">In my life's causal DAG, my mentors are parent nodes of each success 🙏🏻.</p>  -->
 
 <!-- Enhanced Contact Section -->
-<div style="text-align: center; margin: 40px 0; padding: 25px; background: rgba(52, 152, 219, 0.05); border-radius: 16px; border: 2px solid rgba(52, 152, 219, 0.1);">
+<!-- <div style="text-align: center; margin: 40px 0; padding: 25px; background: rgba(52, 152, 219, 0.05); border-radius: 16px; border: 2px solid rgba(52, 152, 219, 0.1);">
   <p style="margin: 0 0 15px 0; font-size: 1.1em; color: #2c3e50; font-weight: 500; font-family: 'Poppins', sans-serif;">💬 Let's Collaborate</p>
   <a href="mailto:maheepchaudhary.research@gmail.com" style="display: inline-block; background: linear-gradient(135deg, #3498db, #2980b9); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 1.05em; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); font-family: 'Poppins', sans-serif;">✉️ Get in Touch</a>
   <p style="margin: 15px 0 0 0; font-size: 0.9em; color: #7f8c8d; font-family: 'Poppins', sans-serif;">Open to collaborations in: <strong>model eval awareness, mechanistic interpretability, AI safety</strong></p>
-</div>
+</div> -->
 
-<h2 style="font-size: 1.8em; font-weight: 700; margin: 60px 0 20px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Poppins', sans-serif; text-align: center;">🔬 Research</h2>
+<!-- <h2 style="font-size: 1.8em; font-weight: 700; margin: 60px 0 20px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Poppins', sans-serif; text-align: center;">🔬 Research</h2> -->
 
-<p style="font-size: 1.05em; margin-bottom: 45px; line-height: 1.65; color: #555; font-family: 'Poppins', sans-serif; text-align: center;">I research AI safety and interpretability to ensure advanced AI systems are aligned with human values. This involves mechanistic interpretability, deception detection, and causal methods for understanding neural networks.</p>
+<!-- <p style="font-size: 1.05em; margin-bottom: 45px; line-height: 1.65; color: #555; font-family: 'Poppins', sans-serif; text-align: center;">I research AI safety and interpretability to ensure advanced AI systems are aligned with human values. This involves mechanistic interpretability, deception detection, and causal methods for understanding neural networks.</p> -->
 
 <!-- Featured Paper (SafetyNet) -->
-<div style="margin: 40px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.15); transition: all 0.3s ease; position: relative;">
+<!-- <div style="margin: 40px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.15); transition: all 0.3s ease; position: relative;">
   <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 20px; color: white; font-size: 0.85em; font-weight: 600; font-family: 'Poppins', sans-serif;">⭐ FEATURED</div>
   <div style="display: flex; align-items: center; padding: 30px; gap: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);">
     <img src="/images/safetynet.png" alt="SafetyNet Research" style="width: 140px; height: 140px; border-radius: 16px; flex-shrink: 0; object-fit: cover; box-shadow: 0 6px 20px rgba(0,0,0,0.15);">
@@ -55,136 +64,122 @@ redirect_from:
       <p style="margin: 0; font-size: 0.95em; color: #5d6d7e; line-height: 1.5; font-family: 'Poppins', sans-serif;">Demonstrated: obfuscation occurs through information shifts from non-linear to linear representation spaces; proves white-box monitoring systems can be made more effective by enabling them to monitor multiple representation spaces.</p>
     </div>
   </div>
-</div>
+</div> -->
 
-
-<div style="margin: 35px 0; background: white; border-radius: 18px; overflow: hidden; border: 2px solid #ecf0f1; box-shadow: 0 6px 25px rgba(0,0,0,0.08); transition: all 0.3s ease;">
-  <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
-    <img src="/images/evaluation_sae.png" alt="Sparse Autoencoder Research" style="width: 130px; height: 130px; border-radius: 14px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
-    <div style="flex: 1;">
-      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-        <span style="background: #9b59b6; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Faithfulness</span>
-        <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;"> Causal Interpretability</span>
-        <!-- <img src="/images/stanford_logo.png" alt="Stanford University" style="width: 36px; height: 36px; border-radius: 50%; background: white; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"> -->
-      </div>
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2409.04478" style="color: #2c3e50; text-decoration: none;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary, Atticus Geiger</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Proved the ineffectiveness of Sparse Autoencoders on disentangling knowledge in latent space, and suggested Distributed Alignment Search might be a better alternative.</p>
-    </div>
+<div style="margin: 30px 0;">
+  <!-- <h3 style="font-size: 1.3em; font-weight: 600; margin-bottom: 20px; color: #2c3e50; font-family: 'Times New Roman', Times, serif;">Selected Publications</h3> -->
+  
+  <!-- Paper 1 -->
+<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+  <img src="/images/safetynet.png" alt="SafetyNet" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+  <div style="flex: 1;">
+    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+      <a href="https://arxiv.org/pdf/2505.14300" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a>
+    </h4>
+    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary, Fazl Barez</p>
+    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Under review, NeurIPS 2025</p>
   </div>
 </div>
 
-<!-- Divider for literature surveys -->
-
-<div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 50px 0;"></div>
-
-<h3 style="font-size: 1.4em; font-weight: 700; margin: 40px 0 25px 0; color: #2c3e50; font-family: 'Poppins', sans-serif;">📑 Literature Surveys</h3>
-
-<div style="margin: 35px 0; background: white; border-radius: 18px; overflow: hidden; border: 2px solid #ecf0f1; box-shadow: 0 6px 25px rgba(0,0,0,0.08); transition: all 0.3s ease;">
-  <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
-    <img src="/images/causality.png" alt="Causal Abstraction Research" style="width: 130px; height: 130px; border-radius: 14px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
-    <div style="flex: 1;">
-      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-        <span style="background: #27ae60; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Theory</span>
-        <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Causality</span>
-        <img src="/images/uiuc_logo.png" alt="University of Illinois" style="width: 36px; height: 36px; border-radius: 50%; background: white; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      </div>
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2307.16851" style="color: #2c3e50; text-decoration: none;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">A 80+ page primer on connecting causality to trustworthiness on AI systems and suggesting why it would the future of more faithful and deterministic systems.</p>
-    </div>
-  </div>
-</div>
-
-<div style="margin: 35px 0; background: white; border-radius: 18px; overflow: hidden; border: 2px solid #ecf0f1; box-shadow: 0 6px 25px rgba(0,0,0,0.08); transition: all 0.3s ease;">
-  <div style="display: flex; align-items: center; padding: 25px; gap: 25px;">
-    <img src="/images/causal_abstraction.png" alt="Causal Abstraction Research" style="width: 130px; height: 130px; border-radius: 14px; flex-shrink: 0; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
-    <div style="flex: 1;">
-      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-        <span style="background: #27ae60; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Theory</span>
-        <span style="background: #f39c12; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.8em; font-weight: 600; font-family: 'Poppins', sans-serif;">Causal Interpretability</span>
-        <img src="/images/stanford_logo.jpg" alt="Stanford University" style="width: 36px; height: 36px; border-radius: 50%; background: white; padding: 3px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-      </div>
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25em; font-weight: 700; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #2c3e50; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></h3>
-      <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #27ae60; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">🏆 JMLR 2024</p>
-      <p style="margin: 0; font-size: 0.9em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">A survey on causal abstraction of neural network from a mechanistic perspective.</p>
-    </div>
+  <!-- Paper 2 -->
+<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+  <img src="/images/evaluation_sae.png" alt="Sparse Autoencoders" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+  <div style="flex: 1;">
+    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+      <a href="https://arxiv.org/abs/2409.04478" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a>
+    </h4>
+    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary, Atticus Geiger</p>
+    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
   </div>
 </div>
 
 <!-- Divider -->
-<div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 50px 0;"></div>
+<div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
-<h3 style="font-size: 1.4em; font-weight: 700; margin: 40px 0 25px 0; color: #2c3e50; font-family: 'Poppins', sans-serif;">📚 Additional Publications</h3>
+<h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">📑 Literature Surveys</h3>
 
-<div style="margin: 25px 0; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #ecf0f1; box-shadow: 0 3px 15px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-  <div style="display: flex; align-items: center; padding: 20px; gap: 20px;">
-    <img src="/images/modularity.png" alt="Modular Neural Network Training" style="width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; object-fit: cover; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
-    <div style="flex: 1; position: relative;">
-      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 2px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2502.02470" style="color: #2c3e50; text-decoration: none;">Modular Training of Neural Networks aids Interpretability</a></h4>
-      <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Satvik Golechha, Maheep Chaudhary, Joan Velja, Alessandro Abate, Nandi Schoots</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
-      <p style="margin: 0; font-size: 0.85em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">A training methodology that promotes modular cluster formation in neural networks, making models more interpretable by learning disjoint, specialized circuits.</p>
-    </div>
+<!-- Causality Survey -->
+<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+  <img src="/images/causality.png" alt="Causality" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+  <div style="flex: 1;">
+    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+      <a href="https://arxiv.org/abs/2307.16851" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a>
+    </h4>
+    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
+    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
   </div>
 </div>
 
-<div style="margin: 25px 0; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #ecf0f1; box-shadow: 0 3px 15px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-  <div style="display: flex; align-items: center; padding: 20px; gap: 20px;">
-    <img src="/images/punctuations.png" alt="Punctuation and Language Models" style="width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; object-fit: cover; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
-    <div style="flex: 1; position: relative;">
-      <img src="/images/oxford_logo.jpeg" alt="University of Oxford" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://arxiv.org/abs/2508.14067" style="color: #2c3e50; text-decoration: none;">Punctuation and Predicates in Language Models</a></h4>
-      <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">Sonakshi Chauhan, Maheep Chaudhary, Koby Choy, Samuel Nellessen, Nandi Schoots</p>
-      <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #95a5a6; background: rgba(149, 165, 166, 0.15); display: inline-block; padding: 4px 12px; border-radius: 15px; font-weight: 600; font-family: 'Poppins', sans-serif;">📄 arXiv</p>
-      <p style="margin: 0; font-size: 0.85em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Investigating the computational importance of punctuation tokens and reasoning patterns across layers in GPT-2, DeepSeek, and Gemma models.</p>
-    </div>
+<!-- Causal Abstraction -->
+<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+  <img src="/images/causal_abstraction.png" alt="Causal Abstraction" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+  <div style="flex: 1;">
+    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+      <a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a>
+    </h4>
+    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
+    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">JMLR 2024</p>
   </div>
 </div>
 
-<div style="margin: 25px 0; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #ecf0f1; box-shadow: 0 3px 15px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-  <div style="display: flex; align-items: center; padding: 20px; gap: 20px;">
-    <img src="/images/memeclip.png" alt="MemeCLIP Research" style="width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0; object-fit: cover; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
-    <div style="flex: 1; position: relative;">
-      <img src="/images/uiuc_logo.png" alt="University of Illinois" style="position: absolute; top: 5px; right: 5px; width: 27px; height: 27px; border-radius: 50%; background: white; padding: 1px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      <h4 style="margin: 0 0 8px 0; font-size: 1.1em; font-weight: 600; line-height: 1.3; color: #2c3e50; font-family: 'Poppins', sans-serif;"><a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #2c3e50; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></h4>
-      <p style="margin: 0 0 6px 0; font-size: 0.9em; color: #7f8c8d; font-weight: 500; font-family: 'Poppins', sans-serif;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
-      <p style="margin: 0 0 6px 0; font-size: 0.85em; color: #27ae60; background: rgba(46, 204, 113, 0.15); display: inline-block; padding: 3px 8px; border-radius: 12px; font-weight: 600; font-family: 'Poppins', sans-serif;">EMNLP 2024</p>
-      <p style="margin: 0; font-size: 0.85em; color: #5d6d7e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Using multimodal AI to understand and classify fair memes.</p>
-    </div>
+<!-- Divider -->
+<div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
+
+<h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">📚 Additional Publications</h3>
+
+<!-- Modularity -->
+<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+  <img src="/images/modularity.png" alt="Modularity" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+  <div style="flex: 1;">
+    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+      <a href="https://arxiv.org/abs/2502.02470" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Modular Training of Neural Networks aids Interpretability</a>
+    </h4>
+    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Satvik Golechha, Maheep Chaudhary, Joan Velja, Alessandro Abate, Nandi Schoots</p>
+    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
   </div>
 </div>
 
-
-<h2 style="font-size: 1.6em; font-weight: 700; margin: 60px 0 30px 0; color: #2c3e50; letter-spacing: -0.5px; font-family: 'Poppins', sans-serif;">🏆 Background & Recognition</h2>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 30px 0;">
-  <div style="background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(192, 57, 43, 0.1) 100%); padding: 25px; border-radius: 16px; border: 2px solid rgba(231, 76, 60, 0.1);">
-    <h4 style="margin: 0 0 12px 0; color: #e74c3c; font-weight: 700; font-family: 'Poppins', sans-serif;">🥇 Smart India Hackathon Winner</h4>
-    <p style="margin: 0; font-size: 0.9em; color: #34495e; line-height: 1.4; font-family: 'Poppins', sans-serif;">World's largest hackathon with 200K+ participants. Developed facial recognition systems for criminal identification.</p>
-  </div>
-  <div style="background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(41, 128, 185, 0.1) 100%); padding: 25px; border-radius: 16px; border: 2px solid rgba(52, 152, 219, 0.1);">
-    <h4 style="margin: 0 0 12px 0; color: #3498db; font-weight: 700; font-family: 'Poppins', sans-serif;">🌏 ASEAN-India Hackathon Leader</h4>
-    <p style="margin: 0; font-size: 0.9em; color: #34495e; line-height: 1.4; font-family: 'Poppins', sans-serif;">Led international teams across 10+ countries, focusing on marine species detection using AI.</p>
+<!-- Punctuation -->
+<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+  <img src="/images/punctuations.png" alt="Punctuation" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+  <div style="flex: 1;">
+    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+      <a href="https://arxiv.org/abs/2508.14067" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Punctuation and Predicates in Language Models</a>
+    </h4>
+    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Sonakshi Chauhan, Maheep Chaudhary, Koby Choy, Samuel Nellessen, Nandi Schoots</p>
+    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
   </div>
 </div>
 
-<p style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e; font-family: 'Poppins', sans-serif;">Beyond research, I'm passionate about nurturing the next generation of AI researchers:</p>
+<!-- MemeCLIP -->
+<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+  <img src="/images/memeclip.png" alt="MemeCLIP" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+  <div style="flex: 1;">
+    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+      <a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a>
+    </h4>
+    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
+    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">EMNLP 2024</p>
+  </div>
+</div>
 
-<ul style="font-size: 1.05em; line-height: 1.65; margin-bottom: 20px; color: #34495e; font-family: 'Poppins', sans-serif; padding-left: 20px;">
-  <li style="margin-bottom: 8px;"><strong>Mentored over 40+ students</strong> across multiple research programs and institutions.</li>
-  <li style="margin-bottom: 8px;"><strong>Selected as mentor for UNESCO-India-Africa Program</strong> spanning 20+ countries.</li>
-  <li style="margin-bottom: 8px;">Reviewed for <strong>ICML 2025</strong> Workshop and multiple <strong>NeurIPS 2024</strong> workshops.</li>
-</ul>
+<p style="font-size: 0.9em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important; margin-top: 15px;">
+  See my <a href="/publications" style="color: #3498db; font-family: 'Times New Roman', Times, serif !important;">full publication list</a> for additional work.
+</p>
 
-<div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); border-radius: 20px; padding: 35px; margin: 50px 0; color: white; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+<div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
+
+<h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">Background & Recognition</h3>
+
+<p style="font-size: 0.9em; line-height: 1.65; margin-bottom: 15px; color: #34495e; font-family: 'Times New Roman', Times, serif !important;">
+Winner of Smart India Hackathon (200K+ participants) and ASEAN-India Hackathon leader across 10+ countries. Mentored 40+ students, selected for UNESCO-India-Africa Program (20+ countries), and reviewer for ICML 2025 and NeurIPS 2024 workshops.
+</p>
+
+<!-- <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); border-radius: 20px; padding: 35px; margin: 50px 0; color: white; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
   <h3 style="margin: 0 0 20px 0; color: white; font-size: 1.4em; font-weight: 700; text-align: center; font-family: 'Poppins', sans-serif;">💡 My Research Philosophy</h3>
   <p style="margin: 0; font-size: 1.15em; line-height: 1.7; opacity: 0.95; text-align: center; font-family: 'Poppins', sans-serif;">I believe powerful AI systems must be interpretable and aligned with human values. My work focuses on understanding the internal mechanisms of neural networks and developing practical methods to detect when they behave in unintended ways. From theoretical foundations to deployed safety systems, I work across the full spectrum of AI alignment research.</p>
-</div>
+</div> -->
+
 
 <!-- <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(52, 152, 219, 0.05); border-radius: 16px;">
   <p style="font-size: 1em; line-height: 1.6; color: #7f8c8d; margin-bottom: 20px; font-family: 'Poppins', sans-serif;">Want to learn more about my research approach and methodology?</p>

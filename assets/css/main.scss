@@ -16,6 +16,10 @@
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 @import "vendor/breakpoint/breakpoint"; // media query mixins
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
@@ -31,6 +35,7 @@
 @import "masthead";
 @import "navigation";
 @import "footer";
+
 @import "syntax";
 
 @import "forms";
@@ -44,3 +49,7 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.masthead {
+  display: none;
+}

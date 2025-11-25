@@ -11,47 +11,49 @@ redirect_from:
 
 <p style="font-size: 1.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-weight: bold; text-align: center;"><em>Surgically making neural networks safe!</em></p>
 
+
+
+
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
   <strong>About me:</strong>
-  My research aims to solve one of AI safety's most challenging problems: models can harbor misaligned reasoning internally while producing benign outputs, rendering black-box evaluation fundamentally insufficient 
+  My research focuses on one of the hardest problems in AI safety: AI models can think in ways that don’t match what they say or show, which means just checking their output doesn’t tell us if they are truly safe
   (<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/172be8b0b88fc2b4aee74237d43f8c04-Abstract-Conference.html" target="_blank" style="color: #0000EE; text-decoration: none;">Rosati et al., 2024</a>).
-  This conviction drives my focus on white-box analysis, specifically using <em>mechanistic interpretability</em> techniques to expose the internal computations that black-box methods cannot reach.
+  Because of this, I study their inner workings, i.e. <em>mechanistic interpretability</em> directly, using methods that help reveal what’s happening inside the model beyond just inputs and outputs or <em>white-box analysis</em>.
 </p>
 
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
   <strong>My Foundation:</strong>
-  My theoretical foundation lies in two survey works connecting causality to ML trustworthiness 
-  (<a href="https://arxiv.org/pdf/2307.16851" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2024</a>) 
-  and mechanistic interpretability 
-  (<a href="https://www.jmlr.org/papers/volume26/23-0058/23-0058.pdf" target="_blank" style="color: #0000EE; text-decoration: none;">Geiger et al., 2025</a>), 
-  which frame my empirical investigations through the lens of causal intervention.
+  My work is built on two important survey papers: One connects causality, i.e. science of cause-and-effect ideas to making machine learning more trustworthy (<a href="https://arxiv.org/pdf/2307.16851" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2024</a>) , and the other studies how to understand the inner mechanics/ mechanistic interpretability of AI models   (<a href="https://www.jmlr.org/papers/volume26/23-0058/23-0058.pdf" target="_blank" style="color: #0000EE; text-decoration: none;">Geiger et al., 2025</a>), . These give me a strong framework to investigate how models work by looking at cause and effect inside them.
 </p>
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
   <strong>My Findings:</strong>
-  Building on this foundation, my diagnostic work has uncovered concerning patterns. In the past, using white-box analysis I was successful in finding:
+  Building on my earlier work, I found some worrying patterns: 
+  <!-- Using white-box methods to look inside models, I discovered that larger models get better at noticing when they are being tested, which means our usual ways to evaluate them might not work well for very advanced AI. I also found that models leave clear signs in their attention patterns when they generate harmful content, and I could detect this with about 95% accuracy. Additionally, models move information across tokens from start to end and use punctuation and sentence structure to store information differently depending on the task. -->
 </p>
 
 <ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; padding-left: 18px;">
   <li style="margin-bottom: 6px;">
-    Models' ability to detect that they are being evaluated increases as they get bigger—suggesting that standard evaluation protocols may become fundamentally unreliable for AGI-level systems, hinting that there might be no way of evaluating AGI-level models before releasing 
+    Models' <em>self-awareness</em> that they are being evaluated increases as they get bigger—suggesting that standard evaluation protocols may become fundamentally unreliable for AGI-level systems, hinting that there might be no way of evaluating AGI-level models before releasing 
     (<a href="https://arxiv.org/pdf/2509.13333" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
-    Models leave distinct signatures in attention patterns when generating harmful content—achieving around 95% accuracy in detecting harmful generation across models 
+    Models leave distinct signatures in their attention patterns when generating harmful content compared to safe content
+    <!-- —achieving around 95% accuracy in detecting harmful generation across models  -->
     (<a href="https://arxiv.org/pdf/2505.14300" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
-    Models shift information from left to right and all the way to the last token to store information, while taking support of punctuation and predicates to store information of all tokens, while having higher and lower complexity for different kinds of rules 
+    Models internals operate by shifting information from left to right and all the way to the last token to store information, while taking support of punctuation and predicates to store information of all tokens in intermediate layers.
     (<a href="https://arxiv.org/pdf/2508.14067?" target="_blank" style="color: #0000EE; text-decoration: none;">Chauhan et al., 2025</a>).
   </li>
 </ul>
 
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
   <strong>My Solutions:</strong>
-  Crucially, my research extends beyond diagnosis to intervention. My research is not only focused on finding problems, but also on making models safer:
+  My research doesn’t stop at interpreting the internals of the model but also using this technique to solve misalignment: 
+  <!-- finding problems—I also work on fixing them. I improved how Chain-of-Thought reasoning works so it’s more honest and trustworthy. I created methods to reduce how much private information leaks during this reasoning process. And I built ways to prune model parts carefully so the model stays safe and aligned while becoming more efficient. -->
 </p>
 
 <ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; padding-left: 18px; font-family: 'Georgia', 'Times New Roman', Times, serif;">
@@ -71,11 +73,14 @@ redirect_from:
   </li>
 </ul>
 
+
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
+<!-- <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
   <strong>Future Steps:</strong>
-  Looking forward, I am investigating jailbreaking through the lens of decision boundary uncertainty—recent work has shown that LLMs possess an "ethical boundary" in latent space separating safe from harmful representations, and that out-of-distribution inputs weaken this boundary, enabling jailbreaks (Huang et al., 2024). Building on my prior work detecting harmful generation via attention signatures, I aim to develop white-box interventions that identify high-uncertainty regions near safety decision boundaries and constrain the model's access to these vulnerable subspaces during inference. This shifts the paradigm from post-hoc output filtering to preventing models from entering representational states where safety boundaries become unreliable—addressing the core problem that misaligned reasoning can hide beneath benign outputs. Ultimately, this work seeks to make alignment verifiable at the computational level, not just the behavioral one.
+  Looking forward, I am investigating jailbreaking through the lens of decision boundary in model internal states Looking ahead to predict jailbreak and hallucination reasons and their solutions. Recent research shows that large language models have an “ethical boundary” inside their hidden states that separates safe from harmful outputs (Huang et al., 2024). However, unusual or unexpected inputs weaken this boundary, allowing jailbreaks to happen. Building on my past work detecting harmful patterns inside models, I plan to create white-box methods that find risky regions near these safety boundaries and limit the model’s access to them during use. This approach moves away from just filtering harmful outputs after generation to stopping the model from reaching unsafe internal states in the first place. Ultimately, this work aims to ensure safety checks are part of the model’s inner computations, not just its final answers.
+   -->
+   <!-- uncertainty—recent work has shown that LLMs possess an "ethical boundary" in latent space separating safe from harmful representations, and that out-of-distribution inputs weaken this boundary, enabling jailbreaks (Huang et al., 2024). Building on my prior work detecting harmful generation via attention signatures, I aim to develop white-box interventions that identify high-uncertainty regions near safety decision boundaries and constrain the model's access to these vulnerable subspaces during inference. This shifts the paradigm from post-hoc output filtering to preventing models from entering representational states where safety boundaries become unreliable—addressing the core problem that misaligned reasoning can hide beneath benign outputs. Ultimately, this work seeks to make alignment verifiable at the computational level, not just the behavioral one. -->
 </p>
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #2c3e50, transparent); margin: 20px 0;"></div>

@@ -5,629 +5,932 @@ permalink: /machine.html
 ---
 
 <style>
+  /* Override page background */
+  body, html {
+    background: #0a0a0a !important;
+  }
+  
+  .page__content, .page, main, #main, .initial-content, .archive {
+    background: #0a0a0a !important;
+  }
+  
+  .machine-view-wrapper {
+    background: #0a0a0a;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
   .machine-view {
-    max-width: 720px;
+    max-width: 750px;
     margin: 0 auto;
-    padding: 20px;
-    font-family: 'Times New Roman', Times, serif !important;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #1a1a1a;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.8;
   }
   
-  .machine-view * {
-    font-family: 'Times New Roman', Times, serif !important;
+  .machine-view .section {
+    border-left: 1px solid #333;
+    padding-left: 20px;
+    margin-bottom: 40px;
   }
   
-  .machine-view h1 {
-    font-size: 1.4em;
-    font-weight: 600;
-    border-bottom: 2px solid #000;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif !important;
+  .machine-view pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Courier New', monospace;
+    font-size: 13px;
+    color: #e0e0e0;
   }
   
-  .machine-view h2 {
-    font-size: 1.1em;
-    font-weight: 600;
-    margin: 30px 0 15px 0;
-    color: #333;
-    border-left: 3px solid #000;
-    padding-left: 10px;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .machine-view h3 {
-    font-size: 0.95em;
-    font-weight: 600;
-    margin: 20px 0 10px 0;
-    color: #555;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .data-block {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 15px;
-    margin: 15px 0;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .data-row {
-    display: flex;
-    margin: 4px 0;
-  }
-  
-  .data-key {
-    min-width: 160px;
-    color: #666;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .data-value {
-    color: #000;
-    flex: 1;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .data-value a {
-    color: #0066cc;
+  .machine-view a {
+    color: #e0e0e0;
     text-decoration: none;
   }
   
-  .data-value a:hover {
+  .machine-view a:hover {
+    text-decoration: underline;
+  }
+
+  /* Profile Image */
+  .profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-top: 1px solid #333;
+    padding-top: 40px;
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Render Button */
+  .render-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Courier New', monospace;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+  
+  .render-btn:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  
+  
+.render-btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+  transition: transform 0.3s ease;
+}
+
+.render-btn:hover svg {
+  transform: rotate(90deg);
+}
+
+  /* Raw View (default) */
+  .raw-view {
+    display: block;
+  }
+  
+  .rendered-view {
+    display: none;
+  }
+  
+  /* When rendered class is active */
+  .machine-view.rendered .raw-view {
+    display: none;
+  }
+  
+  .machine-view.rendered .rendered-view {
+    display: block;
+  }
+
+  /* Rendered View Styles */
+  .rendered-view {
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Courier New', monospace;
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.8;
+    border-left: 1px solid #333;
+    padding-left: 20px;
+  }
+  
+  .rendered-view h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+  }
+  
+  .rendered-view h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+    color: #fff;
+  }
+  
+  .rendered-view h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+    color: #e0e0e0;
+  }
+  
+  .rendered-view p {
+    margin: 0 0 15px 0;
+  }
+  
+  .rendered-view ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .rendered-view li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  .rendered-view li:last-child {
+    border-bottom: none;
+  }
+  
+  .rendered-view a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  
+  .rendered-view a:hover {
     text-decoration: underline;
   }
   
-  .tag {
+  .rendered-view .tag {
     display: inline-block;
-    background: #e8e8e8;
-    padding: 2px 8px;
-    border-radius: 3px;
-    font-size: 0.85em;
-    margin: 2px 4px 2px 0;
-    font-family: 'Times New Roman', Times, serif !important;
+    background: rgba(255,255,255,0.1);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin: 3px 5px 3px 0;
   }
   
-  .tag-primary {
-    background: #1a1a1a;
+  .rendered-view .info-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .rendered-view .info-label {
+    color: rgba(255,255,255,0.5);
+  }
+  
+  .rendered-view .info-value {
     color: #fff;
   }
   
-  .tag-venue {
-    background: #0066cc;
-    color: #fff;
-  }
-  
-  .status-active {
-    color: #28a745;
-  }
-  
-  .status-review {
-    color: #fd7e14;
-  }
-  
-  .status-published {
-    color: #0066cc;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 15px 0;
-    font-size: 0.85em;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 8px 12px;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  th {
-    background: #f0f0f0;
-    font-weight: 600;
-  }
-  
-  tr:hover {
-    background: #f8f9fa;
-  }
-  
-  .metrics-grid {
+  .rendered-view .metric-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin: 20px 0;
   }
   
-  .metric-box {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    padding: 15px;
+  .rendered-view .metric-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 20px;
     text-align: center;
-    border-radius: 4px;
-    font-family: 'Times New Roman', Times, serif !important;
   }
   
-  .metric-value {
-    font-size: 1.8em;
+  .rendered-view .metric-value {
+    font-size: 32px;
     font-weight: 700;
-    color: #000;
-    font-family: 'Times New Roman', Times, serif !important;
+    color: #fff;
   }
   
-  .metric-label {
-    font-size: 0.8em;
-    color: #666;
+  .rendered-view .metric-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
     margin-top: 5px;
-    font-family: 'Times New Roman', Times, serif !important;
   }
   
-  .section-divider {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 30px 0;
+  .rendered-view .pub-item {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
   }
   
-  .timeline-item {
-    display: flex;
-    margin: 8px 0;
-    padding: 8px 0;
-    border-bottom: 1px dashed #e0e0e0;
-  }
-  
-  .timeline-date {
-    min-width: 140px;
-    color: #666;
-    font-size: 0.9em;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .timeline-content {
-    flex: 1;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .timeline-org {
-    font-weight: 600;
-    color: #000;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .timeline-role {
-    color: #555;
-    font-size: 0.9em;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  code {
-    background: #f0f0f0;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 0.9em;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-
-  .pub-authors {
-    font-size: 0.85em;
-    color: #555;
-    margin-top: 4px;
-    font-family: 'Times New Roman', Times, serif !important;
-  }
-  
-  .pub-title {
+  .rendered-view .pub-title {
     font-weight: 500;
-    font-family: 'Times New Roman', Times, serif !important;
+    color: #fff;
+    margin-bottom: 5px;
   }
   
-  .lead-marker {
+  .rendered-view .pub-authors {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 5px;
+  }
+  
+  .rendered-view .pub-venue {
+    display: inline-block;
+    background: #58a6ff;
+    color: #000;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  
+  .rendered-view .pub-lead {
+    display: inline-block;
     background: #28a745;
     color: #fff;
-    font-size: 0.7em;
-    padding: 1px 5px;
-    border-radius: 3px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
     margin-left: 5px;
-    font-family: 'Times New Roman', Times, serif !important;
+  }
+  
+  .rendered-view .experience-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  .rendered-view .experience-date {
+    min-width: 160px;
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+  }
+  
+  .rendered-view .experience-content {
+    flex: 1;
+  }
+  
+  .rendered-view .experience-org {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .rendered-view .experience-role {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
   }
 
+  .rendered-view .profile-image-rendered {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+
+  
+
   @media (max-width: 600px) {
-    .metrics-grid {
+    .rendered-view .metric-grid {
       grid-template-columns: repeat(2, 1fr);
     }
-    .data-row, .timeline-item {
+    .rendered-view .experience-item {
       flex-direction: column;
+      gap: 5px;
     }
-    .data-key, .timeline-date {
-      font-weight: 600;
-      margin-bottom: 2px;
+    .rendered-view .info-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>
 
+<div class="machine-view-wrapper">
+
+<!-- Render Button -->
+<button class="render-btn" onclick="toggleRender()">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="3"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+  </svg>
+  <span class="btn-text">Render</span>
+</button>
+
 <div class="machine-view">
 
-<h1>RESEARCHER_PROFILE</h1>
+<!-- ==================== RAW VIEW ==================== -->
+<div class="raw-view">
 
-<div class="data-block">
-  <div class="data-row"><span class="data-key">name:</span><span class="data-value">Maheep Chaudhary</span></div>
-  <div class="data-row"><span class="data-key">role:</span><span class="data-value">Machine Learning Engineer</span></div>
-  <div class="data-row"><span class="data-key">affiliation:</span><span class="data-value"><a href="https://algoverseairesearch.org">Algoverse AI Research</a></span></div>
-  <div class="data-row"><span class="data-key">email:</span><span class="data-value"><a href="mailto:maheepchaudhary.research@gmail.com">maheepchaudhary.research@gmail.com</a></span></div>
-  <div class="data-row">
-    <span class="data-key">links:</span>
-    <span class="data-value">
+<div class="profile-image-container">
+  <img src="/images/machine.jpeg" alt="Maheep Chaudhary" class="profile-image">
+</div>
+
+<div class="section">
+<pre>
+# RESEARCHER_PROFILE
+
+name:        "Maheep Chaudhary"
+role:        "Machine Learning Engineer"
+affiliation: "Algoverse AI Research" [link](https://algoverseairesearch.org)
+email:       maheepchaudhary.research@gmail.com
+links:       [GitHub](https://github.com/MaheepChaudhary) [Twitter](https://twitter.com/MaheepChaudhary) [Scholar](https://scholar.google.com/citations?user=YOUR_ID)
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## EDUCATION
+
+- Aug 2023 — May 2024
+  Nanyang Technological University, Singapore
+  M.Sc. Artificial Intelligence, Computer Science
+
+- Aug 2018 — May 2022
+  Bundelkhand Institute of Engineering and Technology, India
+  B.E. Electronics and Communication Engineering
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## EXPERIENCE
+
+- Jun 2025 — Present  Algoverse
+  → Machine Learning Engineer
+
+- Jan 2025 — May 2025  AI Safety Camp
+  → Machine Learning Researcher
+
+- Nov 2024 — May 2025  University of Oxford
+  → Research Intern (Supervisor: Fazl Barez)
+
+- Jul 2024 — Sep 2024  WhiteBox Research
+  → Research Mentor
+
+- Oct 2023 — Sep 2024  Pr(Ai)²R Group, Stanford
+  → Alignment Research Engineer (Supervisor: Atticus Geiger)
+
+- Sep 2021 — Jan 2024  UIUC
+  → Research Collaboration (Supervisor: Haohan Wang)
+
+- Oct 2019 — Mar 2021  IIT Indore
+  → Research Collaboration (Supervisor: Chandresh Maurya)
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## RESEARCH_TAXONOMY
+
+primary_focus:
+  [AI Safety] [Mechanistic Interpretability]
+
+secondary:
+  [Chain-of-Thought] [Causal Abstraction]
+  [Deception Detection] [Attention Mechanisms]
+
+methods:
+  [White-box Analysis] [Activation Steering]
+  [Probing] [Anomaly Detection] [Causal Intervention]
+
+models:
+  [Llama] [Gemma] [Qwen] [Mistral] [GPT-2]
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## METRICS
+
+journal_conference:  5
+workshop_papers:     7
+preprints:           6
+as_project_lead:     8
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## PUBLICATIONS
+
+### Journal & Conference
+
+1. "Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability"
+   A. Geiger, D. Ibeling, A. Zur, Maheep Chaudhary, et al.
+   [JMLR 2024] [paper](http://jmlr.org/papers/v26/23-0058.html)
+
+2. "MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification"
+   S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang
+   [EMNLP 2024] [paper](https://aclanthology.org/2024.emnlp-main.959/)
+
+3. "An Intelligent Recommendation cum Reminder System"
+   R. Saxena, Maheep Chaudhary, C.K. Maurya, S. Prasad
+   [ACM CODS-COMAD 2022]
+
+4. "CQFaRAD: Collaborative Query-Answering Framework"
+   M. Singh, S. Pandey, R. Saxena, Maheep Chaudhary, N. Lal
+   [Springer IJIT 2021]
+</pre>
+</div>
+
+<div class="section">
+<pre>
+### Workshop Papers (NeurIPS 2025)
+
+1. "Evaluation Awareness Scales Predictably in Open-Weights LLMs"
+   Maheep Chaudhary†, I. Su, N. Hooda, et al.
+   [Responsible FM] LEAD
+
+2. "FRIT: Using Causal Importance to Improve CoT Faithfulness"
+   A. Swaroop, et al., Maheep Chaudhary†
+   [FoRLM] LEAD
+
+3. "Optimizing CoT Confidence via Topological and Dirichlet Risk Analysis"
+   A. More, et al., Maheep Chaudhary†
+   [Responsible FM] LEAD
+
+4. "Alignment-Constrained Dynamic Pruning for LLMs"
+   D. Patel, et al., Maheep Chaudhary†
+   [Responsible FM] LEAD
+
+5. "SALT: Steering Activations towards Leakage-free Thinking"
+   S. Batra, et al., Maheep Chaudhary†
+   [Responsible FM] LEAD
+
+6. "Amortized Latent Steering: Low-Cost Test-Time Optimization"
+   N. Egbuna, et al., Maheep Chaudhary†
+   [Efficient Reasoning] LEAD
+
+7. "Hydra: A Modular Architecture for Efficient Long-Context Reasoning"
+   S. Chaudhary, D. Patel, Maheep Chaudhary, B. Browning
+   [Efficient Reasoning]
+</pre>
+</div>
+
+<div class="section">
+<pre>
+### Preprints
+
+1. "SafetyNet: Detecting Harmful Outputs in LLMs"
+   Maheep Chaudhary, F. Barez
+   LEAD [arXiv](https://arxiv.org/abs/2505.14300)
+
+2. "Evaluating Sparse Autoencoders on Disentangling Factual Knowledge"
+   Maheep Chaudhary, A. Geiger
+   LEAD [arXiv](https://arxiv.org/abs/2409.04478)
+
+3. "PALADIN: Self-Correcting LM Agents to Cure Tool-Failure Cases"
+   S. V. Vuddanti, et al., Maheep Chaudhary†
+   LEAD
+
+4. "Modular Training of Neural Networks aids Interpretability"
+   S. Golechha, Maheep Chaudhary, et al.
+   [arXiv](https://arxiv.org/abs/2502.02470)
+
+5. "Punctuation and Predicates in Language Models"
+   S. Chauhan, Maheep Chaudhary, et al.
+   [arXiv](https://arxiv.org/abs/2504.05110)
+
+6. "Towards Trustworthy ML: A Data-centric Survey with Causality Perspectives"
+   Maheep Chaudhary*, H. Liu*, H. Wang
+   Co-first [arXiv](https://arxiv.org/abs/2307.16851)
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## KEY_FINDINGS
+
+[1] Evaluation awareness scales with model size
+    → standard eval may fail for AGI-level systems
+
+[2] Harmful content produces distinct attention signatures
+    → ~95% detection accuracy
+
+[3] Information flows left→right to last token
+    → punctuation/predicates serve as storage anchors
+
+[4] Obfuscation shifts info from non-linear to linear spaces
+    → white-box monitoring can detect this
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## SERVICE
+
+reviewer:
+  - ICML 2025 (Actionable Interpretability)
+  - NeurIPS 2024 (MATH+AI, CALM)
+
+mentoring:
+  - UNESCO-India-Africa Program (20+ countries)
+  - Research Mentor at Algoverse
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## AWARDS
+
+- Winner — Smart India Hackathon (200K+ participants)
+  Face recognition for Bureau of Police R&D
+
+- Team Leader — ASEAN-India Hackathon (10+ countries)
+  Marine Species Detection
+
+- Selected Mentor — UNESCO-India-Africa Program (20+ countries)
+  Voice-assisted system for farmers
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## CONTACT
+
+email:   maheepchaudhary.research@gmail.com
+github:  [GitHub](https://github.com/MaheepChaudhary)
+twitter: [Twitter](https://twitter.com/MaheepChaudhary)
+scholar: [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)
+</pre>
+</div>
+
+<div class="section">
+<pre>
+## STRUCTURED_DATA
+
+{
+  "@type": "Person",
+  "name": "Maheep Chaudhary",
+  "role": "Machine Learning Engineer",
+  "affiliation": "Algoverse AI Research",
+  "education": ["M.Sc. AI (NTU)", "B.E. ECE (BIET)"],
+  "research_focus": ["AI Safety", "Mechanistic Interpretability"],
+  "publications": {
+    "journal_conference": 5,
+    "workshop": 7,
+    "preprints": 6,
+    "as_lead": 8
+  },
+  "venues": ["JMLR", "EMNLP", "NeurIPS", "ACM", "Springer"]
+}
+</pre>
+</div>
+
+</div>
+<!-- ==================== END RAW VIEW ==================== -->
+
+
+<!-- ==================== RENDERED VIEW ==================== -->
+<div class="rendered-view">
+  
+  <img src="/images/machine_render.jpeg" alt="Maheep Chaudhary" class="profile-image-rendered">
+  
+  <h1>Maheep Chaudhary</h1>
+  
+  <div class="info-grid">
+    <span class="info-label">Role</span>
+    <span class="info-value">Machine Learning Engineer</span>
+    <span class="info-label">Affiliation</span>
+    <span class="info-value"><a href="https://algoverseairesearch.org">Algoverse AI Research</a></span>
+    <span class="info-label">Email</span>
+    <span class="info-value"><a href="mailto:maheepchaudhary.research@gmail.com">maheepchaudhary.research@gmail.com</a></span>
+    <span class="info-label">Links</span>
+    <span class="info-value">
       <a href="https://github.com/MaheepChaudhary">GitHub</a> · 
       <a href="https://twitter.com/MaheepChaudhary">Twitter</a> · 
-      <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=YOUR_ID">Scholar</a>
     </span>
   </div>
-</div>
-
-<h2>EDUCATION</h2>
-
-<div class="data-block">
-  <div class="timeline-item">
-    <span class="timeline-date">Aug 2023 — May 2024</span>
-    <div class="timeline-content">
-      <span class="timeline-org">Nanyang Technological University, Singapore</span>
-      <div class="timeline-role">M.Sc. Artificial Intelligence, Computer Science</div>
+  
+  <h2>Education</h2>
+  
+  <div class="experience-item">
+    <span class="experience-date">Aug 2023 — May 2024</span>
+    <div class="experience-content">
+      <div class="experience-org">Nanyang Technological University, Singapore</div>
+      <div class="experience-role">M.Sc. Artificial Intelligence, Computer Science</div>
     </div>
   </div>
-  <div class="timeline-item" style="border-bottom: none;">
-    <span class="timeline-date">Aug 2018 — May 2022</span>
-    <div class="timeline-content">
-      <span class="timeline-org">Bundelkhand Institute of Engineering and Technology, India</span>
-      <div class="timeline-role">B.E. Electronics and Communication Engineering</div>
+  
+  <div class="experience-item">
+    <span class="experience-date">Aug 2018 — May 2022</span>
+    <div class="experience-content">
+      <div class="experience-org">Bundelkhand Institute of Engineering and Technology, India</div>
+      <div class="experience-role">B.E. Electronics and Communication Engineering</div>
     </div>
   </div>
-</div>
-
-<h2>EXPERIENCE</h2>
-
-<div class="data-block">
-  <div class="timeline-item">
-    <span class="timeline-date">Jun 2025 — Present</span>
-    <div class="timeline-content">
-      <span class="timeline-org">Algoverse</span>
-      <div class="timeline-role">Machine Learning Engineer</div>
+  
+  <h2>Experience</h2>
+  
+  <div class="experience-item">
+    <span class="experience-date">Jun 2025 — Present</span>
+    <div class="experience-content">
+      <div class="experience-org">Algoverse</div>
+      <div class="experience-role">Machine Learning Engineer</div>
     </div>
   </div>
-  <div class="timeline-item">
-    <span class="timeline-date">Jan 2025 — May 2025</span>
-    <div class="timeline-content">
-      <span class="timeline-org">AI Safety Camp</span>
-      <div class="timeline-role">Machine Learning Researcher</div>
+  
+  <div class="experience-item">
+    <span class="experience-date">Jan 2025 — May 2025</span>
+    <div class="experience-content">
+      <div class="experience-org">AI Safety Camp</div>
+      <div class="experience-role">Machine Learning Researcher</div>
     </div>
   </div>
-  <div class="timeline-item">
-    <span class="timeline-date">Nov 2024 — May 2025</span>
-    <div class="timeline-content">
-      <span class="timeline-org">University of Oxford</span>
-      <div class="timeline-role">Research Intern — Supervisor: Fazl Barez</div>
+  
+  <div class="experience-item">
+    <span class="experience-date">Nov 2024 — May 2025</span>
+    <div class="experience-content">
+      <div class="experience-org">University of Oxford</div>
+      <div class="experience-role">Research Intern (Supervisor: Fazl Barez)</div>
     </div>
   </div>
-  <div class="timeline-item">
-    <span class="timeline-date">Jul 2024 — Sep 2024</span>
-    <div class="timeline-content">
-      <span class="timeline-org">WhiteBox Research</span>
-      <div class="timeline-role">Research Mentor</div>
+  
+  <div class="experience-item">
+    <span class="experience-date">Jul 2024 — Sep 2024</span>
+    <div class="experience-content">
+      <div class="experience-org">WhiteBox Research</div>
+      <div class="experience-role">Research Mentor</div>
     </div>
   </div>
-  <div class="timeline-item">
-    <span class="timeline-date">Oct 2023 — Sep 2024</span>
-    <div class="timeline-content">
-      <span class="timeline-org">Pr(Ai)²R Group, Stanford</span>
-      <div class="timeline-role">Alignment Research Engineer — Supervisor: Atticus Geiger</div>
+  
+  <div class="experience-item">
+    <span class="experience-date">Oct 2023 — Sep 2024</span>
+    <div class="experience-content">
+      <div class="experience-org">Pr(Ai)²R Group, Stanford</div>
+      <div class="experience-role">Alignment Research Engineer (Supervisor: Atticus Geiger)</div>
     </div>
   </div>
-  <div class="timeline-item">
-    <span class="timeline-date">Sep 2021 — Jan 2024</span>
-    <div class="timeline-content">
-      <span class="timeline-org">UIUC</span>
-      <div class="timeline-role">Research Collaboration — Supervisor: Haohan Wang</div>
+  
+  <div class="experience-item">
+    <span class="experience-date">Sep 2021 — Jan 2024</span>
+    <div class="experience-content">
+      <div class="experience-org">UIUC</div>
+      <div class="experience-role">Research Collaboration (Supervisor: Haohan Wang)</div>
     </div>
   </div>
-  <div class="timeline-item" style="border-bottom: none;">
-    <span class="timeline-date">Oct 2019 — Mar 2021</span>
-    <div class="timeline-content">
-      <span class="timeline-org">IIT Indore</span>
-      <div class="timeline-role">Research Collaboration — Supervisor: Chandresh Maurya</div>
+  
+  <div class="experience-item">
+    <span class="experience-date">Oct 2019 — Mar 2021</span>
+    <div class="experience-content">
+      <div class="experience-org">IIT Indore</div>
+      <div class="experience-role">Research Collaboration (Supervisor: Chandresh Maurya)</div>
     </div>
   </div>
+  
+  <h2>Research Focus</h2>
+  
+  <p><strong>Primary:</strong></p>
+  <span class="tag">AI Safety</span>
+  <span class="tag">Mechanistic Interpretability</span>
+  
+  <p style="margin-top: 20px;"><strong>Secondary:</strong></p>
+  <span class="tag">Chain-of-Thought</span>
+  <span class="tag">Causal Abstraction</span>
+  <span class="tag">Deception Detection</span>
+  <span class="tag">Attention Mechanisms</span>
+  
+  <p style="margin-top: 20px;"><strong>Methods:</strong></p>
+  <span class="tag">White-box Analysis</span>
+  <span class="tag">Activation Steering</span>
+  <span class="tag">Probing</span>
+  <span class="tag">Anomaly Detection</span>
+  <span class="tag">Causal Intervention</span>
+  
+  <p style="margin-top: 20px;"><strong>Models:</strong></p>
+  <span class="tag">Llama</span>
+  <span class="tag">Gemma</span>
+  <span class="tag">Qwen</span>
+  <span class="tag">Mistral</span>
+  <span class="tag">GPT-2</span>
+  
+  <h2>Metrics</h2>
+  
+  <div class="metric-grid">
+    <div class="metric-box">
+      <div class="metric-value">5</div>
+      <div class="metric-label">Journal/Conference</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-value">7</div>
+      <div class="metric-label">Workshop Papers</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-value">6</div>
+      <div class="metric-label">Preprints</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-value">8</div>
+      <div class="metric-label">As Project Lead</div>
+    </div>
+  </div>
+  
+  <h2>Publications</h2>
+  
+  <h3>Journal & Conference</h3>
+  
+  <div class="pub-item">
+    <div class="pub-title">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</div>
+    <div class="pub-authors">A. Geiger, D. Ibeling, A. Zur, Maheep Chaudhary, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</div>
+    <span class="pub-venue">JMLR 2024</span>
+    <a href="http://jmlr.org/papers/v26/23-0058.html" style="margin-left: 10px; font-size: 12px;">[paper]</a>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</div>
+    <div class="pub-authors">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</div>
+    <span class="pub-venue">EMNLP 2024</span>
+    <a href="https://aclanthology.org/2024.emnlp-main.959/" style="margin-left: 10px; font-size: 12px;">[paper]</a>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">An Intelligent Recommendation cum Reminder System</div>
+    <div class="pub-authors">R. Saxena, Maheep Chaudhary, C.K. Maurya, S. Prasad</div>
+    <span class="pub-venue">ACM CODS-COMAD 2022</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">CQFaRAD: Collaborative Query-Answering Framework for a Research Article Dataspace</div>
+    <div class="pub-authors">M. Singh, S. Pandey, R. Saxena, Maheep Chaudhary, N. Lal</div>
+    <span class="pub-venue">Springer IJIT 2021</span>
+  </div>
+  
+  <h3>Workshop Papers (NeurIPS 2025)</h3>
+  
+  <div class="pub-item">
+    <div class="pub-title">Evaluation Awareness Scales Predictably in Open-Weights LLMs</div>
+    <div class="pub-authors">Maheep Chaudhary†, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</div>
+    <span class="pub-venue">Responsible FM</span>
+    <span class="pub-lead">LEAD</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">FRIT: Using Causal Importance to Improve Chain-of-Thought Faithfulness</div>
+    <div class="pub-authors">A. Swaroop, A. Nallani, S. Uboweja, A. Uzdenova, M. Nguyen, K. Zhu, S. Dev, A. Panda, V. Sharma, Maheep Chaudhary†</div>
+    <span class="pub-venue">FoRLM</span>
+    <span class="pub-lead">LEAD</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Optimizing Chain-of-Thought Confidence via Topological and Dirichlet Risk Analysis</div>
+    <div class="pub-authors">A. More, A. Zhang, N. Bonilla, A. Vivekan, K. Zhu, P. Sharafoleslami, Maheep Chaudhary†</div>
+    <span class="pub-venue">Responsible FM</span>
+    <span class="pub-lead">LEAD</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Alignment-Constrained Dynamic Pruning for LLMs</div>
+    <div class="pub-authors">D. Patel, G. Gervacio, D. Raimi, K. Zhu, R. Lagasse, G. Grand, A. Panda, Maheep Chaudhary†</div>
+    <span class="pub-venue">Responsible FM</span>
+    <span class="pub-lead">LEAD</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">SALT: Steering Activations towards Leakage-free Thinking in Chain of Thought</div>
+    <div class="pub-authors">S. Batra, P. Tillman, S. Gaggar, S. Kesineni, S. Dev, K. Zhu, A. Panda, Maheep Chaudhary†</div>
+    <span class="pub-venue">Responsible FM</span>
+    <span class="pub-lead">LEAD</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Amortized Latent Steering: Low-Cost Alternative to Test-Time Optimization</div>
+    <div class="pub-authors">N. Egbuna, S. Gaur, S. Dev, A. Panda, Maheep Chaudhary†</div>
+    <span class="pub-venue">Efficient Reasoning</span>
+    <span class="pub-lead">LEAD</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Hydra: A Modular Architecture for Efficient Long-Context Reasoning</div>
+    <div class="pub-authors">S. Chaudhary, D. Patel, Maheep Chaudhary, B. Browning</div>
+    <span class="pub-venue">Efficient Reasoning</span>
+  </div>
+  
+  <h3>Preprints</h3>
+  
+  <div class="pub-item">
+    <div class="pub-title">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</div>
+    <div class="pub-authors">Maheep Chaudhary, F. Barez</div>
+    <span class="pub-lead">LEAD</span>
+    <a href="https://arxiv.org/abs/2505.14300" style="margin-left: 10px; font-size: 12px;">[arXiv]</a>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</div>
+    <div class="pub-authors">Maheep Chaudhary, A. Geiger</div>
+    <span class="pub-lead">LEAD</span>
+    <a href="https://arxiv.org/abs/2409.04478" style="margin-left: 10px; font-size: 12px;">[arXiv]</a>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases</div>
+    <div class="pub-authors">S. V. Vuddanti, A. Shah, S. K. Chittiprolu, T. Song, S. Dev, K. Zhu, Maheep Chaudhary†</div>
+    <span class="pub-lead">LEAD</span>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Modular Training of Neural Networks aids Interpretability</div>
+    <div class="pub-authors">S. Golechha, Maheep Chaudhary, J. Velja, A. Abate, N. Schoots</div>
+    <a href="https://arxiv.org/abs/2502.02470" style="font-size: 12px;">[arXiv]</a>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Punctuation and Predicates in Language Models</div>
+    <div class="pub-authors">S. Chauhan, Maheep Chaudhary, K. Choy, S. Nellessen, N. Schoots</div>
+    <a href="https://arxiv.org/abs/2504.05110" style="font-size: 12px;">[arXiv]</a>
+  </div>
+  
+  <div class="pub-item">
+    <div class="pub-title">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</div>
+    <div class="pub-authors">Maheep Chaudhary*, H. Liu*, H. Wang</div>
+    <span class="pub-lead" style="background: #6c757d;">Co-first</span>
+    <a href="https://arxiv.org/abs/2307.16851" style="margin-left: 10px; font-size: 12px;">[arXiv]</a>
+  </div>
+  
+  <h2>Key Findings</h2>
+  
+  <ul>
+    <li><strong>Evaluation awareness scales with model size</strong> — standard eval may fail for AGI-level systems</li>
+    <li><strong>Harmful content produces distinct attention signatures</strong> — ~95% detection accuracy</li>
+    <li><strong>Information flows left→right to last token</strong> — punctuation/predicates serve as storage anchors</li>
+    <li><strong>Obfuscation shifts info from non-linear to linear spaces</strong> — white-box monitoring can detect this</li>
+  </ul>
+  
+  <h2>Service</h2>
+  
+  <ul>
+    <li><strong>Reviewer:</strong> ICML 2025 (Actionable Interpretability), NeurIPS 2024 (MATH+AI, CALM)</li>
+    <li><strong>Mentoring:</strong> UNESCO-India-Africa Program (20+ countries), Research Mentor at Algoverse</li>
+  </ul>
+  
+  <h2>Awards</h2>
+  
+  <ul>
+    <li><strong>Winner</strong> — Smart India Hackathon (200K+ participants) — Face recognition for Bureau of Police R&D</li>
+    <li><strong>Team Leader</strong> — ASEAN-India Hackathon (10+ countries) — Marine Species Detection</li>
+    <li><strong>Selected Mentor</strong> — UNESCO-India-Africa Program (20+ countries) — Voice-assisted system for farmers</li>
+  </ul>
+  
+  <h2>Contact</h2>
+  
+  <div class="info-grid">
+    <span class="info-label">Email</span>
+    <span class="info-value"><a href="mailto:maheepchaudhary.research@gmail.com">maheepchaudhary.research@gmail.com</a></span>
+    <span class="info-label">GitHub</span>
+    <span class="info-value"><a href="https://github.com/MaheepChaudhary">github.com/MaheepChaudhary</a></span>
+    <span class="info-label">Twitter</span>
+    <span class="info-value"><a href="https://twitter.com/MaheepChaudhary">@MaheepChaudhary</a></span>
+    <span class="info-label">Scholar</span>
+    <span class="info-value"><a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a></span>
+  </div>
+  
+</div>
+<!-- ==================== END RENDERED VIEW ==================== -->
+
+</div>
 </div>
 
-<h2>RESEARCH_TAXONOMY</h2>
-
-<div class="data-block">
-  <div class="data-row">
-    <span class="data-key">primary_focus:</span>
-    <span class="data-value">
-      <span class="tag tag-primary">AI Safety</span>
-      <span class="tag tag-primary">Mechanistic Interpretability</span>
-    </span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">secondary:</span>
-    <span class="data-value">
-      <span class="tag">Chain-of-Thought</span>
-      <span class="tag">Causal Abstraction</span>
-      <span class="tag">Deception Detection</span>
-      <span class="tag">Attention Mechanisms</span>
-    </span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">methods:</span>
-    <span class="data-value">
-      <span class="tag">White-box Analysis</span>
-      <span class="tag">Activation Steering</span>
-      <span class="tag">Probing</span>
-      <span class="tag">Anomaly Detection</span>
-      <span class="tag">Causal Intervention</span>
-    </span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">models:</span>
-    <span class="data-value">
-      <span class="tag">Llama</span>
-      <span class="tag">Gemma</span>
-      <span class="tag">Qwen</span>
-      <span class="tag">Mistral</span>
-      <span class="tag">GPT-2</span>
-    </span>
-  </div>
-</div>
-
-<h2>METRICS</h2>
-
-<div class="metrics-grid">
-  <div class="metric-box">
-    <div class="metric-value">5</div>
-    <div class="metric-label">Journal/Conference</div>
-  </div>
-  <div class="metric-box">
-    <div class="metric-value">7</div>
-    <div class="metric-label">Workshop Papers</div>
-  </div>
-  <div class="metric-box">
-    <div class="metric-value">6</div>
-    <div class="metric-label">Preprints</div>
-  </div>
-  <div class="metric-box">
-    <div class="metric-value">8</div>
-    <div class="metric-label">As Project Lead</div>
-  </div>
-</div>
-
-<hr class="section-divider">
-
-<h2>PUBLICATIONS</h2>
-
-<h3>Journal & Conference Papers</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Venue</th>
-      <th>Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <span class="pub-title"><a href="http://jmlr.org/papers/v26/23-0058.html">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a></span>
-        <div class="pub-authors">A. Geiger, D. Ibeling, A. Zur, <strong>Maheep Chaudhary</strong>, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</div>
-      </td>
-      <td><span class="tag tag-venue">JMLR</span></td>
-      <td>2024</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title"><a href="https://aclanthology.org/2024.emnlp-main.959/">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a></span>
-        <div class="pub-authors">S. B. Shah, S. Shiwakoti, <strong>Maheep Chaudhary</strong>, H. Wang</div>
-      </td>
-      <td><span class="tag tag-venue">EMNLP</span></td>
-      <td>2024</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">An Intelligent Recommendation cum Reminder System</span>
-        <div class="pub-authors">R. Saxena, <strong>Maheep Chaudhary</strong>, C.K. Maurya, S. Prasad</div>
-      </td>
-      <td><span class="tag tag-venue">ACM CODS-COMAD</span></td>
-      <td>2022</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">CQFaRAD: Collaborative Query-Answering Framework for a Research Article Dataspace</span>
-        <div class="pub-authors">M. Singh, S. Pandey, R. Saxena, <strong>Maheep Chaudhary</strong>, N. Lal</div>
-      </td>
-      <td><span class="tag tag-venue">Springer IJIT</span></td>
-      <td>2021</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Workshop Papers (NeurIPS 2025)</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Workshop</th>
-      <th>Role</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <span class="pub-title">Evaluation Awareness Scales Predictably in Open-Weights LLMs</span>
-        <div class="pub-authors"><strong>Maheep Chaudhary†</strong>, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</div>
-      </td>
-      <td>Responsible FM</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">FRIT: Using Causal Importance to Improve Chain-of-Thought Faithfulness</span>
-        <div class="pub-authors">A. Swaroop, A. Nallani, S. Uboweja, A. Uzdenova, M. Nguyen, K. Zhu, S. Dev, A. Panda, V. Sharma, <strong>Maheep Chaudhary†</strong></div>
-      </td>
-      <td>FoRLM</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">Optimizing Chain-of-Thought Confidence via Topological and Dirichlet Risk Analysis</span>
-        <div class="pub-authors">A. More, A. Zhang, N. Bonilla, A. Vivekan, K. Zhu, P. Sharafoleslami, <strong>Maheep Chaudhary†</strong></div>
-      </td>
-      <td>Responsible FM</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">Alignment-Constrained Dynamic Pruning for LLMs</span>
-        <div class="pub-authors">D. Patel, G. Gervacio, D. Raimi, K. Zhu, R. Lagasse, G. Grand, A. Panda, <strong>Maheep Chaudhary†</strong></div>
-      </td>
-      <td>Responsible FM</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">SALT: Steering Activations towards Leakage-free Thinking in Chain of Thought</span>
-        <div class="pub-authors">S. Batra, P. Tillman, S. Gaggar, S. Kesineni, S. Dev, K. Zhu, A. Panda, <strong>Maheep Chaudhary†</strong></div>
-      </td>
-      <td>Responsible FM</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">Amortized Latent Steering: Low-Cost Alternative to Test-Time Optimization</span>
-        <div class="pub-authors">N. Egbuna, S. Gaur, S. Dev, A. Panda, <strong>Maheep Chaudhary†</strong></div>
-      </td>
-      <td>Efficient Reasoning</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td>
-        <span class="pub-title">Hydra: A Modular Architecture for Efficient Long-Context Reasoning</span>
-        <div class="pub-authors">S. Chaudhary, D. Patel, <strong>Maheep Chaudhary</strong>, B. Browning</div>
-      </td>
-      <td>Efficient Reasoning</td>
-      <td>—</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Preprints</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Authors</th>
-      <th>Role</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2505.14300">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a></td>
-      <td><strong>Maheep Chaudhary</strong>, F. Barez</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2409.04478">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a></td>
-      <td><strong>Maheep Chaudhary</strong>, A. Geiger</td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td>PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases</td>
-      <td>S. V. Vuddanti, A. Shah, S. K. Chittiprolu, T. Song, S. Dev, K. Zhu, <strong>Maheep Chaudhary†</strong></td>
-      <td><span class="lead-marker">LEAD</span></td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2502.02470">Modular Training of Neural Networks aids Interpretability</a></td>
-      <td>S. Golechha, <strong>Maheep Chaudhary</strong>, J. Velja, A. Abate, N. Schoots</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2504.05110">Punctuation and Predicates in Language Models</a></td>
-      <td>S. Chauhan, <strong>Maheep Chaudhary</strong>, K. Choy, S. Nellessen, N. Schoots</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2307.16851">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a></td>
-      <td><strong>Maheep Chaudhary*</strong>, H. Liu*, H. Wang</td>
-      <td>Co-first</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr class="section-divider">
-
-<h2>KEY_FINDINGS</h2>
-
-<div class="data-block">
-  <div class="data-row">
-    <span class="data-key">[1]</span>
-    <span class="data-value">Evaluation awareness scales with model size → standard eval may fail for AGI-level systems</span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">[2]</span>
-    <span class="data-value">Harmful content produces distinct attention signatures → ~95% detection accuracy</span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">[3]</span>
-    <span class="data-value">Information flows left→right to last token; punctuation/predicates serve as storage anchors</span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">[4]</span>
-    <span class="data-value">Obfuscation shifts info from non-linear to linear representation spaces</span>
-  </div>
-</div>
-
-<h2>SERVICE</h2>
-
-<div class="data-block">
-  <div class="data-row"><span class="data-key">reviewer:</span><span class="data-value">ICML 2025 (Actionable Interpretability), NeurIPS 2024 (MATH+AI, CALM)</span></div>
-  <div class="data-row"><span class="data-key">mentoring:</span><span class="data-value">UNESCO-India-Africa Program (20+ countries), Research Mentor at Algoverse</span></div>
-</div>
-
-<h2>AWARDS</h2>
-
-<div class="data-block">
-  <div class="data-row">
-    <span class="data-key">2022</span>
-    <span class="data-value"><strong>Winner</strong> — Smart India Hackathon (200K+ participants) — Face recognition for Bureau of Police R&D</span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">—</span>
-    <span class="data-value"><strong>Team Leader</strong> — ASEAN-India Hackathon (10+ countries) — Marine Species Detection</span>
-  </div>
-  <div class="data-row">
-    <span class="data-key">—</span>
-    <span class="data-value"><strong>Selected Mentor</strong> — UNESCO-India-Africa Program (20+ countries) — Voice-assisted system for farmers</span>
-  </div>
-</div>
-
-<hr class="section-divider">
-
-<h2>CONTACT</h2>
-
-<div class="data-block">
-  <div class="data-row"><span class="data-key">email:</span><span class="data-value"><a href="mailto:maheepchaudhary.research@gmail.com">maheepchaudhary.research@gmail.com</a></span></div>
-  <div class="data-row"><span class="data-key">github:</span><span class="data-value"><a href="https://github.com/MaheepChaudhary">github.com/MaheepChaudhary</a></span></div>
-  <div class="data-row"><span class="data-key">twitter:</span><span class="data-value"><a href="https://twitter.com/MaheepChaudhary">@MaheepChaudhary</a></span></div>
-  <div class="data-row"><span class="data-key">scholar:</span><span class="data-value"><a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a></span></div>
-</div>
-
-<hr class="section-divider">
-
-<h2>STRUCTURED_DATA</h2>
-
-<p style="font-size: 0.85em; color: #666;">JSON-LD schema for search engines and AI agents:</p>
+<script>
+  function toggleRender() {
+    const machineView = document.querySelector('.machine-view');
+    const btnText = document.querySelector('.btn-text');
+    
+    machineView.classList.toggle('rendered');
+    
+    if (machineView.classList.contains('rendered')) {
+      btnText.textContent = 'Raw';
+    } else {
+      btnText.textContent = 'Render';
+    }
+  }
+</script>
 
 <script type="application/ld+json">
 {
@@ -667,23 +970,3 @@ permalink: /machine.html
   ]
 }
 </script>
-
-<pre style="background: #f0f0f0; padding: 15px; border-radius: 4px; overflow-x: auto; font-size: 0.8em; font-family: 'Times New Roman', Times, serif !important;">
-{
-  "@type": "Person",
-  "name": "Maheep Chaudhary",
-  "role": "Machine Learning Engineer",
-  "affiliation": "Algoverse AI Research",
-  "education": ["M.Sc. AI (NTU Singapore)", "B.E. ECE (BIET India)"],
-  "research_focus": ["AI Safety", "Mechanistic Interpretability"],
-  "publications": {
-    "journal_conference": 4,
-    "workshop": 7,
-    "preprints": 6,
-    "as_lead": 8
-  },
-  "venues": ["JMLR", "EMNLP", "NeurIPS Workshops", "ACM CODS-COMAD", "Springer IJIT"]
-}
-</pre>
-
-</div>

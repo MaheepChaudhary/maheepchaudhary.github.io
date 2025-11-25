@@ -12,10 +12,11 @@ layout: compress
   </head>
 
   <body>
-
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
+    <!-- Place the toggle here, so it is visible on the page -->
+    
     {{ content }}
 
     <div class="page__footer">
@@ -26,6 +27,36 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+    <script src="/assets/js/main.js"></script>
+
+    <div id="template-toggle-container">
+  <label>
+    <input type="radio" name="template" value="human" onclick="window.location.href='/'"> HUMAN
+  </label>
+  <label>
+    <input type="radio" name="template" value="machine" onclick="window.location.href='/machine.html'"> MACHINE
+    </label>
+  </div>
+
+  <script>
+    // Set correct radio based on current page
+    if (window.location.pathname.includes('machine')) {
+      document.querySelector('input[value="machine"]').checked = true;
+    } else {
+      document.querySelector('input[value="human"]').checked = true;
+    }
+  </script>
+
+  <!-- <div id="template-toggle-container">
+  <label>
+    <input type="radio" name="template" value="human" checked>
+    HUMAN
+  </label>
+  <label>
+    <input type="radio" name="template" value="machine">
+    MACHINE
+  </label>
+  </div> -->
 
   </body>
 </html>

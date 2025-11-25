@@ -25,7 +25,79 @@ redirect_from:
 
 <p style="font-size: 2em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important; font-weight: bold; font-style: italic; text-align: center;">Surgically making neural networks safe!</p>
 
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">I am Maheep, and I am working on "understanding" and "solving" misalignment via using <em style="font-family: 'Times New Roman', Times, serif !important;">mechanistic interpretability</em>. My research is oriented towards whitebox techniques, as models can be thinking evil but can give benign output after the last layer manipulates the latent state towards benign generation—acting as one of the main disadvantages for black-box safety learning \cite{?}.</p>
+<!-- <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">I am Maheep, and I am working on "understanding" and "solving" misalignment via using <em style="font-family: 'Times New Roman', Times, serif !important;">mechanistic interpretability</em>. My research is oriented towards whitebox techniques, as models can be thinking evil but can give benign output after the last layer manipulates the latent state towards benign generation—acting as one of the main disadvantages for black-box safety learning \cite{?}.</p>
+ -->
+
+<!-- <strong style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">About me:</strong> -->
+<!-- <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;"> -->
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+  <strong style="font-family: 'Times New Roman', Times, serif !important;">About me:</strong>
+  My research aims to solve one of AI safety's most challenging problems: models can harbor misaligned reasoning internally while producing benign outputs, rendering black-box evaluation fundamentally insufficient 
+  (<a href="https://arxiv.org/abs/2409.06052" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Rosati et al., 2024</a>).
+  This conviction drives my focus on white-box analysis, specifically using <em style="font-family: 'Times New Roman', Times, serif !important;">mechanistic interpretability</em> techniques to expose the internal computations that black-box methods cannot reach.
+</p>
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+  <strong style="font-family: 'Times New Roman', Times, serif !important;">My Foundation:</strong>
+  My theoretical foundation lies in two survey works connecting causality to ML trustworthiness 
+  (<a href="https://arxiv.org/abs/2409.15539" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Chaudhary et al., 2024</a>) 
+  and mechanistic interpretability 
+  (<a href="https://arxiv.org/abs/2503.17049" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Geiger et al., 2025</a>), 
+  which frame my empirical investigations through the lens of causal intervention.
+</p>
+
+  <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
+
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+  <strong style="font-family: 'Times New Roman', Times, serif !important;">My Findings:</strong>
+  Building on this foundation, my diagnostic work has uncovered concerning patterns. In the past, using white-box analysis I was successful in finding:
+</p>
+
+<ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important; padding-left: 18px;">
+  <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif !important;">
+    Models' ability to detect that they are being evaluated increases as they get bigger—suggesting that standard evaluation protocols may become fundamentally unreliable for AGI-level systems, hinting that there might be no way of evaluating AGI-level models before releasing 
+    (<a href="https://arxiv.org/abs/2507.15327" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Chaudhary et al., 2025</a>).
+  </li>
+  <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif !important;">
+    Models leave distinct signatures in attention patterns when generating harmful content—achieving around 95% accuracy in detecting harmful generation across models 
+    (<a href="https://arxiv.org/abs/2507.15327" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Chaudhary et al., 2025</a>).
+  </li>
+  <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif !important;">
+    Models shift information from left to right and all the way to the last token to store information, while taking support of punctuation and predicates to store information of all tokens, while having higher and lower complexity for different kinds of rules 
+    (<a href="https://arxiv.org/abs/2504.05110" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Chauhan et al., 2025</a>).
+  </li>
+</ul>
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+  <strong style="font-family: 'Times New Roman', Times, serif !important;">My Solutions:</strong>
+  Crucially, my research extends beyond diagnosis to intervention. My research is not only focused on finding problems, but also on making models safer:
+</p>
+
+<ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important; padding-left: 18px;">
+  <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif !important;">
+    I made Chain-of-Thought (CoT) more faithful 
+    (<a href="https://arxiv.org/abs/2505.06069" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Swaroop et al., 2025</a>) 
+    and improved its confidence calibration to make it more aligned 
+    (<a href="https://arxiv.org/abs/2505.06082" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">More et al., 2025</a>).
+  </li>
+  <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif !important;">
+    I developed techniques to reduce privacy leakage in CoT 
+    (<a href="https://arxiv.org/abs/2505.06062" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Batra et al., 2025</a>).
+  </li>
+  <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif !important;">
+    I incorporated alignment constraints into pruning circuits to preserve the safety of the model 
+    (<a href="https://arxiv.org/abs/2505.06079" target="_blank" style="color: #0000EE; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Patel et al., 2025</a>).
+  </li>
+</ul>
+
+  <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
+
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+  <strong style="font-family: 'Times New Roman', Times, serif !important;">Future Steps:</strong>
+Looking forward, I am investigating jailbreaking through the lens of decision boundary uncertainty—recent work has shown that LLMs possess an "ethical boundary" in latent space separating safe from harmful representations, and that out-of-distribution inputs weaken this boundary, enabling jailbreaks (Huang et al., 2024). Building on my prior work detecting harmful generation via attention signatures, I aim to develop white-box interventions that identify high-uncertainty regions near safety decision boundaries and constrain the model's access to these vulnerable subspaces during inference. This shifts the paradigm from post-hoc output filtering to preventing models from entering representational states where safety boundaries become unreliable—addressing the core problem that misaligned reasoning can hide beneath benign outputs. Ultimately, this work seeks to make alignment verifiable at the computational level, not just the behavioral one.</p>
+
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #2c3e50, transparent); margin: 20px 0 20px 0;"></div>
 
@@ -67,106 +139,218 @@ redirect_from:
 </div> -->
 
 <div style="margin: 30px 0;">
-  <!-- <h3 style="font-size: 1.3em; font-weight: 600; margin-bottom: 20px; color: #2c3e50; font-family: 'Times New Roman', Times, serif;">Selected Publications</h3> -->
   
-  <!-- Paper 1 -->
-<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
-  <img src="/images/safetynet.png" alt="SafetyNet" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div style="flex: 1;">
-    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
-      <a href="https://arxiv.org/pdf/2505.14300" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a>
-    </h4>
-    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary, Fazl Barez</p>
-    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Under review, NeurIPS 2025</p>
+  <!-- SafetyNet -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/safetynet.png" alt="SafetyNet" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="https://arxiv.org/pdf/2505.14300" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary, F. Barez</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Under review</p>
+    </div>
   </div>
-</div>
 
-  <!-- Paper 2 -->
-<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
-  <img src="/images/evaluation_sae.png" alt="Sparse Autoencoders" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div style="flex: 1;">
-    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
-      <a href="https://arxiv.org/abs/2409.04478" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a>
-    </h4>
-    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary, Atticus Geiger</p>
-    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+  <!-- Evaluation Awareness -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/evaluation_sae.png" alt="Evaluation Awareness" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary†, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">NeurIPS 2025 Responsible FM Workshop</p>
+    </div>
   </div>
-</div>
 
-<!-- Divider -->
-<div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
-
-<h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">📑 Literature Surveys</h3>
-
-<!-- Causality Survey -->
-<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
-  <img src="/images/causality.png" alt="Causality" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div style="flex: 1;">
-    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
-      <a href="https://arxiv.org/abs/2307.16851" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a>
-    </h4>
-    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
-    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+  <!-- SALT -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/salt.png" alt="SALT" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">SALT: Steering Activations towards Leakage-free Thinking in Chain of Thought</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. Batra, P. Tillman, S. Gaggar, S. Kesineni, S. Dev, K. Zhu, A. Panda, Maheep Chaudhary†</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">NeurIPS 2025 Responsible FM Workshop</p>
+    </div>
   </div>
-</div>
 
-<!-- Causal Abstraction -->
-<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
-  <img src="/images/causal_abstraction.png" alt="Causal Abstraction" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div style="flex: 1;">
-    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
-      <a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a>
-    </h4>
-    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Atticus Geiger, Daniel Ibeling, ..., Maheep Chaudhary, ..., Christopher Potts</p>
-    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">JMLR 2024</p>
+  <!-- Alignment-Constrained Pruning -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/pruning.png" alt="Dynamic Pruning" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Alignment-Constrained Dynamic Pruning for LLMs: Identifying and Preserving Alignment-Critical Circuits</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">D. Patel, G. Gervacio, D. Raimi, K. Zhu, R. Lagasse, G. Grand, A. Panda, Maheep Chaudhary†</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">NeurIPS 2025 Responsible FM Workshop</p>
+    </div>
   </div>
-</div>
 
-<!-- Divider -->
-<div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
-
-<h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">📚 Additional Publications</h3>
-
-<!-- Modularity -->
-<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
-  <img src="/images/modularity.png" alt="Modularity" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div style="flex: 1;">
-    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
-      <a href="https://arxiv.org/abs/2502.02470" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Modular Training of Neural Networks aids Interpretability</a>
-    </h4>
-    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Satvik Golechha, Maheep Chaudhary, Joan Velja, Alessandro Abate, Nandi Schoots</p>
-    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+  <!-- Chain-of-Thought Confidence -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/confidence.png" alt="CoT Confidence" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Optimizing Chain-of-Thought Confidence via Topological and Dirichlet Risk Analysis</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">A. More, A. Zhang, N. Bonilla, A. Vivekan, K. Zhu, P. Sharafoleslami, Maheep Chaudhary†</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">NeurIPS 2025 Responsible FM Workshop</p>
+    </div>
   </div>
-</div>
 
-<!-- Punctuation -->
-<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
-  <img src="/images/punctuations.png" alt="Punctuation" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div style="flex: 1;">
-    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
-      <a href="https://arxiv.org/abs/2508.14067" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Punctuation and Predicates in Language Models</a>
-    </h4>
-    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Sonakshi Chauhan, Maheep Chaudhary, Koby Choy, Samuel Nellessen, Nandi Schoots</p>
-    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+  <!-- FRIT -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/frit.png" alt="FRIT" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">FRIT: Using Causal Importance to Improve Chain-of-Thought Faithfulness</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">A. Swaroop, A. Nallani, S. Uboweja, A. Uzdenova, M. Nguyen, K. Zhu, S. Dev, A. Panda, V. Sharma, Maheep Chaudhary†</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">NeurIPS 2025 FoRLM Workshop</p>
+    </div>
   </div>
-</div>
 
-<!-- MemeCLIP -->
-<div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
-  <img src="/images/memeclip.png" alt="MemeCLIP" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
-  <div style="flex: 1;">
-    <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
-      <a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a>
-    </h4>
-    <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
-    <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">EMNLP 2024</p>
+  <!-- Amortized Latent Steering -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/latent_steering.png" alt="Latent Steering" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Amortized Latent Steering: Low-Cost Alternative to Test-Time Optimization</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">N. Egbuna, S. Gaur, S. Dev, A. Panda, Maheep Chaudhary†</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">NeurIPS 2025 Efficient Reasoning Workshop</p>
+    </div>
   </div>
-</div>
 
-<p style="font-size: 0.9em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important; margin-top: 15px;">
-  See my <a href="/publications" style="color: #3498db; font-family: 'Times New Roman', Times, serif !important;">full publication list</a> for additional work.
-</p>
+  <!-- Hydra -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/hydra.png" alt="Hydra" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Hydra: A Modular Architecture for Efficient Long-Context Reasoning</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. Chaudhary, D. Patel, Maheep Chaudhary, B. Browning</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">NeurIPS 2025 Efficient Reasoning Workshop</p>
+    </div>
+  </div>
 
+  <!-- Divider -->
+  <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
+
+  <h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">📑 Literature Surveys & Theory</h3>
+
+  <!-- Causal Abstraction JMLR -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/causal_abstraction.png" alt="Causal Abstraction" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">A. Geiger, D. Ibeling, A. Zur, Maheep Chaudhary, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">JMLR 2024</p>
+    </div>
+  </div>
+
+  <!-- Causality Survey -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/causality.png" alt="Causality" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="https://arxiv.org/abs/2307.16851" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary*, H. Liu*, H. Wang</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+    </div>
+  </div>
+
+  <!-- SAE -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/evaluation_sae.png" alt="Sparse Autoencoders" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="https://arxiv.org/abs/2409.04478" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">Maheep Chaudhary, A. Geiger</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+    </div>
+  </div>
+
+  <!-- PALADIN -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/paladin.png" alt="PALADIN" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">PALADIN: Self-Correcting Language Model Agents to Cure Tool-Failure Cases</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. V. Vuddanti, A. Shah, S. K. Chittiprolu, T. Song, S. Dev, K. Zhu, Maheep Chaudhary†</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
+
+  <h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">📚 Additional Publications</h3>
+
+  <!-- Modularity -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/modularity.png" alt="Modularity" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="https://arxiv.org/abs/2502.02470" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Modular Training of Neural Networks aids Interpretability</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. Golechha, Maheep Chaudhary, J. Velja, A. Abate, N. Schoots</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+    </div>
+  </div>
+
+  <!-- Punctuation -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/punctuations.png" alt="Punctuation" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="https://arxiv.org/abs/2508.14067" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">Punctuation and Predicates in Language Models</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. Chauhan, Maheep Chaudhary, K. Choy, S. Nellessen, N. Schoots</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">arXiv preprint</p>
+    </div>
+  </div>
+
+  <!-- MemeCLIP -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/memeclip.png" alt="MemeCLIP" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">EMNLP 2024</p>
+    </div>
+  </div>
+
+  <!-- Recommendation System -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/recommendation.png" alt="Recommendation System" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">An Intelligent Recommendation cum Reminder System</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">R. Saxena, Maheep Chaudhary, C.K. Maurya, S. Prasad</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">ACM IKDD CODS & COMAD 2022</p>
+    </div>
+  </div>
+
+  <!-- CQFaRAD -->
+  <div style="display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start;">
+    <img src="/images/cqfarad.png" alt="CQFaRAD" style="width: 100px; height: 100px; border-radius: 8px; flex-shrink: 0; object-fit: cover;">
+    <div style="flex: 1;">
+      <h4 style="margin: 0 0 6px 0; font-size: 0.9em; font-weight: normal; color: #000000; font-family: 'Times New Roman', Times, serif !important;">
+        <a href="#" style="color: #000000; text-decoration: none; font-family: 'Times New Roman', Times, serif !important;">CQFaRAD: Collaborative Query-Answering Framework for a Research Article Dataspace</a>
+      </h4>
+      <p style="margin: 0 0 4px 0; font-size: 0.75em; color: #666; font-style: italic; font-family: 'Times New Roman', Times, serif !important;">M. Singh, S. Pandey, R. Saxena, Maheep Chaudhary, N. Lal</p>
+      <p style="margin: 0; font-size: 0.7em; color: #888; font-style: italic; font-family: 'Times New
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
 <h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000; font-family: 'Times New Roman', Times, serif !important;">Background & Recognition</h3>
@@ -174,6 +358,8 @@ redirect_from:
 <p style="font-size: 0.9em; line-height: 1.65; margin-bottom: 15px; color: #34495e; font-family: 'Times New Roman', Times, serif !important;">
 Winner of Smart India Hackathon (200K+ participants) and ASEAN-India Hackathon leader across 10+ countries. Mentored 40+ students, selected for UNESCO-India-Africa Program (20+ countries), and reviewer for ICML 2025 and NeurIPS 2024 workshops.
 </p>
+
+
 
 <!-- <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); border-radius: 20px; padding: 35px; margin: 50px 0; color: white; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
   <h3 style="margin: 0 0 20px 0; color: white; font-size: 1.4em; font-weight: 700; text-align: center; font-family: 'Poppins', sans-serif;">💡 My Research Philosophy</h3>

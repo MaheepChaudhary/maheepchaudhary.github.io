@@ -53,3 +53,20 @@
 .masthead {
   display: none;
 }
+
+#template-toggle-container input[type="radio"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  width: 18px !important;
+  height: 18px !important;
+  border: 2px solid #fff !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+}
+
+#template-toggle-container input[type="radio"]:checked {
+  background-color: #f1c40f !important;
+  border-color: #f1c40f !important;
+}

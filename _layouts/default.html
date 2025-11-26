@@ -29,9 +29,6 @@ layout: compress
     {% include scripts.html %}
     <script src="/assets/js/main.js"></script>
 
-    {% include scripts.html %}
-<script src="/assets/js/main.js"></script>
-
 <!-- <style>
 #template-toggle-container {
   position: fixed;
@@ -76,7 +73,7 @@ layout: compress
 </style> -->
 
 
-    <div id="template-toggle-container">
+    <!-- <div id="template-toggle-container">
   <label>
     <input type="radio" name="template" value="human" onclick="window.location.href='/'"> HUMAN
   </label>
@@ -92,6 +89,25 @@ layout: compress
     } else {
       document.querySelector('input[value="human"]').checked = true;
     }
+  </script> -->
+
+  <div id="template-toggle-container">
+  <label>
+    <input type="radio" name="template" value="human" onclick="window.location.href='/'"> HUMAN
+  </label>
+  <label>
+    <input type="radio" name="template" value="machine" onclick="window.location.href='/machine.html'"> MACHINE
+  </label>
+  </div>
+
+  <script>
+  (function() {
+    var isMachine = window.location.pathname.includes('machine');
+    var activeRadio = document.querySelector('input[value="' + (isMachine ? 'machine' : 'human') + '"]');
+    activeRadio.checked = true;
+    activeRadio.style.backgroundColor = '#f1c40f';
+    activeRadio.style.borderColor = '#f1c40f';
+  })();
   </script>
 
   <!-- <div id="template-toggle-container">

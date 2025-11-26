@@ -14,71 +14,102 @@ redirect_from:
 
 
 
+<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
+  About Me
+</h3>
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>About me:</strong>
-  My research focuses on one of the hardest problems in AI safety: AI models can think in ways that don’t match what they say or show, which means just checking their output doesn’t tell us if they are truly safe
+  My research addresses one of AI safety's hardest problems: models can think one thing internally while saying another—meaning we can't verify true alignment just by checking outputs
   (<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/172be8b0b88fc2b4aee74237d43f8c04-Abstract-Conference.html" target="_blank" style="color: #0000EE; text-decoration: none;">Rosati et al., 2024</a>).
-  Because of this, I study their inner workings, i.e. <em>mechanistic interpretability</em> directly, using methods that help reveal what’s happening inside the model beyond just inputs and outputs or <em>white-box analysis</em>.
+  This drives my focus on <strong>white-box analysis</strong>: using mechanistic interpretability to see what's actually happening inside models.
 </p>
 
+<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 24px; color: #000000;">
+  Foundation
+</h3>
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>My Foundation:</strong>
-  My work is built on two important survey papers: One connects causality, i.e. science of cause-and-effect ideas to making machine learning more trustworthy (<a href="https://arxiv.org/pdf/2307.16851" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2024</a>) , and the other studies how to understand the inner mechanics/ mechanistic interpretability of AI models   (<a href="https://www.jmlr.org/papers/volume26/23-0058/23-0058.pdf" target="_blank" style="color: #0000EE; text-decoration: none;">Geiger et al., 2025</a>), . These give me a strong framework to investigate how models work by looking at cause and effect inside them.
+  My work builds on two survey papers: one connecting causal reasoning to ML trustworthiness 
+  (<a href="https://arxiv.org/pdf/2307.16851" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2024</a>), 
+  and another on mechanistic interpretability 
+  (<a href="https://www.jmlr.org/papers/volume26/23-0058/23-0058.pdf" target="_blank" style="color: #0000EE; text-decoration: none;">Geiger et al., 2025</a>). 
+  Together, these give me a <strong>causal-mechanistic framework</strong> for investigating how models work from the inside out.
 </p>
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>My Findings:</strong>
-  Building on my earlier work, I found some worrying patterns: 
-  <!-- Using white-box methods to look inside models, I discovered that larger models get better at noticing when they are being tested, which means our usual ways to evaluate them might not work well for very advanced AI. I also found that models leave clear signs in their attention patterns when they generate harmful content, and I could detect this with about 95% accuracy. Additionally, models move information across tokens from start to end and use punctuation and sentence structure to store information differently depending on the task. -->
-</p>
+<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
+  Key Findings
+</h3>
 
 <ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; padding-left: 18px;">
   <li style="margin-bottom: 6px;">
-    Models' <em>self-awareness</em> that they are being evaluated increases as they get bigger—suggesting that standard evaluation protocols may become fundamentally unreliable for AGI-level systems, hinting that there might be no way of evaluating AGI-level models before releasing 
-    (<a href="https://arxiv.org/pdf/2509.13333" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>).
+    <strong>Models can detect when they're being evaluated—and this ability increases with scale</strong>
+    (<a href="https://arxiv.org/pdf/2509.13333" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>). 
+    If models behave differently during testing versus deployment, we can't trust safety evaluations.
   </li>
   <li style="margin-bottom: 6px;">
-    Models leave distinct signatures in their attention patterns when generating harmful content compared to safe content
-    <!-- —achieving around 95% accuracy in detecting harmful generation across models  -->
+    Models leave distinct attention signatures when generating harmful content—enabling <strong>~95% detection accuracy</strong>
     (<a href="https://arxiv.org/pdf/2505.14300" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
-    Models internals operate by shifting information from left to right and all the way to the last token to store information, while taking support of punctuation and predicates to store information of all tokens in intermediate layers.
+    Models can reach harmful outputs through <strong>multiple pathways</strong> (SafetyNet, 
+    <a href="https://arxiv.org/pdf/2505.14300" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>). 
+    Blocking one route may just cause rerouting.
+  </li>
+  <li style="margin-bottom: 6px;">
+    Models shift information toward final tokens, using punctuation as intermediate storage
     (<a href="https://arxiv.org/pdf/2508.14067?" target="_blank" style="color: #0000EE; text-decoration: none;">Chauhan et al., 2025</a>).
   </li>
 </ul>
 
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>My Solutions:</strong>
-  My research doesn’t stop at interpreting the internals of the model but also using this technique to solve misalignment: 
-  <!-- finding problems—I also work on fixing them. I improved how Chain-of-Thought reasoning works so it’s more honest and trustworthy. I created methods to reduce how much private information leaks during this reasoning process. And I built ways to prune model parts carefully so the model stays safe and aligned while becoming more efficient. -->
-</p>
+<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 24px; color: #000000;">
+  Solutions
+</h3>
 
-<ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; padding-left: 18px; font-family: 'Georgia', 'Times New Roman', Times, serif;">
+<ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; padding-left: 18px;">
   <li style="margin-bottom: 6px;">
-    I made Chain-of-Thought (CoT) more faithful 
+    Made Chain-of-Thought more faithful 
     (<a href="https://arxiv.org/pdf/2509.13334?" target="_blank" style="color: #0000EE; text-decoration: none;">Swaroop et al., 2025</a>) 
-    and improved its confidence calibration to make it more aligned 
+    and better calibrated 
     (<a href="https://arxiv.org/pdf/2511.06437" target="_blank" style="color: #0000EE; text-decoration: none;">More et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
-    I developed techniques to reduce privacy leakage in CoT 
+    Reduced privacy leakage in CoT reasoning 
     (<a href="https://arxiv.org/pdf/2511.07772" target="_blank" style="color: #0000EE; text-decoration: none;">Batra et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
-    I incorporated alignment constraints into pruning circuits to preserve the safety of the model 
+    Incorporated alignment constraints into circuit pruning 
     (<a href="https://arxiv.org/pdf/2511.07482" target="_blank" style="color: #0000EE; text-decoration: none;">Patel et al., 2025</a>).
   </li>
 </ul>
 
-
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
+<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
+  Current Focus: Model Organisms of Hyperawareness
+</h3>
+
+<p style="font-size: 0.95em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-style: italic;">
+  Can we trust safety evaluations of AI systems that know they're being tested?
+</p>
+
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>Future Steps:</strong>
-  Looking forward, I am investigating jailbreaking through the lens of decision boundary in model internal states Looking ahead to predict jailbreak and hallucination reasons and their solutions. Recent research shows that large language models have an “ethical boundary” inside their hidden states that separates safe from harmful outputs (Huang et al., 2024). However, unusual or unexpected inputs weaken this boundary, allowing jailbreaks to happen. Building on my past work detecting harmful patterns inside models, I plan to create white-box methods that find risky regions near these safety boundaries and limit the model’s access to them during use. This approach moves away from just filtering harmful outputs after generation to stopping the model from reaching unsafe internal states in the first place. Ultimately, this work aims to ensure safety checks are part of the model’s inner computations, not just its final answers.
+  My research shows this awareness is already measurable and growing with scale. Without intervention, we risk models that fake alignment during testing.
+</p>
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
+  <strong>Two threats:</strong> (1) models naturally developing evaluation-detection as they scale; (2) bad actors intentionally building models that hide misaligned goals until deployment.
+</p>
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
+  <strong>My approach:</strong> Build controlled "model organisms" that are hyperaware of evaluation, then develop and test countermeasures. By designing organisms with known awareness mechanisms—from simple to sophisticated—I can find where defenses work and where they fail.
+</p>
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
+  <strong>Key insight:</strong> My SafetyNet work shows models use multiple pathways to reach outputs. Blocking one awareness "direction" may just cause rerouting. I'm studying how flexibly networks encode self-awareness.
+</p>
+
+<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
+  <strong>The goal:</strong> Move from filtering bad outputs to preventing bad internal states—making safety verifiable inside the model, not just outside.
 </p>
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #2c3e50, transparent); margin: 20px 0;"></div>

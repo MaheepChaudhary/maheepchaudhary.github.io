@@ -14,7 +14,7 @@ redirect_from:
 
 
 
-<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
+<h3 style="font-size: 1.1em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
   About Me
 </h3>
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
@@ -23,7 +23,7 @@ redirect_from:
   This drives my focus on <strong>white-box analysis</strong>: using mechanistic interpretability to see what's actually happening inside models.
 </p>
 
-<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 24px; color: #000000;">
+<h3 style="font-size: 1.1em; font-weight: bold; margin-bottom: 12px; margin-top: 24px; color: #000000;">
   Foundation
 </h3>
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
@@ -36,7 +36,7 @@ redirect_from:
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
-<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
+<h3 style="font-size: 1.1em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
   Key Findings
 </h3>
 
@@ -61,7 +61,7 @@ redirect_from:
   </li>
 </ul>
 
-<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 24px; color: #000000;">
+<h3 style="font-size: 1.1em; font-weight: bold; margin-bottom: 12px; margin-top: 24px; color: #000000;">
   Solutions
 </h3>
 
@@ -84,7 +84,7 @@ redirect_from:
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
-<h3 style="font-size: 1.3em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
+<h3 style="font-size: 1.1em; font-weight: bold; margin-bottom: 12px; margin-top: 0; color: #000000;">
   Current Focus: Model Organisms of Hyperawareness
 </h3>
 

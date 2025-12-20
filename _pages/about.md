@@ -19,7 +19,7 @@ redirect_from:
 </h3>
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
   My research addresses one of AI safety's hardest problems: models can think one thing internally while saying another—meaning we can't verify true alignment just by checking outputs
-  (<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/172be8b0b88fc2b4aee74237d43f8c04-Abstract-Conference.html" target="_blank" style="color: #0000EE; text-decoration: none;">Rosati et al., 2024</a>).
+  (<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/172be8b0b88fc2b4aee74237d43f8c04-Abstract-Conference.html" target="_blank" style="color: #3d7a7a; text-decoration: none;">Rosati et al., 2024</a>).
   This drives my focus on <strong>white-box analysis</strong>: using mechanistic interpretability to see what's actually happening inside models.
 </p>
 
@@ -28,9 +28,9 @@ redirect_from:
 </h3>
 <p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
   My work builds on two survey papers: one connecting causal reasoning to ML trustworthiness 
-  (<a href="https://arxiv.org/pdf/2307.16851" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2024</a>), 
+  (<a href="https://arxiv.org/pdf/2307.16851" target="_blank" style="color: #3d7a7a; text-decoration: none;">Chaudhary et al., 2024</a>), 
   and another on mechanistic interpretability 
-  (<a href="https://www.jmlr.org/papers/volume26/23-0058/23-0058.pdf" target="_blank" style="color: #0000EE; text-decoration: none;">Geiger et al., 2025</a>). 
+  (<a href="https://www.jmlr.org/papers/volume26/23-0058/23-0058.pdf" target="_blank" style="color: #3d7a7a; text-decoration: none;">Geiger et al., 2025</a>). 
   Together, these give me a <strong>causal-mechanistic framework</strong> for investigating how models work from the inside out.
 </p>
 
@@ -43,21 +43,21 @@ redirect_from:
 <ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; padding-left: 18px;">
   <li style="margin-bottom: 6px;">
     <strong>Models can detect when they're being evaluated—and this ability increases with scale</strong>
-    (<a href="https://arxiv.org/pdf/2509.13333" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>). 
+    (<a href="https://arxiv.org/pdf/2509.13333" target="_blank" style="color: #3d7a7a; text-decoration: none;">Chaudhary et al., 2025</a>). 
     If models behave differently during testing versus deployment, we can't trust safety evaluations.
   </li>
   <li style="margin-bottom: 6px;">
     Models leave distinct attention signatures when generating harmful content—enabling <strong>~95% detection accuracy</strong>
-    (<a href="https://arxiv.org/pdf/2505.14300" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>).
+    (<a href="https://arxiv.org/pdf/2505.14300" target="_blank" style="color: #3d7a7a; text-decoration: none;">Chaudhary et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
     Models can reach harmful outputs through <strong>multiple pathways</strong> (SafetyNet, 
-    <a href="https://arxiv.org/pdf/2505.14300" target="_blank" style="color: #0000EE; text-decoration: none;">Chaudhary et al., 2025</a>). 
+    <a href="https://arxiv.org/pdf/2505.14300" target="_blank" style="color: #3d7a7a; text-decoration: none;">Chaudhary et al., 2025</a>). 
     Blocking one route may just cause rerouting.
   </li>
   <li style="margin-bottom: 6px;">
     Models shift information toward final tokens, using punctuation as intermediate storage
-    (<a href="https://arxiv.org/pdf/2508.14067?" target="_blank" style="color: #0000EE; text-decoration: none;">Chauhan et al., 2025</a>).
+    (<a href="https://arxiv.org/pdf/2508.14067?" target="_blank" style="color: #3d7a7a; text-decoration: none;">Chauhan et al., 2025</a>).
   </li>
 </ul>
 
@@ -68,17 +68,17 @@ redirect_from:
 <ul style="font-size: 0.9em; margin-bottom: 16px; line-height: 1.65; color: #000000; padding-left: 18px;">
   <li style="margin-bottom: 6px;">
     Made Chain-of-Thought more faithful 
-    (<a href="https://arxiv.org/pdf/2509.13334?" target="_blank" style="color: #0000EE; text-decoration: none;">Swaroop et al., 2025</a>) 
+    (<a href="https://arxiv.org/pdf/2509.13334?" target="_blank" style="color: #3d7a7a; text-decoration: none;">Swaroop et al., 2025</a>) 
     and better calibrated 
-    (<a href="https://arxiv.org/pdf/2511.06437" target="_blank" style="color: #0000EE; text-decoration: none;">More et al., 2025</a>).
+    (<a href="https://arxiv.org/pdf/2511.06437" target="_blank" style="color: #3d7a7a; text-decoration: none;">More et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
     Reduced privacy leakage in CoT reasoning 
-    (<a href="https://arxiv.org/pdf/2511.07772" target="_blank" style="color: #0000EE; text-decoration: none;">Batra et al., 2025</a>).
+    (<a href="https://arxiv.org/pdf/2511.07772" target="_blank" style="color: #3d7a7a; text-decoration: none;">Batra et al., 2025</a>).
   </li>
   <li style="margin-bottom: 6px;">
     Incorporated alignment constraints into circuit pruning 
-    (<a href="https://arxiv.org/pdf/2511.07482" target="_blank" style="color: #0000EE; text-decoration: none;">Patel et al., 2025</a>).
+    (<a href="https://arxiv.org/pdf/2511.07482" target="_blank" style="color: #3d7a7a; text-decoration: none;">Patel et al., 2025</a>).
   </li>
 </ul>
 
@@ -88,48 +88,38 @@ redirect_from:
   Current Focus: Model Organisms of Hyperawareness
 </h3>
 
-<p style="font-size: 0.95em; margin-bottom: 22px; line-height: 1.65; color: #000000; font-style: italic;">
-  Can we trust safety evaluations of AI systems that know they're being tested?
+<p style="font-size: 0.95em; margin-bottom: 16px; line-height: 1.65; color: #000000;">
+  Can we trust safety evaluations if models know they're being tested? My research shows this awareness is already measurable and scales with capability — creating risk of models that fake alignment during evaluation.
 </p>
 
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  My research shows this awareness is already measurable and growing with scale. Without intervention, we risk models that fake alignment during testing.
-</p>
-
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>Two threats:</strong> (1) models naturally developing evaluation-detection as they scale; (2) bad actors intentionally building models that hide misaligned goals until deployment.
-</p>
-
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>My approach:</strong> Build controlled "model organisms" that are hyperaware of evaluation, then develop and test countermeasures. By designing organisms with known awareness mechanisms—from simple to sophisticated—I can find where defenses work and where they fail.
-</p>
-
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>Key insight:</strong> My SafetyNet work shows models use multiple pathways to reach outputs. Blocking one awareness "direction" may just cause rerouting. I'm studying how flexibly networks encode self-awareness.
-</p>
-
-<p style="font-size: 0.9em; margin-bottom: 22px; line-height: 1.65; color: #000000;">
-  <strong>The goal:</strong> Move from filtering bad outputs to preventing bad internal states—making safety verifiable inside the model, not just outside.
+<p style="font-size: 0.9em; color: #000000;">
+  <a href="YOUR_LESSWRONG_LINK" style="color: #3d7a7a; text-decoration: none;">Read the full research agenda</a>
 </p>
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #2c3e50, transparent); margin: 20px 0;"></div>
 
 <h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000;">🔬 Current Research</h3>
 
-<div style="margin-bottom: 20px;">
-  <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
-    <a href="https://arxiv.org/abs/2505.14300" style="color: #000000; text-decoration: none; font-family: 'Georgia', 'Times New Roman', Times, serif !import;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a>
-  </h4>
-  <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">Maheep Chaudhary, F. Barez</p>
-  <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">Under review</p>
+<div style="margin-bottom: 30px; display: flex; gap: 20px; align-items: flex-start;">
+<img src="images/safetynet.png" 
+     style="width: 100px; height: 100px; border: 1px solid #eee; border-radius: 4px; object-fit: contain;">  <div>
+    <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
+      <a href="https://arxiv.org/abs/2505.14300" style="color: #000000; text-decoration: none; font-family: 'Georgia', 'Times New Roman', Times, serif;">SafetyNet: Detecting Harmful Outputs in LLMs by Modeling and Monitoring Deceptive Behaviors</a>
+    </h4>
+    <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">Maheep Chaudhary, F. Barez</p>
+    <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">Under review</p>
+  </div>
 </div>
 
-<div style="margin-bottom: 20px;">
-  <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
-    <a href="https://arxiv.org/abs/2509.13333" style="color: #000000; text-decoration: none;">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</a>
-  </h4>
-  <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">Maheep Chaudhary†, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</p>
-  <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">NeurIPS 2025 Responsible FM Workshop</p>
+<div style="margin-bottom: 30px; display: flex; gap: 20px; align-items: flex-start;">
+  <img src="images/evaluation_awareness.png" alt="Evaluation Awareness Scaling" style="width: 100px; height: 100px; border: 1px solid #eee; border-radius: 4px; object-fit: contain;">
+  <div>
+    <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
+      <a href="https://arxiv.org/abs/2509.13333" style="color: #000000; text-decoration: none;">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</a>
+    </h4>
+    <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">Maheep Chaudhary†, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</p>
+    <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">NeurIPS 2025 Responsible FM Workshop</p>
+  </div>
 </div>
 
 <div style="margin-bottom: 20px;">
@@ -188,13 +178,6 @@ redirect_from:
   <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">NeurIPS 2025 Efficient Reasoning Workshop</p>
 </div>
 
-<div style="margin-bottom: 20px;">
-  <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
-    <a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #000000; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a>
-  </h4>
-  <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
-  <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">EMNLP 2024</p>
-</div>
 
 <div style="margin-bottom: 20px;">
   <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
@@ -216,12 +199,15 @@ redirect_from:
 
 <h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000;">📑 Literature Surveys & Theory</h3>
 
-<div style="margin-bottom: 20px;">
-  <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
-    <a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #000000; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a>
-  </h4>
-  <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">A. Geiger, D. Ibeling, A. Zur, Maheep Chaudhary, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</p>
-  <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">JMLR 2024</p>
+<div style="margin-bottom: 30px; display: flex; gap: 20px; align-items: flex-start;">
+  <img src="images/causal_abstraction.png" alt="Causal Abstraction" style="width: 100px; height: 100px; border: 1px solid #eee; border-radius: 4px; object-fit: contain;">
+  <div>
+    <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
+      <a href="http://jmlr.org/papers/v26/23-0058.html" style="color: #000000; text-decoration: none;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</a>
+    </h4>
+    <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">A. Geiger, D. Ibeling, A. Zur, Maheep Chaudhary, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</p>
+    <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">JMLR 2024</p>
+  </div>
 </div>
 
 <div style="margin-bottom: 20px;">
@@ -235,6 +221,15 @@ redirect_from:
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
 <h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000;">📚 Additional Publications</h3>
+
+
+<div style="margin-bottom: 20px;">
+  <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
+    <a href="https://aclanthology.org/2024.emnlp-main.959/" style="color: #000000; text-decoration: none;">MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification</a>
+  </h4>
+  <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">S. B. Shah, S. Shiwakoti, Maheep Chaudhary, H. Wang</p>
+  <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">EMNLP 2024</p>
+</div>
 
 <div style="margin-bottom: 20px;">
   <h4 style="margin: 0 0 4px 0; font-size: 0.95em; font-weight: normal; color: #000000;">
@@ -259,7 +254,6 @@ redirect_from:
   <p style="margin: 0 0 2px 0; font-size: 0.8em; color: #666; font-style: italic;">M. Singh, S. Pandey, R. Saxena, Maheep Chaudhary, N. Lal</p>
   <p style="margin: 0; font-size: 0.75em; color: #888; font-style: italic;">ACM COMPUTE 2021</p>
 </div>
-
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #ecf0f1, transparent); margin: 30px 0;"></div>
 
 <h3 style="font-size: 1.2em; font-weight: normal; margin: 30px 0 20px 0; color: #000000;">Background & Recognition</h3>

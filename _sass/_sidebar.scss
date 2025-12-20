@@ -78,6 +78,7 @@
    Author profile and links
    ========================================================================== */
 
+
 .author__avatar {
   display: table-cell;
   vertical-align: top;
@@ -92,15 +93,19 @@
   }
 
   img {
-    max-width: 225px;
-    border-radius: 50%;
+  max-width: 225px;
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 50%;
 
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
-    }
+  @include breakpoint($large) {
+    padding: 5px;
+    border: 1px solid $border-color;
   }
 }
+}
+
 
 .author__content {
   display: table-cell;

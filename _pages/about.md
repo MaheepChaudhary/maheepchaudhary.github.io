@@ -93,7 +93,7 @@ redirect_from:
 </p>
 
 <p style="font-size: 0.9em; color: #000000;">
-  <a href="YOUR_LESSWRONG_LINK" style="color: #3d7a7a; text-decoration: none;">Read the full research agenda</a>
+  <a href="https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in" style="color: #3d7a7a; text-decoration: none;">Read the full research agenda</a>
 </p>
 
 <div style="height: 2px; background: linear-gradient(90deg, transparent, #2c3e50, transparent); margin: 20px 0;"></div>

@@ -25,6 +25,57 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 @keyframes n1{0%,11%{fill:#fff;stroke:#c9ccd1}18%,88%{fill:var(--signal);stroke:var(--signal)}100%{fill:#fff;stroke:#c9ccd1}}
 @keyframes n2{0%,27%{fill:#fff;stroke:#c9ccd1}34%,88%{fill:var(--signal);stroke:var(--signal)}100%{fill:#fff;stroke:#c9ccd1}}
 @keyframes ring{0%,44%{opacity:0;transform:scale(.6)}54%{opacity:1;transform:scale(1.15)}62%,88%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+.bb-p1,.bb-nb{opacity:0}
+.cs-zx{opacity:.15}
+@media (prefers-reduced-motion:no-preference){
+.bb-p1,.bb-p2{stroke-dasharray:125}
+.bb-p1{animation:bb1 8s ease-in-out infinite}.bb-p2{animation:bb2 8s ease-in-out infinite}
+.bb-nb{animation:bbnb 8s ease-in-out infinite}.bb-nc{animation:bbnc 8s ease-in-out infinite}.bb-x{animation:bbx 8s ease-in-out infinite}
+.bb-r{transform-box:fill-box;transform-origin:center;animation:bbr 3s ease-in-out infinite}
+@keyframes bb1{0%{stroke-dashoffset:125;opacity:1}25%,34%{stroke-dashoffset:0;opacity:1}42%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes bb2{0%,48%{stroke-dashoffset:125;opacity:1}70%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes bbnb{0%,10%{opacity:0}14%,34%{opacity:1}42%,100%{opacity:0}}
+@keyframes bbnc{0%,56%{opacity:0}60%,90%{opacity:1}100%{opacity:0}}
+@keyframes bbx{0%,36%{opacity:0}42%,92%{opacity:1}100%{opacity:0}}
+@keyframes bbr{0%,100%{transform:scale(.94)}50%{transform:scale(1.08)}}
+.ea-c{stroke-dasharray:170;animation:eac 8s ease-in-out infinite}
+@keyframes eac{0%{stroke-dashoffset:170;opacity:1}55%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.ea-d0{transform-box:fill-box;transform-origin:center;animation:ead0 8s ease-out infinite}
+@keyframes ead0{0%,7%{opacity:0;transform:scale(0)}12%{opacity:1;transform:scale(1.25)}15%,88%{opacity:1;transform:scale(1)}96%,100%{opacity:0;transform:scale(1)}}
+.ea-d1{transform-box:fill-box;transform-origin:center;animation:ead1 8s ease-out infinite}
+@keyframes ead1{0%,19%{opacity:0;transform:scale(0)}24%{opacity:1;transform:scale(1.25)}27%,88%{opacity:1;transform:scale(1)}96%,100%{opacity:0;transform:scale(1)}}
+.ea-d2{transform-box:fill-box;transform-origin:center;animation:ead2 8s ease-out infinite}
+@keyframes ead2{0%,31%{opacity:0;transform:scale(0)}36%{opacity:1;transform:scale(1.25)}39%,88%{opacity:1;transform:scale(1)}96%,100%{opacity:0;transform:scale(1)}}
+.ea-d3{transform-box:fill-box;transform-origin:center;animation:ead3 8s ease-out infinite}
+@keyframes ead3{0%,43%{opacity:0;transform:scale(0)}48%{opacity:1;transform:scale(1.25)}51%,88%{opacity:1;transform:scale(1)}96%,100%{opacity:0;transform:scale(1)}}
+.ea-d4{transform-box:fill-box;transform-origin:center;animation:ead4 8s ease-out infinite}
+@keyframes ead4{0%,53%{opacity:0;transform:scale(0)}58%{opacity:1;transform:scale(1.25)}61%,88%{opacity:1;transform:scale(1)}96%,100%{opacity:0;transform:scale(1)}}
+.sa-in{animation:sain 8s ease-in-out infinite}.sa-ar{animation:saar 8s ease-in-out infinite}
+@keyframes sain{0%{opacity:0}8%,90%{opacity:1}98%,100%{opacity:0}}
+@keyframes saar{0%,10%{opacity:0}18%,90%{opacity:1}98%,100%{opacity:0}}
+.sa-f0{animation:saf0 8s ease-in-out infinite}
+@keyframes saf0{0%,24%{fill:#e1e3e6}29%,90%{fill:#0f5e5a}98%,100%{fill:#e1e3e6}}
+.sa-f1{animation:saf1 8s ease-in-out infinite}
+@keyframes saf1{0%,36%{fill:#e1e3e6}41%,90%{fill:#c8500a}98%,100%{fill:#e1e3e6}}
+.sa-f2{animation:saf2 8s ease-in-out infinite}
+@keyframes saf2{0%,48%{fill:#e1e3e6}53%,90%{fill:#0f5e5a}98%,100%{fill:#e1e3e6}}
+.sa-f3{animation:saf3 8s ease-in-out infinite}
+@keyframes saf3{0%,60%{fill:#e1e3e6}65%,90%{fill:#c8500a}98%,100%{fill:#e1e3e6}}
+.cs-zx{animation:cszx 8s ease-in-out infinite}.cs-zy{animation:cszy 8s ease-in-out infinite}.cs-xy{animation:csxy 8s ease-in-out infinite}.cs-xyo{animation:csxyo 8s ease-in-out infinite}.cs-do{animation:csdo 8s ease-in-out infinite}
+@keyframes cszx{0%,2%{opacity:0}8%,40%{opacity:1}48%,92%{opacity:.15}100%{opacity:0}}
+@keyframes cszy{0%,10%{opacity:0}16%,92%{opacity:1}100%{opacity:0}}
+@keyframes csxy{0%,18%{opacity:0}24%,92%{opacity:1}100%{opacity:0}}
+@keyframes csxyo{0%,54%{opacity:0}62%,92%{opacity:1}100%{opacity:0}}
+@keyframes csdo{0%,42%{opacity:0}48%,92%{opacity:1}100%{opacity:0}}
+.ca-ar{animation:caar 8s ease-in-out infinite}
+@keyframes caar{0%,82%{opacity:0}90%,96%{opacity:1}100%{opacity:0}}
+.ca-h0{animation:cah0 8s ease-in-out infinite}
+@keyframes cah0{0%,1%{opacity:0}4%,26%{opacity:1}29%,100%{opacity:0}}
+.ca-h1{animation:cah1 8s ease-in-out infinite}
+@keyframes cah1{0%,27%{opacity:0}30%,52%{opacity:1}55%,100%{opacity:0}}
+.ca-h2{animation:cah2 8s ease-in-out infinite}
+@keyframes cah2{0%,53%{opacity:0}56%,78%{opacity:1}81%,100%{opacity:0}}
+}
 @media (prefers-reduced-motion:reduce){.trace,.n1,.n2,.ring{animation:none}.trace{stroke-dasharray:none}}
 </style>
 </head>
@@ -154,7 +205,7 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 <div style="display:flex; flex-direction:column; gap:32px;">
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<img src="images/safetynet.png" alt="Beyond Black-Box Obfuscation figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: a harmful route through a small network is blocked, so the signal reroutes along another path while a monitor ring watches an internal node." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><g stroke="#e1e3e6" stroke-width="1.5" fill="none"><polyline points="20,50 70,22 125,50"/><polyline points="20,50 70,78 125,50"/></g><polyline class="bb-p1" points="20,50 70,22 125,50" stroke="#c8500a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><polyline class="bb-p2" points="20,50 70,78 125,50" stroke="#c8500a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="20" cy="50" r="8"/><circle cx="70" cy="22" r="8"/><circle cx="70" cy="78" r="8"/><circle cx="125" cy="50" r="8"/></g><circle class="bb-nb" cx="70" cy="22" r="8" fill="#c8500a" stroke="#c8500a" stroke-width="1.5"/><circle class="bb-nc" cx="70" cy="78" r="8" fill="#c8500a" stroke="#c8500a" stroke-width="1.5"/><g class="bb-x" stroke="#5a5f66" stroke-width="2" stroke-linecap="round"><line x1="64" y1="16" x2="76" y2="28"/><line x1="76" y1="16" x2="64" y2="28"/></g><circle class="bb-r" cx="125" cy="50" r="14" fill="none" stroke="#0f5e5a" stroke-width="1.5" stroke-dasharray="4 3"/></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Beyond Black-Box Obfuscation: Mechanistic Analysis and Defense of White-Box Monitors</h3>
 <div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">COLM 2026</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, F. Barez</div>
@@ -164,7 +215,7 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<img src="images/evaluation_awareness.png" alt="Evaluation awareness scaling figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Schematic: evaluation awareness rising as model size grows." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><g stroke="#c9ccd1" stroke-width="1.5" fill="none" stroke-linecap="round"><polyline points="22,10 22,84 150,84"/></g><text x="27" y="12" font-size="7.5" fill="#5a5f66">evaluation awareness</text><text x="150" y="96" font-size="7.5" fill="#5a5f66" text-anchor="end">model size</text><path class="ea-c" d="M34,74 C52,74 74,70 90,60 S128,36 144,16" fill="none" stroke="#0f5e5a" stroke-width="2" stroke-linecap="round"/><circle class="ea-d0" cx="34" cy="74" r="2.5" fill="#c8500a"/><circle class="ea-d1" cx="62.75" cy="70.75" r="3.5" fill="#c8500a"/><circle class="ea-d2" cx="90" cy="60" r="4.5" fill="#c8500a"/><circle class="ea-d3" cx="117" cy="41.75" r="5.5" fill="#c8500a"/><circle class="ea-d4" cx="144" cy="16" r="6.5" fill="#c8500a"/></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</h3>
 <div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">NeurIPS 2025 Workshop</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</div>
@@ -174,7 +225,7 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<img src="images/evaluation_sae.png" alt="Sparse autoencoder evaluation figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: a dense, mixed activation vector is decomposed by a sparse autoencoder into a few separate features." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><g class="sa-in"><rect x="12" y="16" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="28" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/><rect x="12" y="40" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="52" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/><rect x="12" y="64" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="76" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/></g><g class="sa-ar"><line x1="38" y1="52" x2="64" y2="52" stroke="#5a5f66" stroke-width="1.5"/><polygon points="64,48 71,52 64,56" fill="#5a5f66"/><text x="51" y="45" font-size="7.5" fill="#5a5f66" text-anchor="middle">SAE</text></g><rect x="78" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f0" x="93" y="22" width="11" height="11" rx="2" fill="#0f5e5a"/><rect x="108" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="123" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="138" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="108" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f1" x="123" y="37" width="11" height="11" rx="2" fill="#c8500a"/><rect x="138" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f2" x="108" y="52" width="11" height="11" rx="2" fill="#0f5e5a"/><rect x="123" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="138" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="108" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="123" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f3" x="138" y="67" width="11" height="11" rx="2" fill="#c8500a"/></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</h3>
 <div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">arXiv preprint</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, A. Geiger</div>
@@ -183,7 +234,7 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<img src="images/causality.png" alt="Causality survey figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Causal graph with variables Z, X and Y; intervening on X cuts the arrow from Z into X and leaves the effect of X on Y." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><defs><marker id="cs-g" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#5a5f66"/></marker><marker id="cs-o" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#c8500a"/></marker></defs><line class="cs-zx" x1="72.9" y1="26.4" x2="43.1" y2="61.6" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-zy" x1="87.1" y1="26.4" x2="116.9" y2="61.6" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-xy" x1="47" y1="70" x2="113" y2="70" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-xyo" x1="47" y1="70" x2="113" y2="70" stroke="#c8500a" stroke-width="2.5" marker-end="url(#cs-o)"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="80" cy="18" r="11"/><circle cx="36" cy="70" r="11"/><circle cx="124" cy="70" r="11"/></g><g font-size="10" font-weight="600" fill="#1a1a1a" text-anchor="middle" dominant-baseline="central"><text x="80" y="18">Z</text><text x="36" y="70">X</text><text x="124" y="70">Y</text></g><g class="cs-do"><circle cx="36" cy="70" r="15" fill="none" stroke="#c8500a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="36" y="95" font-size="8" font-weight="600" fill="#c8500a" text-anchor="middle">do(X)</text></g></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</h3>
 <div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">arXiv preprint</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>*, H. Liu*, H. Wang</div>
@@ -192,7 +243,7 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<img src="images/causal_abstraction.png" alt="Causal abstraction figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: groups of low-level network units map onto the nodes of a simpler high-level causal model." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><text x="6" y="10" font-size="7" fill="#5a5f66">high-level model</text><text x="6" y="97" font-size="7" fill="#5a5f66">neural network</text><line x1="20" y1="73" x2="32" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="44" y1="73" x2="32" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="68" y1="73" x2="80" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="92" y1="73" x2="80" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="116" y1="73" x2="128" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="140" y1="73" x2="128" y2="35" stroke="#c9ccd1" stroke-width="1"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="32" cy="26" r="9"/><circle cx="80" cy="26" r="9"/><circle cx="128" cy="26" r="9"/><circle cx="20" cy="78" r="5"/><circle cx="44" cy="78" r="5"/><circle cx="68" cy="78" r="5"/><circle cx="92" cy="78" r="5"/><circle cx="116" cy="78" r="5"/><circle cx="140" cy="78" r="5"/></g><g class="ca-h0"><line x1="20" y1="73" x2="32" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="44" y1="73" x2="32" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="20" cy="78" r="5" fill="#0f5e5a"/><circle cx="44" cy="78" r="5" fill="#0f5e5a"/><circle cx="32" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><g class="ca-h1"><line x1="68" y1="73" x2="80" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="92" y1="73" x2="80" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="68" cy="78" r="5" fill="#0f5e5a"/><circle cx="92" cy="78" r="5" fill="#0f5e5a"/><circle cx="80" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><g class="ca-h2"><line x1="116" y1="73" x2="128" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="140" y1="73" x2="128" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="116" cy="78" r="5" fill="#0f5e5a"/><circle cx="140" cy="78" r="5" fill="#0f5e5a"/><circle cx="128" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><defs><marker id="ca-ar" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#c8500a"/></marker></defs><g class="ca-ar" stroke="#c8500a" stroke-width="2"><line x1="43" y1="26" x2="66" y2="26" marker-end="url(#ca-ar)"/><line x1="91" y1="26" x2="114" y2="26" marker-end="url(#ca-ar)"/></g></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</h3>
 <div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">JMLR</span> &middot; A. Geiger, D. Ibeling, A. Zur, <strong style="font-weight:600">Maheep Chaudhary</strong>, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</div>

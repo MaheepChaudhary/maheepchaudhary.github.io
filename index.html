@@ -16,6 +16,15 @@
 html{scroll-behavior:smooth}
 body{margin:0}
 a{color:#0f5e5a}a:hover{color:#0a4441}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{position:relative;display:flex;gap:16px;align-items:flex-start;padding-bottom:28px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li:not(:last-child)::after{content:"";position:absolute;left:27.25px;top:56px;bottom:0;width:1.5px;background:#0f5e5a}
+.timeline .tl-dot{flex:0 0 56px;width:56px;height:56px;box-sizing:border-box;border:1.5px solid #0f5e5a;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#0f5e5a}
+.timeline .tl-text{flex:1 1 0;min-width:0;padding-top:4px}
+.timeline .tl-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.timeline .tl-role{font-weight:700;font-size:16px;line-height:1.35;margin-top:2px}
+.timeline .tl-org{font-size:14px;color:#5a5f66;margin-top:2px}
 
 .trace{stroke-dasharray:240;animation:trace 8s ease-in-out infinite}
 .n1{animation:n1 8s ease-in-out infinite}
@@ -258,11 +267,11 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 
 <section id="experience" style="margin-top:72px;">
 <h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Experience</h2>
-<ul style="list-style:none; padding:0; margin:0; display:grid; gap:16px;">
-<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2025 – now</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">Research Mentor</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Algoverse AI Research</div></div></li>
-<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2021 – 2025</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">Research collaborations</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Oxford, UIUC and Stanford</div></div></li>
-<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2023 – 2024</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">M.Sc. in Artificial Intelligence</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Nanyang Technological University, Singapore</div></div></li>
-<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2018 – 2022</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">B.E. in Electronics and Communication Engineering</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Bundelkhand Institute of Engineering and Technology, India</div></div></li>
+<ul class="timeline">
+<li><span class="tl-dot" aria-hidden="true">AL</span><div class="tl-text"><div class="tl-label">Now</div><div class="tl-role">Research Mentor</div><div class="tl-org">Algoverse AI Research · 2025 – now</div></div></li>
+<li><span class="tl-dot" aria-hidden="true">RC</span><div class="tl-text"><div class="tl-label">Previously</div><div class="tl-role">Research collaborations</div><div class="tl-org">Oxford, UIUC and Stanford · 2021 – 2025</div></div></li>
+<li><span class="tl-dot" aria-hidden="true">NTU</span><div class="tl-text"><div class="tl-label">Previously</div><div class="tl-role">M.Sc. in Artificial Intelligence</div><div class="tl-org">Nanyang Technological University, Singapore · 2023 – 2024</div></div></li>
+<li><span class="tl-dot" aria-hidden="true">BIET</span><div class="tl-text"><div class="tl-label">Previously</div><div class="tl-role">B.E. in Electronics and Communication Engineering</div><div class="tl-org">Bundelkhand Institute of Engineering and Technology, India · 2018 – 2022</div></div></li>
 </ul>
 </section>
 

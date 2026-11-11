@@ -22,8 +22,12 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 .edu-list .tl-label{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--accent);font-variant-numeric:tabular-nums}
 .edu-list .tl-org{font-size:14px;color:#5a5f66;margin-top:2px}
 @media (max-width:640px){.exp-grid{grid-template-columns:1fr;gap:36px}}
-.use-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-right:4px}
-.org{color:#1a1a1a;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.cb-orgs,.cb-built,.cb-proof{margin:0}
+.cb-orgs{font-size:16px;line-height:1.6;color:#5a5f66}
+.cb-orgs .cb-n{color:#1a1a1a}
+.cb-built{font-size:14px;line-height:1.6;color:#5a5f66;margin-top:2px}
+.cb-built .cb-t{color:#1a1a1a}
+.cb-proof{font-size:13px;line-height:1.6;color:#5a5f66;margin-top:2px}
 .timeline{list-style:none;padding:0;margin:0}
 .timeline li{position:relative;display:flex;gap:16px;align-items:flex-start;padding-bottom:28px}
 .timeline li:last-child{padding-bottom:0}
@@ -278,23 +282,16 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 
 <section id="cited" style="margin-top:72px;">
 <h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Cited by</h2>
-<p style="font-size:15px; margin:0 0 24px;">Where others have cited or used my work. Institutions are the authors&rsquo; affiliations as printed on each paper.</p>
-<div style="display:grid; gap:28px;">
+<div style="display:grid; grid-template-columns:minmax(0,1fr); gap:28px;">
 <div>
-<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:16px; line-height:1.4; margin:0;">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</h3>
-<div style="font-size:14px; color:#5a5f66; margin-top:2px;">26 citations on <a href="https://scholar.google.com/citations?user=zLUnjyUAAAAJ&amp;hl=en" style="color:var(--accent);">Google Scholar</a></div>
-<div style="font-size:14px; color:#5a5f66; margin-top:8px; display:grid; gap:4px;">
-<div><span class="use-label">Cited in</span> <a href="https://icml.cc/virtual/2026/poster/67051" style="color:var(--accent);">Preparing for AI Systems That Deceive Developers</a> (ICML 2026): authors at <span class="org">FAR.AI</span>, <span class="org">Mila</span>, <span class="org">Tsinghua University</span>, <span class="org">CISPA Helmholtz Center for Information Security</span> and others</div>
-<div><span class="use-label">Cited in</span> <a href="https://arxiv.org/abs/2609.01611" style="color:var(--accent);">EvalDetectBench</a>: authors at <span class="org">UK AI Security Institute</span>, <span class="org">LASR Labs</span>, <span class="org">University of Pennsylvania</span></div>
-<div><span class="use-label">Cited in</span> <a href="https://arxiv.org/abs/2605.27681" style="color:var(--accent);">Behavioural Analysis of Alignment Faking</a>: authors at <span class="org">UK AI Security Institute</span>, <span class="org">University of Cambridge</span>, <span class="org">Harvard University</span> and others</div>
-</div>
+<p class="cb-orgs">Authors at <span class="cb-n">FAR.AI</span>, <span class="cb-n">Mila</span>, <span class="cb-n">UK AI Security Institute</span>, <span class="cb-n">Tsinghua University</span>, <span class="cb-n">University of Cambridge</span> and <span class="cb-n">Harvard University</span></p>
+<p class="cb-built">cited <span class="cb-t">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</span></p>
+<p class="cb-proof">in <a href="https://icml.cc/virtual/2026/poster/67051" style="color:var(--accent);">Preparing for AI Systems That Deceive Developers</a>, <a href="https://arxiv.org/abs/2609.01611" style="color:var(--accent);">EvalDetectBench</a> and <a href="https://arxiv.org/abs/2605.27681" style="color:var(--accent);">Behavioural Analysis of Alignment Faking</a></p>
 </div>
 <div>
-<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:16px; line-height:1.4; margin:0;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</h3>
-<div style="font-size:14px; color:#5a5f66; margin-top:8px; display:grid; gap:4px;">
-<div><span class="use-label">Used in</span> <a href="https://arxiv.org/abs/2503.09532" style="color:var(--accent);">SAEBench</a>: authors at <span class="org">Anthropic</span>, <span class="org">UCL</span>, <span class="org">Decode Research</span> and others</div>
-<div><span class="use-label">Used in</span> <a href="https://arxiv.org/abs/2504.13151" style="color:var(--accent);">MIB</a>: authors at <span class="org">Stanford</span>, <span class="org">MIT</span>, <span class="org">Northeastern</span>, <span class="org">Technion</span> and others</div>
-</div>
+<p class="cb-orgs">Authors at <span class="cb-n">Anthropic</span>, <span class="cb-n">Stanford</span>, <span class="cb-n">MIT</span>, <span class="cb-n">UCL</span> and <span class="cb-n">Technion</span></p>
+<p class="cb-built">used the method from <span class="cb-t">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</span></p>
+<p class="cb-proof">in <a href="https://arxiv.org/abs/2503.09532" style="color:var(--accent);">SAEBench</a> and <a href="https://arxiv.org/abs/2504.13151" style="color:var(--accent);">MIB</a></p>
 </div>
 </div>
 </section>

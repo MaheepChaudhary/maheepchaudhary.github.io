@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maheep Chaudhary — White-box monitoring for AI agents</title>
+<meta name="description" content="Maheep Chaudhary: PhD student at MBZUAI and Research Engineer at CaML, working on white-box monitoring for AI agents.">
+<meta property="og:title" content="Maheep Chaudhary — White-box monitoring for AI agents">
+<meta property="og:description" content="Maheep Chaudhary: PhD student at MBZUAI and Research Engineer at CaML, working on white-box monitoring for AI agents.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maheepchaudhary.github.io/">
+<meta property="og:image" content="https://maheepchaudhary.github.io/images/pp.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#0f5e5a;--signal:#c8500a}
+html{scroll-behavior:smooth}
+body{margin:0}
+a{color:#0f5e5a}a:hover{color:#0a4441}
+</style>
+</head>
+<body>
+<div style="width:100%; min-height:100vh; box-sizing:border-box; background:#ffffff; color:#1a1a1a; font-family:Inter, system-ui, sans-serif; font-size:16px; line-height:1.6;">
+<div style="max-width:720px; margin:0 auto; padding:0 24px 96px;">
+
+<header style="padding:24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px 24px;">
+<a href="#top" style="font-family:Merriweather, Georgia, serif; font-size:18px; font-weight:700; color:#1a1a1a; text-decoration:none;">Maheep Chaudhary</a>
+<nav style="display:flex; flex-wrap:wrap; gap:0 24px;">
+<a href="#research" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Research</a>
+<a href="#papers" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Papers</a>
+<a href="#experience" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Experience</a>
+<a href="#notes" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Notes</a>
+<a href="#mentoring" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Mentoring</a>
+<a href="#contact" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Contact</a>
+</nav>
+</header>
+
+<section id="top" style="margin-top:56px;">
+<div style="display:flex; flex-direction:row; align-items:center; gap:16px; margin-bottom:28px;">
+<img src="images/pp.jpeg" alt="Maheep Chaudhary" width="64" height="64" style="flex:0 0 64px; width:64px; height:64px; border-radius:50%; object-fit:cover;">
+<div>
+<div style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:16px;">Maheep Chaudhary</div>
+<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">PhD student, MBZUAI &middot; Research Engineer, CaML</div>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:40px; flex-wrap:wrap; align-items:flex-start;">
+<div style="flex:1 1 380px;">
+<p style="font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); margin:0 0 12px;">Surgically making neural networks safe</p>
+<h1 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:38px; line-height:1.25; margin:0;">White-box monitoring for AI agents.</h1>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:23px; line-height:1.4; color:#5a5f66; margin:16px 0 0;">Detecting misalignment from model internals, even when models know they are being watched.</p>
+<p style="margin:24px 0 0;">I am a PhD student in NLP at MBZUAI and a Research Engineer at CaML (Compassion in Machine Learning). I study how to catch unsafe behaviour <strong style="font-weight:600">from a model's internals rather than its outputs</strong>: backdoors, evaluation awareness, and reasoning that never reaches the chain of thought. I also mentor research teams at Algoverse. Previously: M.Sc. in AI at NTU Singapore.</p>
+<div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:8px 20px; font-size:15px;">
+<a href="https://scholar.google.com/citations?user=zLUnjyUAAAAJ&amp;hl=en" style="color:var(--accent);">Google Scholar</a>
+<a href="https://github.com/maheepchaudhary" style="color:var(--accent);">GitHub</a>
+<a href="https://x.com/ChaudharyMaheep" style="color:var(--accent);">X</a>
+<a href="https://www.linkedin.com/in/maheep-chaudhary" style="color:var(--accent);">LinkedIn</a>
+</div>
+</div>
+<div style="flex:0 1 260px;">
+<figure style="margin:0">
+<svg width="100%" viewBox="0 0 255 220" role="img" aria-label="Diagram of a small neural network. One internal pathway is highlighted and a dashed ring marks the internal node a monitor reads." xmlns="http://www.w3.org/2000/svg">
+<line x1="30" y1="60" x2="95" y2="35" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="60" x2="95" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="60" x2="95" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="60" x2="95" y2="185" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="110" x2="95" y2="35" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="110" x2="95" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="110" x2="95" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="110" x2="95" y2="185" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="160" x2="95" y2="35" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="160" x2="95" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="160" x2="95" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="30" y1="160" x2="95" y2="185" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="35" x2="160" y2="35" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="35" x2="160" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="35" x2="160" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="35" x2="160" y2="185" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="85" x2="160" y2="35" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="85" x2="160" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="85" x2="160" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="85" x2="160" y2="185" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="135" x2="160" y2="35" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="135" x2="160" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="135" x2="160" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="135" x2="160" y2="185" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="185" x2="160" y2="35" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="185" x2="160" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="185" x2="160" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="95" y1="185" x2="160" y2="185" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="35" x2="225" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="35" x2="225" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="85" x2="225" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="85" x2="225" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="135" x2="225" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="135" x2="225" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="185" x2="225" y2="85" stroke="#e1e3e6" stroke-width="1"></line>
+<line x1="160" y1="185" x2="225" y2="135" stroke="#e1e3e6" stroke-width="1"></line>
+<polyline points="30,110 95,135 160,85 225,135" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--signal)"></polyline>
+<circle cx="30" cy="60" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="30" cy="110" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="30" cy="160" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="95" cy="35" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="95" cy="85" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="95" cy="135" r="9" stroke-width="1.5" style="fill: var(--signal); stroke: var(--signal)"></circle>
+<circle cx="95" cy="185" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="160" cy="35" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="160" cy="85" r="9" stroke-width="1.5" style="fill: var(--signal); stroke: var(--signal)"></circle>
+<circle cx="160" cy="135" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="160" cy="185" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="225" cy="85" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="225" cy="135" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
+<circle cx="160" cy="85" r="16" fill="none" stroke-width="1.5" stroke-dasharray="4 3" style="stroke: var(--accent)"></circle>
+</svg>
+<figcaption style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:15px; color:#5a5f66; line-height:1.5; margin-top:12px;">Fig. 1. The output can look safe while a hidden pathway (orange) carries the unsafe computation. I build monitors that read it (teal ring).</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section id="news" style="margin-top:72px;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">News</h2>
+<ul style="list-style:none; padding:0; margin:0; display:grid; gap:12px;">
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Aug 2026</span><span>Started my PhD in NLP at MBZUAI.</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">[Mon YYYY]</span><span>Joined CaML as a Research Engineer.</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Dec 2025</span><span>Several papers at NeurIPS 2025 workshops, including work on evaluation awareness and SALT.</span></li>
+</ul>
+</section>
+
+<section id="research" style="margin-top:72px;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Research agenda</h2>
+<ol style="list-style:none; padding:0; margin:0; display:grid; gap:28px;">
+<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">01</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Outputs are not enough</h3><p style="font-size:15px; margin:0;">What a model says it is doing and what it computes internally can differ, so checking outputs alone cannot confirm that a model is aligned.</p></div></li>
+<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">02</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Models adapt to being watched</h3><p style="font-size:15px; margin:0;">Models can tell when they are being evaluated and change how they behave, and information can move to places interpretability tools do not look. I call this hypothesis <strong style="font-weight:600">Alignment Jailbreaking</strong>: networks are more internally flexible than our tools assume.</p></div></li>
+<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">03</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Monitors must read internals and survive evasion</h3><p style="font-size:15px; margin:0;">I build white-box monitors for agents and test them against models that are trying to hide: backdoors, obfuscation, and reasoning that never reaches the chain of thought.</p></div></li>
+</ol>
+<p style="font-size:15px; margin:28px 0 0;">Current focus: <a href="https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in">Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models</a></p>
+</section>
+
+<section id="papers" style="margin-top:72px;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Selected papers</h2>
+<div style="display:flex; flex-direction:column; gap:32px;">
+
+<div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
+<img src="images/safetynet.png" alt="SafetyNet figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:1 1 320px;">
+<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">SafetyNet</h3>
+<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">Under review</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, F. Barez</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:17px; line-height:1.45; margin:6px 0 0;">Harmful outputs can be reached through several internal pathways, so blocking one route leads the model to reroute.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="https://arxiv.org/abs/2505.14300" style="color:var(--accent);">Paper</a></div>
+</div>
+</div>
+
+<div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
+<img src="images/evaluation_awareness.png" alt="Evaluation awareness scaling figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:1 1 320px;">
+<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</h3>
+<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">NeurIPS 2025 Workshop</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:17px; line-height:1.45; margin:6px 0 0;">Larger models are better at telling when they are being evaluated.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="https://arxiv.org/abs/2509.13333" style="color:var(--accent);">Paper</a></div>
+</div>
+</div>
+
+<div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
+<img src="images/causal_abstraction.png" alt="Causal abstraction figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:1 1 320px;">
+<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</h3>
+<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">JMLR</span> &middot; A. Geiger, D. Ibeling, A. Zur, <strong style="font-weight:600">Maheep Chaudhary</strong>, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:17px; line-height:1.45; margin:6px 0 0;">A common formal language for interpretability methods, built on causal abstraction.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color:var(--accent);">Paper</a></div>
+</div>
+</div>
+
+<div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
+<img src="images/memeclip.png" alt="MemeCLIP figure" width="160" height="100" loading="lazy" style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; object-fit:cover; background:#f1f2f4;">
+<div style="flex:1 1 320px;">
+<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">MemeCLIP</h3>
+<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">EMNLP 2024</span> &middot; S. B. Shah, S. Shiwakoti, <strong style="font-weight:600">Maheep Chaudhary</strong>, H. Wang</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:17px; line-height:1.45; margin:6px 0 0;">[One-line takeaway]</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="https://aclanthology.org/2024.emnlp-main.959/" style="color:var(--accent);">Paper</a></div>
+</div>
+</div>
+
+</div>
+<a href="https://scholar.google.com/citations?user=zLUnjyUAAAAJ&amp;hl=en" style="font-size:15px; margin-top:24px; display:inline-block; color:var(--accent);">All publications on Google Scholar</a>
+</section>
+
+<section id="experience" style="margin-top:72px;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Experience</h2>
+<ul style="list-style:none; padding:0; margin:0; display:grid; gap:16px;">
+<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026 – now</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">PhD student, NLP</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">MBZUAI, Abu Dhabi</div></div></li>
+<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">[YYYY] – now</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">Research Engineer</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">CaML (Compassion in Machine Learning)</div></div></li>
+<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2025 – now</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">Research Mentor</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Algoverse AI Research</div></div></li>
+<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2021 – 2025</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">Research collaborations</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Oxford, UIUC and Stanford</div></div></li>
+<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2023 – 2024</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">M.Sc. in Artificial Intelligence</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Nanyang Technological University, Singapore</div></div></li>
+<li style="display:flex; flex-direction:row; gap:16px; flex-wrap:wrap;"><span style="flex:0 0 120px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2018 – 2022</span><div style="flex:1 1 320px;"><div style="font-size:16px; font-weight:600;">B.E. in Electronics and Communication Engineering</div><div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Bundelkhand Institute of Engineering and Technology, India</div></div></li>
+</ul>
+</section>
+
+<section id="notes" style="margin-top:72px;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Notes</h2>
+<ul style="list-style:none; padding:0; margin:0; display:grid; gap:12px;">
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Dec 2025</span><a href="https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in" style="color:var(--accent);">Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models</a></li>
+</ul>
+</section>
+
+<section id="mentoring" style="margin-top:72px;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Mentoring</h2>
+<p style="margin:0;">I mentor at Algoverse AI Research, where I have worked with 100+ students across 13+ research teams.</p>
+<div style="display:flex; flex-wrap:wrap; gap:16px 48px; margin:24px 0;">
+<div><div style="font-family:Merriweather, Georgia, serif; font-size:28px; font-weight:700; line-height:1.2;">100+</div><div style="font-size:14px; color:#5a5f66;">students mentored</div></div>
+<div><div style="font-family:Merriweather, Georgia, serif; font-size:28px; font-weight:700; line-height:1.2;">13+</div><div style="font-size:14px; color:#5a5f66;">research teams</div></div>
+</div>
+</section>
+
+<section id="contact" style="margin-top:72px;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Collaborate</h2>
+<p style="margin:0;">I am open to collaborations on white-box monitoring and agent safety. The fastest way to reach me is email.</p>
+<p style="margin:12px 0 0;"><a href="mailto:maheepchaudhary.research@gmail.com" style="color:var(--accent);">maheepchaudhary.research@gmail.com</a></p>
+</section>
+
+<footer style="margin-top:96px; padding-top:24px; border-top:1px solid #e6e6e6; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">&copy; 2026 Maheep Chaudhary</footer>
+
+</div>
+</div>
+</body>
+</html>

@@ -10,34 +10,36 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://maheepchaudhary.github.io/">
 <meta property="og:image" content="https://maheepchaudhary.github.io/images/pp.jpeg">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Merriweather:wght@400;700&family=Inter:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--accent:#0f5e5a;--signal:#c8500a}
 html{scroll-behavior:smooth}
 body{margin:0}
 a{color:#0f5e5a}a:hover{color:#0a4441}
+.svc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+@media (max-width:640px){.svc-grid{grid-template-columns:minmax(0,1fr);gap:36px}}
 .exp-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
 .edu-list{list-style:none;padding:0;margin:0;display:grid;gap:28px}
 .edu-list .tl-role{font-weight:700;font-size:16px;line-height:1.35;margin-top:2px}
-.edu-list .tl-label{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--accent);font-variant-numeric:tabular-nums}
+.edu-list .tl-label{font-family:Inter, system-ui, sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--accent);font-variant-numeric:tabular-nums}
 .edu-list .tl-org{font-size:14px;color:#5a5f66;margin-top:2px}
 @media (max-width:640px){.exp-grid{grid-template-columns:1fr;gap:36px}}
 .cb-orgs,.cb-built,.cb-proof{margin:0}
-.cb-orgs{font-size:16px;line-height:1.6;color:#5a5f66}
-.cb-orgs .cb-n{color:#1a1a1a}
-.cb-built{font-size:14px;line-height:1.6;color:#5a5f66;margin-top:2px}
+.cb-orgs{font-size:17px;line-height:1.6;color:#5a5f66}
+.cb-orgs .cb-n{color:#1a1a1a;font-family:Merriweather, Georgia, serif;font-weight:700}
+.cb-built{font-size:15px;line-height:1.6;color:#5a5f66;margin-top:2px}
 .cb-built .cb-t{color:#1a1a1a}
-.cb-proof{font-size:13px;line-height:1.6;color:#5a5f66;margin-top:2px}
+.cb-proof{font-size:14px;line-height:1.6;color:#5a5f66;margin-top:2px}
 .timeline{list-style:none;padding:0;margin:0}
 .timeline li{position:relative;display:flex;gap:16px;align-items:flex-start;padding-bottom:28px}
 .timeline li:last-child{padding-bottom:0}
 .timeline li:not(:last-child)::after{content:"";position:absolute;left:27.25px;top:56px;bottom:0;width:1.5px;background:#0f5e5a}
-.timeline .tl-dot{flex:0 0 56px;width:56px;height:56px;box-sizing:border-box;border:1.5px solid #0f5e5a;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#0f5e5a}
+.timeline .tl-dot{flex:0 0 56px;width:56px;height:56px;box-sizing:border-box;border:1.5px solid #0f5e5a;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:Inter, system-ui, sans-serif;font-size:13px;color:#0f5e5a}
 .timeline .tl-split{overflow:hidden;padding:0}
 .timeline .tl-split span{flex:1 1 50%;height:100%;display:flex;align-items:center;justify-content:center;font-size:11px}
 .timeline .tl-split span+span{border-left:1.5px solid #0f5e5a}
 .timeline .tl-text{flex:1 1 0;min-width:0;padding-top:4px}
-.timeline .tl-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.timeline .tl-label{font-family:Inter, system-ui, sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
 .timeline .tl-role{font-weight:700;font-size:16px;line-height:1.35;margin-top:2px}
 .timeline .tl-org{font-size:14px;color:#5a5f66;margin-top:2px}
 
@@ -101,21 +103,22 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 @keyframes cah2{0%,53%{opacity:0}56%,78%{opacity:1}81%,100%{opacity:0}}
 }
 @media (prefers-reduced-motion:reduce){.trace,.n1,.n2,.ring{animation:none}.trace{stroke-dasharray:none}}
+@media (max-width:480px){#top h1{font-size:38px !important}}
 </style>
 </head>
 <body>
-<div style="width:100%; min-height:100vh; box-sizing:border-box; background:#ffffff; color:#1a1a1a; font-family:Inter, system-ui, sans-serif; font-size:16px; line-height:1.6;">
+<div style="width:100%; min-height:100vh; box-sizing:border-box; background:#ffffff; color:#1a1a1a; font-family:'Times New Roman', Times, serif; font-size:18px; line-height:1.6;">
 <div style="max-width:720px; margin:0 auto; padding:0 24px 96px;">
 
 <header style="padding:24px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px 24px;">
 <a href="#top" style="font-family:Merriweather, Georgia, serif; font-size:18px; font-weight:700; color:#1a1a1a; text-decoration:none;">Maheep Chaudhary</a>
 <nav style="display:flex; flex-wrap:wrap; gap:0 24px;">
-<a href="#research" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Research</a>
-<a href="#papers" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Papers</a>
-<a href="#experience" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Experience</a>
-<a href="#notes" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Notes</a>
-<a href="#mentoring" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Mentoring</a>
-<a href="#contact" style="font-size:15px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Contact</a>
+<a href="#research" style="font-size:16px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Research</a>
+<a href="#papers" style="font-size:16px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Papers</a>
+<a href="#experience" style="font-size:16px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Experience</a>
+<a href="#notes" style="font-size:16px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Notes</a>
+<a href="#service" style="font-size:16px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Service</a>
+<a href="#contact" style="font-size:16px; display:inline-flex; align-items:center; min-height:44px; color:var(--accent);">Contact</a>
 </nav>
 </header>
 
@@ -123,17 +126,17 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 <div style="display:flex; flex-direction:row; align-items:center; gap:16px; margin-bottom:28px;">
 <img src="images/pp.jpeg" alt="Maheep Chaudhary" width="64" height="64" style="flex:0 0 64px; width:64px; height:64px; border-radius:50%; object-fit:cover;">
 <div>
-<div style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:16px;">Maheep Chaudhary</div>
-<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Independent researcher</div>
+<div style="font-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:16px;">Maheep Chaudhary</div>
+<div style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Independent researcher</div>
 </div>
 </div>
 <div style="display:flex; flex-direction:row; gap:40px; flex-wrap:wrap; align-items:flex-start;">
 <div style="flex:1 1 380px;">
-<p style="font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); margin:0 0 12px;">Surgically making neural networks safe</p>
-<h1 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:38px; line-height:1.25; margin:0;">White-box monitoring for AI agents.</h1>
-<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:23px; line-height:1.4; color:#5a5f66; margin:16px 0 0;">Detecting misalignment from model internals, even when models know they are being watched.</p>
+<p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); margin:0 0 12px;">Surgically making neural networks safe</p>
+<h1 style="font-family:'Playfair Display', 'Times New Roman', Times, serif; font-style:italic; font-weight:700; font-size:46px; line-height:1.15; margin:0;">White-box monitoring for AI agents.</h1>
+<p style="font-family:'Times New Roman', Times, serif; font-style:normal; font-weight:400; font-size:23px; line-height:1.4; color:#5a5f66; margin:16px 0 0;">Detecting misalignment from model internals, even when models know they are being watched.</p>
 <p style="margin:24px 0 0;">I am an independent researcher. I study how to catch unsafe behaviour <strong style="font-weight:600">from a model's internals rather than its outputs</strong>: backdoors, evaluation awareness, and reasoning that never reaches the chain of thought. I also mentor research teams at Algoverse. Previously: M.Sc. in AI at NTU Singapore.</p>
-<div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:8px 20px; font-size:15px;">
+<div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:8px 20px; font-size:16px;">
 <a href="https://scholar.google.com/citations?user=zLUnjyUAAAAJ&amp;hl=en" style="color:var(--accent);">Google Scholar</a>
 <a href="https://github.com/maheepchaudhary" style="color:var(--accent);">GitHub</a>
 <a href="https://x.com/ChaudharyMaheep" style="color:var(--accent);">X</a>
@@ -195,7 +198,7 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 <circle cx="225" cy="135" r="9" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.5"></circle>
 <circle class="ring" cx="160" cy="85" r="16" fill="none" stroke-width="1.5" stroke-dasharray="4 3" style="stroke: var(--accent)"></circle>
 </svg>
-<figcaption style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:15px; color:#5a5f66; line-height:1.5; margin-top:12px;">Fig. 1. The output can look safe while a hidden pathway (orange) carries the unsafe computation. I build monitors that read it (teal ring).</figcaption>
+<figcaption style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:16px; color:#5a5f66; line-height:1.5; margin-top:12px;">Fig. 1. The output can look safe while a hidden pathway (orange) carries the unsafe computation. I build monitors that read it (teal ring).</figcaption>
 </figure>
 </div>
 </div>
@@ -204,24 +207,24 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 <section id="news" style="margin-top:72px;">
 <h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">News</h2>
 <ul style="list-style:none; padding:0; margin:0; display:grid; gap:12px;">
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Beyond Black-Box Obfuscation accepted at the COLM 2026 main conference.</span></li>
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Four papers at COLM 2026 workshops (Actionable Interpretability and Efficient Reasoning).</span></li>
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Two papers at ICML 2026 workshops.</span></li>
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Two papers at ICLR 2026 workshops.</span></li>
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>One paper in Findings of EACL 2026 and one at the EACL 2026 Student Research Workshop.</span></li>
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>A paper at the IAB workshop at NeurIPS 2026.</span></li>
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Dec 2025</span><span>Several papers at NeurIPS 2025 workshops, including work on evaluation awareness and SALT.</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>One paper at COLM 2026 (main conference).</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Four papers at COLM 2026 workshops.</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Two papers at ICML 2026 workshops.</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Two papers at ICLR 2026 workshops.</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>Two papers at EACL 2026 (Findings and student workshop).</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">2026</span><span>One paper at NeurIPS 2026 workshops.</span></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">Dec 2025</span><span>Seven papers at NeurIPS 2025 workshops.</span></li>
 </ul>
 </section>
 
 <section id="research" style="margin-top:72px;">
 <h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Research agenda</h2>
 <ol style="list-style:none; padding:0; margin:0; display:grid; gap:28px;">
-<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">01</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Outputs are not enough</h3><p style="font-size:15px; margin:0;">What a model says it is doing and what it computes internally can differ, so checking outputs alone cannot confirm that a model is aligned.</p></div></li>
-<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">02</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Models adapt to being watched</h3><p style="font-size:15px; margin:0;">Models can tell when they are being evaluated and change how they behave, and information can move to places interpretability tools do not look.</p></div></li>
-<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">03</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Monitors must read internals and survive evasion</h3><p style="font-size:15px; margin:0;">I build white-box monitors for agents and test them against models that are trying to hide: backdoors, obfuscation, and reasoning that never reaches the chain of thought.</p></div></li>
+<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">01</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Outputs are not enough</h3><p style="font-size:16px; margin:0;">What a model says it is doing and what it computes internally can differ, so checking outputs alone cannot confirm that a model is aligned.</p></div></li>
+<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">02</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Models adapt to being watched</h3><p style="font-size:16px; margin:0;">Models can tell when they are being evaluated and change how they behave, and information can move to places interpretability tools do not look.</p></div></li>
+<li style="display:flex; flex-direction:row; gap:20px; align-items:flex-start;"><span style="flex:0 0 40px; font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:30px; line-height:1.1; color:var(--accent);">03</span><div><h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 6px;">Monitors must read internals and survive evasion</h3><p style="font-size:16px; margin:0;">I build white-box monitors for agents and test them against models that are trying to hide: backdoors, obfuscation, and reasoning that never reaches the chain of thought.</p></div></li>
 </ol>
-<p style="font-size:15px; margin:28px 0 0;">Current focus: white-box monitoring for AI agents. A side interest: <a href="https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in">Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models</a></p>
+<p style="font-size:16px; margin:28px 0 0;">Current focus: white-box monitoring for AI agents. A side interest: <a href="https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in">Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models</a></p>
 </section>
 
 <section id="papers" style="margin-top:72px;">
@@ -229,55 +232,57 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 <div style="display:flex; flex-direction:column; gap:32px;">
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: a harmful route through a small network is blocked, so the signal reroutes along another path while a monitor ring watches an internal node." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><g stroke="#e1e3e6" stroke-width="1.5" fill="none"><polyline points="20,50 70,22 125,50"/><polyline points="20,50 70,78 125,50"/></g><polyline class="bb-p1" points="20,50 70,22 125,50" stroke="#c8500a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><polyline class="bb-p2" points="20,50 70,78 125,50" stroke="#c8500a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="20" cy="50" r="8"/><circle cx="70" cy="22" r="8"/><circle cx="70" cy="78" r="8"/><circle cx="125" cy="50" r="8"/></g><circle class="bb-nb" cx="70" cy="22" r="8" fill="#c8500a" stroke="#c8500a" stroke-width="1.5"/><circle class="bb-nc" cx="70" cy="78" r="8" fill="#c8500a" stroke="#c8500a" stroke-width="1.5"/><g class="bb-x" stroke="#5a5f66" stroke-width="2" stroke-linecap="round"><line x1="64" y1="16" x2="76" y2="28"/><line x1="76" y1="16" x2="64" y2="28"/></g><circle class="bb-r" cx="125" cy="50" r="14" fill="none" stroke="#0f5e5a" stroke-width="1.5" stroke-dasharray="4 3"/></svg></div>
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: a harmful route through a small network is blocked, so the signal reroutes along another path while a monitor ring watches an internal node." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:'Times New Roman', Times, serif"><g stroke="#e1e3e6" stroke-width="1.5" fill="none"><polyline points="20,50 70,22 125,50"/><polyline points="20,50 70,78 125,50"/></g><polyline class="bb-p1" points="20,50 70,22 125,50" stroke="#c8500a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><polyline class="bb-p2" points="20,50 70,78 125,50" stroke="#c8500a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="20" cy="50" r="8"/><circle cx="70" cy="22" r="8"/><circle cx="70" cy="78" r="8"/><circle cx="125" cy="50" r="8"/></g><circle class="bb-nb" cx="70" cy="22" r="8" fill="#c8500a" stroke="#c8500a" stroke-width="1.5"/><circle class="bb-nc" cx="70" cy="78" r="8" fill="#c8500a" stroke="#c8500a" stroke-width="1.5"/><g class="bb-x" stroke="#5a5f66" stroke-width="2" stroke-linecap="round"><line x1="64" y1="16" x2="76" y2="28"/><line x1="76" y1="16" x2="64" y2="28"/></g><circle class="bb-r" cx="125" cy="50" r="14" fill="none" stroke="#0f5e5a" stroke-width="1.5" stroke-dasharray="4 3"/></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Beyond Black-Box Obfuscation: Mechanistic Analysis and Defense of White-Box Monitors</h3>
-<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">COLM 2026</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, F. Barez</div>
-<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:17px; line-height:1.45; margin:6px 0 0;">LLMs can fool a monitor by moving information between linear and non-linear representations and by altering feature covariance.</p>
-<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="https://arxiv.org/abs/2505.14300" style="color:var(--accent);">Paper</a></div>
+<div style="font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:14px; font-weight:600; color:var(--accent);">COLM 2026</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, F. Barez</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:18px; line-height:1.45; margin:6px 0 0;">LLMs can fool a monitor by moving information between linear and non-linear representations and by altering feature covariance.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:15px; margin-top:6px;"><a href="https://arxiv.org/abs/2505.14300" style="color:var(--accent);">Paper</a></div>
 </div>
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Schematic: evaluation awareness rising as model size grows." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><g stroke="#c9ccd1" stroke-width="1.5" fill="none" stroke-linecap="round"><polyline points="22,10 22,84 150,84"/></g><text x="27" y="12" font-size="7.5" fill="#5a5f66">evaluation awareness</text><text x="150" y="96" font-size="7.5" fill="#5a5f66" text-anchor="end">model size</text><path class="ea-c" d="M34,74 C52,74 74,70 90,60 S128,36 144,16" fill="none" stroke="#0f5e5a" stroke-width="2" stroke-linecap="round"/><circle class="ea-d0" cx="34" cy="74" r="2.5" fill="#c8500a"/><circle class="ea-d1" cx="62.75" cy="70.75" r="3.5" fill="#c8500a"/><circle class="ea-d2" cx="90" cy="60" r="4.5" fill="#c8500a"/><circle class="ea-d3" cx="117" cy="41.75" r="5.5" fill="#c8500a"/><circle class="ea-d4" cx="144" cy="16" r="6.5" fill="#c8500a"/></svg></div>
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Schematic: evaluation awareness rising as model size grows." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:'Times New Roman', Times, serif"><g stroke="#c9ccd1" stroke-width="1.5" fill="none" stroke-linecap="round"><polyline points="22,10 22,84 150,84"/></g><text x="27" y="12" font-size="7.5" fill="#5a5f66">evaluation awareness</text><text x="150" y="96" font-size="7.5" fill="#5a5f66" text-anchor="end">model size</text><path class="ea-c" d="M34,74 C52,74 74,70 90,60 S128,36 144,16" fill="none" stroke="#0f5e5a" stroke-width="2" stroke-linecap="round"/><circle class="ea-d0" cx="34" cy="74" r="2.5" fill="#c8500a"/><circle class="ea-d1" cx="62.75" cy="70.75" r="3.5" fill="#c8500a"/><circle class="ea-d2" cx="90" cy="60" r="4.5" fill="#c8500a"/><circle class="ea-d3" cx="117" cy="41.75" r="5.5" fill="#c8500a"/><circle class="ea-d4" cx="144" cy="16" r="6.5" fill="#c8500a"/></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</h3>
-<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">NeurIPS 2025 Workshop</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</div>
-<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:17px; line-height:1.45; margin:6px 0 0;">As models get larger, they become more evaluation-aware.</p>
-<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="https://arxiv.org/abs/2509.13333" style="color:var(--accent);">Paper</a></div>
+<div style="font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:14px; font-weight:600; color:var(--accent);">NeurIPS 2025 Workshop</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, I. Su, N. Hooda, N. Shankar, J. Tan, K. Zhu, A. Panda, R. Lagasse, V. Sharma</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:18px; line-height:1.45; margin:6px 0 0;">As model size grows, evaluation awareness grows with it.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:15px; margin-top:6px;"><a href="https://arxiv.org/abs/2509.13333" style="color:var(--accent);">Paper</a></div>
 </div>
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: a dense, mixed activation vector is decomposed by a sparse autoencoder into a few separate features." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><g class="sa-in"><rect x="12" y="16" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="28" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/><rect x="12" y="40" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="52" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/><rect x="12" y="64" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="76" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/></g><g class="sa-ar"><line x1="38" y1="52" x2="64" y2="52" stroke="#5a5f66" stroke-width="1.5"/><polygon points="64,48 71,52 64,56" fill="#5a5f66"/><text x="51" y="45" font-size="7.5" fill="#5a5f66" text-anchor="middle">SAE</text></g><rect x="78" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f0" x="93" y="22" width="11" height="11" rx="2" fill="#0f5e5a"/><rect x="108" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="123" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="138" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="108" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f1" x="123" y="37" width="11" height="11" rx="2" fill="#c8500a"/><rect x="138" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f2" x="108" y="52" width="11" height="11" rx="2" fill="#0f5e5a"/><rect x="123" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="138" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="108" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="123" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f3" x="138" y="67" width="11" height="11" rx="2" fill="#c8500a"/></svg></div>
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: a dense, mixed activation vector is decomposed by a sparse autoencoder into a few separate features." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:'Times New Roman', Times, serif"><g class="sa-in"><rect x="12" y="16" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="28" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/><rect x="12" y="40" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="52" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/><rect x="12" y="64" width="18" height="9" rx="2" fill="#0f5e5a" opacity="0.55"/><rect x="12" y="76" width="18" height="9" rx="2" fill="#c8500a" opacity="0.5"/></g><g class="sa-ar"><line x1="38" y1="52" x2="64" y2="52" stroke="#5a5f66" stroke-width="1.5"/><polygon points="64,48 71,52 64,56" fill="#5a5f66"/><text x="51" y="45" font-size="7.5" fill="#5a5f66" text-anchor="middle">SAE</text></g><rect x="78" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f0" x="93" y="22" width="11" height="11" rx="2" fill="#0f5e5a"/><rect x="108" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="123" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="138" y="22" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="108" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f1" x="123" y="37" width="11" height="11" rx="2" fill="#c8500a"/><rect x="138" y="37" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f2" x="108" y="52" width="11" height="11" rx="2" fill="#0f5e5a"/><rect x="123" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="138" y="52" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="78" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="93" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="108" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect x="123" y="67" width="11" height="11" rx="2" fill="#e1e3e6"/><rect class="sa-f3" x="138" y="67" width="11" height="11" rx="2" fill="#c8500a"/></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small</h3>
-<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">arXiv preprint</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, A. Geiger</div>
-<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="https://arxiv.org/abs/2409.04478" style="color:var(--accent);">Paper</a></div>
+<div style="font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:14px; font-weight:600; color:var(--accent);">arXiv preprint</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>, A. Geiger</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:18px; line-height:1.45; margin:6px 0 0;">Open-source sparse autoencoders disentangle facts worse than raw neurons, while distributed alignment search beats them all.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:15px; margin-top:6px;"><a href="https://arxiv.org/abs/2409.04478" style="color:var(--accent);">Paper</a></div>
 </div>
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Causal graph with variables Z, X and Y; intervening on X cuts the arrow from Z into X and leaves the effect of X on Y." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><defs><marker id="cs-g" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#5a5f66"/></marker><marker id="cs-o" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#c8500a"/></marker></defs><line class="cs-zx" x1="72.9" y1="26.4" x2="43.1" y2="61.6" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-zy" x1="87.1" y1="26.4" x2="116.9" y2="61.6" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-xy" x1="47" y1="70" x2="113" y2="70" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-xyo" x1="47" y1="70" x2="113" y2="70" stroke="#c8500a" stroke-width="2.5" marker-end="url(#cs-o)"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="80" cy="18" r="11"/><circle cx="36" cy="70" r="11"/><circle cx="124" cy="70" r="11"/></g><g font-size="10" font-weight="600" fill="#1a1a1a" text-anchor="middle" dominant-baseline="central"><text x="80" y="18">Z</text><text x="36" y="70">X</text><text x="124" y="70">Y</text></g><g class="cs-do"><circle cx="36" cy="70" r="15" fill="none" stroke="#c8500a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="36" y="95" font-size="8" font-weight="600" fill="#c8500a" text-anchor="middle">do(X)</text></g></svg></div>
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Causal graph with variables Z, X and Y; intervening on X cuts the arrow from Z into X and leaves the effect of X on Y." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:'Times New Roman', Times, serif"><defs><marker id="cs-g" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#5a5f66"/></marker><marker id="cs-o" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#c8500a"/></marker></defs><line class="cs-zx" x1="72.9" y1="26.4" x2="43.1" y2="61.6" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-zy" x1="87.1" y1="26.4" x2="116.9" y2="61.6" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-xy" x1="47" y1="70" x2="113" y2="70" stroke="#5a5f66" stroke-width="1.5" marker-end="url(#cs-g)"/><line class="cs-xyo" x1="47" y1="70" x2="113" y2="70" stroke="#c8500a" stroke-width="2.5" marker-end="url(#cs-o)"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="80" cy="18" r="11"/><circle cx="36" cy="70" r="11"/><circle cx="124" cy="70" r="11"/></g><g font-size="10" font-weight="600" fill="#1a1a1a" text-anchor="middle" dominant-baseline="central"><text x="80" y="18">Z</text><text x="36" y="70">X</text><text x="124" y="70">Y</text></g><g class="cs-do"><circle cx="36" cy="70" r="15" fill="none" stroke="#c8500a" stroke-width="1.5" stroke-dasharray="4 3"/><text x="36" y="95" font-size="8" font-weight="600" fill="#c8500a" text-anchor="middle">do(X)</text></g></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives</h3>
-<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">arXiv preprint</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>*, H. Liu*, H. Wang</div>
-<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="https://arxiv.org/abs/2307.16851" style="color:var(--accent);">Paper</a></div>
+<div style="font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:14px; font-weight:600; color:var(--accent);">arXiv preprint</span> &middot; <strong style="font-weight:600">Maheep Chaudhary</strong>*, H. Liu*, H. Wang</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:18px; line-height:1.45; margin:6px 0 0;">A nearly 50-page primer connecting trustworthy machine learning and causality, extended to large language models.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:15px; margin-top:6px;"><a href="https://arxiv.org/abs/2307.16851" style="color:var(--accent);">Paper</a></div>
 </div>
 </div>
 
 <div style="display:flex; flex-direction:row; gap:24px; flex-wrap:wrap;">
-<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: groups of low-level network units map onto the nodes of a simpler high-level causal model." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:Inter, system-ui, sans-serif"><text x="6" y="10" font-size="7" fill="#5a5f66">high-level model</text><text x="6" y="97" font-size="7" fill="#5a5f66">neural network</text><line x1="20" y1="73" x2="32" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="44" y1="73" x2="32" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="68" y1="73" x2="80" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="92" y1="73" x2="80" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="116" y1="73" x2="128" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="140" y1="73" x2="128" y2="35" stroke="#c9ccd1" stroke-width="1"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="32" cy="26" r="9"/><circle cx="80" cy="26" r="9"/><circle cx="128" cy="26" r="9"/><circle cx="20" cy="78" r="5"/><circle cx="44" cy="78" r="5"/><circle cx="68" cy="78" r="5"/><circle cx="92" cy="78" r="5"/><circle cx="116" cy="78" r="5"/><circle cx="140" cy="78" r="5"/></g><g class="ca-h0"><line x1="20" y1="73" x2="32" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="44" y1="73" x2="32" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="20" cy="78" r="5" fill="#0f5e5a"/><circle cx="44" cy="78" r="5" fill="#0f5e5a"/><circle cx="32" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><g class="ca-h1"><line x1="68" y1="73" x2="80" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="92" y1="73" x2="80" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="68" cy="78" r="5" fill="#0f5e5a"/><circle cx="92" cy="78" r="5" fill="#0f5e5a"/><circle cx="80" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><g class="ca-h2"><line x1="116" y1="73" x2="128" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="140" y1="73" x2="128" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="116" cy="78" r="5" fill="#0f5e5a"/><circle cx="140" cy="78" r="5" fill="#0f5e5a"/><circle cx="128" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><defs><marker id="ca-ar" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#c8500a"/></marker></defs><g class="ca-ar" stroke="#c8500a" stroke-width="2"><line x1="43" y1="26" x2="66" y2="26" marker-end="url(#ca-ar)"/><line x1="91" y1="26" x2="114" y2="26" marker-end="url(#ca-ar)"/></g></svg></div>
+<div style="flex:0 0 160px; width:160px; height:100px; border-radius:6px; background:#f1f2f4; overflow:hidden;"><svg viewBox="0 0 160 100" width="160" height="100" role="img" aria-label="Diagram: groups of low-level network units map onto the nodes of a simpler high-level causal model." xmlns="http://www.w3.org/2000/svg" style="display:block; font-family:'Times New Roman', Times, serif"><text x="6" y="10" font-size="7" fill="#5a5f66">high-level model</text><text x="6" y="97" font-size="7" fill="#5a5f66">neural network</text><line x1="20" y1="73" x2="32" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="44" y1="73" x2="32" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="68" y1="73" x2="80" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="92" y1="73" x2="80" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="116" y1="73" x2="128" y2="35" stroke="#c9ccd1" stroke-width="1"/><line x1="140" y1="73" x2="128" y2="35" stroke="#c9ccd1" stroke-width="1"/><g fill="#fff" stroke="#c9ccd1" stroke-width="1.5"><circle cx="32" cy="26" r="9"/><circle cx="80" cy="26" r="9"/><circle cx="128" cy="26" r="9"/><circle cx="20" cy="78" r="5"/><circle cx="44" cy="78" r="5"/><circle cx="68" cy="78" r="5"/><circle cx="92" cy="78" r="5"/><circle cx="116" cy="78" r="5"/><circle cx="140" cy="78" r="5"/></g><g class="ca-h0"><line x1="20" y1="73" x2="32" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="44" y1="73" x2="32" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="20" cy="78" r="5" fill="#0f5e5a"/><circle cx="44" cy="78" r="5" fill="#0f5e5a"/><circle cx="32" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><g class="ca-h1"><line x1="68" y1="73" x2="80" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="92" y1="73" x2="80" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="68" cy="78" r="5" fill="#0f5e5a"/><circle cx="92" cy="78" r="5" fill="#0f5e5a"/><circle cx="80" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><g class="ca-h2"><line x1="116" y1="73" x2="128" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><line x1="140" y1="73" x2="128" y2="35" stroke="#0f5e5a" stroke-width="1.5"/><circle cx="116" cy="78" r="5" fill="#0f5e5a"/><circle cx="140" cy="78" r="5" fill="#0f5e5a"/><circle cx="128" cy="26" r="9" fill="#dcebea" stroke="#0f5e5a" stroke-width="1.5"/></g><defs><marker id="ca-ar" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#c8500a"/></marker></defs><g class="ca-ar" stroke="#c8500a" stroke-width="2"><line x1="43" y1="26" x2="66" y2="26" marker-end="url(#ca-ar)"/><line x1="91" y1="26" x2="114" y2="26" marker-end="url(#ca-ar)"/></g></svg></div>
 <div style="flex:1 1 320px;">
 <h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0;">Causal Abstraction: A Theoretical Foundation for Mechanistic Interpretability</h3>
-<div style="font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:13px; font-weight:600; color:var(--accent);">JMLR</span> &middot; A. Geiger, D. Ibeling, A. Zur, <strong style="font-weight:600">Maheep Chaudhary</strong>, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</div>
-<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:17px; line-height:1.45; margin:6px 0 0;">A common formal language for interpretability methods, built on causal abstraction.</p>
-<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin-top:6px;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color:var(--accent);">Paper</a></div>
+<div style="font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;"><span style="font-size:14px; font-weight:600; color:var(--accent);">JMLR</span> &middot; A. Geiger, D. Ibeling, A. Zur, <strong style="font-weight:600">Maheep Chaudhary</strong>, S. Chauhan, J. Huang, A. Arora, Z. Wu, N. Goodman, C. Potts, T. Icard</div>
+<p style="font-family:'Times New Roman', Times, serif; font-style:italic; font-weight:400; font-size:18px; line-height:1.45; margin:6px 0 0;">A common formal language for interpretability methods, built on causal abstraction.</p>
+<div style="display:flex; flex-wrap:wrap; gap:4px 16px; font-size:15px; margin-top:6px;"><a href="http://jmlr.org/papers/v26/23-0058.html" style="color:var(--accent);">Paper</a></div>
 </div>
 </div>
 
 </div>
-<a href="https://scholar.google.com/citations?user=zLUnjyUAAAAJ&amp;hl=en" style="font-size:15px; margin-top:24px; display:inline-block; color:var(--accent);">All publications on Google Scholar</a>
+<a href="https://scholar.google.com/citations?user=zLUnjyUAAAAJ&amp;hl=en" style="font-size:16px; margin-top:24px; display:inline-block; color:var(--accent);">All publications on Google Scholar</a>
 </section>
 
 <section id="cited" style="margin-top:72px;">
@@ -296,18 +301,18 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 </div>
 </section>
 
-<section id="experience" style="margin-top:72px;">
+<section id="experience" style="margin-top:72px; font-family:Arial, Helvetica, sans-serif;">
 <h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Experience</h2>
 <div class="exp-grid">
 <div>
-<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 20px;">Education</h3>
+<h3 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:17px; margin:0 0 20px;">Education</h3>
 <ul class="edu-list">
 <li><div class="tl-role">M.Sc. in Artificial Intelligence</div><div class="tl-org">Nanyang Technological University, Singapore</div></li>
 <li><div class="tl-role">B.E. in Electronics and Communication Engineering</div><div class="tl-org">Bundelkhand Institute of Engineering and Technology, India</div></li>
 </ul>
 </div>
 <div>
-<h3 style="font-family:Inter, system-ui, sans-serif; font-weight:600; font-size:17px; margin:0 0 20px;">Work</h3>
+<h3 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:17px; margin:0 0 20px;">Work</h3>
 <ul class="timeline">
 <li><span class="tl-dot" aria-hidden="true">AL</span><div class="tl-text"><div class="tl-label">Now</div><div class="tl-role">Research Mentor</div><div class="tl-org">Algoverse AI Research</div></div></li>
 <li><span class="tl-dot" aria-hidden="true">OX</span><div class="tl-text"><div class="tl-label">Previously</div><div class="tl-role">Research Intern</div><div class="tl-org">University of Oxford</div></div></li>
@@ -320,16 +325,26 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 <section id="notes" style="margin-top:72px;">
 <h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Notes</h2>
 <ul style="list-style:none; padding:0; margin:0; display:grid; gap:12px;">
-<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">Dec 2025</span><a href="https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in" style="color:var(--accent);">Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models</a></li>
+<li style="display:flex; flex-direction:row; gap:16px;"><span style="flex:0 0 96px; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">Dec 2025</span><a href="https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in" style="color:var(--accent);">Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models</a></li>
 </ul>
 </section>
 
-<section id="mentoring" style="margin-top:72px;">
-<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Mentoring</h2>
-<p style="margin:0;">I mentor at Algoverse AI Research, where I have worked with 100+ students across 13+ research teams.</p>
-<div style="display:flex; flex-wrap:wrap; gap:16px 48px; margin:24px 0;">
+<section id="service" style="margin-top:72px; font-family:Arial, Helvetica, sans-serif;">
+<h2 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:21px; line-height:1.3; margin:0 0 24px; padding-bottom:8px; border-bottom:1px solid #e6e6e6;">Service</h2>
+<div class="svc-grid">
+<div>
+<h3 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:17px; margin:0 0 20px;">Mentorship</h3>
+<p style="font-family:'Times New Roman', Times, serif; font-size:16px; margin:0 0 20px;">I mentor research teams at Algoverse AI Research.</p>
 <div><div style="font-family:Merriweather, Georgia, serif; font-size:28px; font-weight:700; line-height:1.2;">100+</div><div style="font-size:14px; color:#5a5f66;">students mentored</div></div>
-<div><div style="font-family:Merriweather, Georgia, serif; font-size:28px; font-weight:700; line-height:1.2;">13+</div><div style="font-size:14px; color:#5a5f66;">research teams</div></div>
+</div>
+<div>
+<h3 style="font-family:Merriweather, Georgia, serif; font-weight:700; font-size:17px; margin:0 0 20px;">Reviewing</h3>
+<ul class="edu-list">
+<li><div class="tl-role">Reviewer, ICLR 2026</div><div class="tl-org">Main conference</div></li>
+<li><div class="tl-role">Reviewer, ICML 2025</div><div class="tl-org">Actionable Interpretability workshop</div></li>
+<li><div class="tl-role">Reviewer, NeurIPS 2024</div><div class="tl-org">MATH+AI and CALM workshops</div></li>
+</ul>
+</div>
 </div>
 </section>
 
@@ -339,7 +354,7 @@ a{color:#0f5e5a}a:hover{color:#0a4441}
 <p style="margin:12px 0 0;"><a href="mailto:maheepchaudhary.research@gmail.com" style="color:var(--accent);">maheepchaudhary.research@gmail.com</a></p>
 </section>
 
-<footer style="margin-top:96px; padding-top:24px; border-top:1px solid #e6e6e6; font-size:14px; color:#5a5f66; font-variant-numeric:tabular-nums;">&copy; 2026 Maheep Chaudhary</footer>
+<footer style="margin-top:96px; padding-top:24px; border-top:1px solid #e6e6e6; font-size:15px; color:#5a5f66; font-variant-numeric:tabular-nums;">&copy; 2026 Maheep Chaudhary</footer>
 
 </div>
 </div>
